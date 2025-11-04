@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5847605262182091113}
   - component: {fileID: 105793244289384542}
-  - component: {fileID: 2461125785106376612}
   - component: {fileID: 1714363105047909694}
   m_Layer: 0
   m_Name: Ice
-  m_TagString: Floor
+  m_TagString: Ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,25 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2461125785106376612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7666249872668329625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7d3a05277dd22d439615d7023a4ef68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iceFriction: 0.02
-  iceBounciness: 0
-  iceWallSlideSpeed: 4
-  normalGravity: 3
-  iceFloorSlideMultiplier: 0.98
-  minHorizontalSpeed: 0.3
-  recoveryTime: 1.5
 --- !u!61 &1714363105047909694
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3217219958706957929}
   - component: {fileID: 2828125604763834654}
   - component: {fileID: 7413224945395978076}
-  - component: {fileID: 5596511255099623319}
   - component: {fileID: 6032958206699107330}
   - component: {fileID: 8991539805111918881}
   - component: {fileID: 4220486671582934798}
@@ -116,27 +115,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5596511255099623319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472138762689265279}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65d9735327bbb994d87b9d407d6783d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 6
-  rb: {fileID: 0}
-  isGrounded: 1
-  animator: {fileID: 0}
-  isRunning: 0
-  isJumping: 0
-  isFalling: 0
-  isCrouching: 0
 --- !u!95 &6032958206699107330
 Animator:
   serializedVersion: 5
@@ -218,12 +196,17 @@ MonoBehaviour:
   speed: 7
   jumpForce: 15
   rb: {fileID: 0}
-  isGrounded: 1
+  isGrounded: 0
+  isIced: 0
+  iceAcceleration: 30
+  iceCoastingFriction: 1.5
+  iceMaxSpeed: 10
+  iceStopThreshold: 0.05
   wallCheck: {fileID: 0}
   wallCheckDistance: 0.6
   wallLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   wallSlideSpeed: 2
   wallClimbSpeed: 3
   normalGravity: 3
@@ -232,3 +215,4 @@ MonoBehaviour:
   isJumping: 0
   isFalling: 0
   isCrouching: 0
+  IsRecovering: 0

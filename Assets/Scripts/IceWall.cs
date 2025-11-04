@@ -80,13 +80,7 @@ public class IceWall : MonoBehaviour
 
             // Trigger animator update
             pm.SetAnimatorState();
-
-            // Start recovery coroutine if not already running (so when leaving ice, traction is regained smoothly)
-            if (!pm.IsRecovering)
-            {
-                pm.StartCoroutine(pm.RecoverTraction(recoveryTime));
-            }
-
+            
             return;
         }
 
@@ -143,10 +137,7 @@ public class IceWall : MonoBehaviour
         pm.isFalling = true;
         pm.isRunning = false;
         pm.SetAnimatorState();
-
-        // Optionally start traction recovery on player (if not already running)
-        if (!pm.IsRecovering)
-            pm.StartCoroutine(pm.RecoverTraction(recoveryTime));
+        
     }
 
     void OnDrawGizmosSelected()
