@@ -26,14 +26,14 @@ public class PlayerMovementRe : MonoBehaviour
     public float normalGravity = 3f;
 
     [Header("Wall Jump")]
-    public float wallJumpHorizontal = 8f;  // horizontal push when wall-jumping
+    public float wallJumpHorizontal = 8f;  
 
     private bool isTouchingWall;
     private bool isWallClinging;
     private bool facingRight = true;
     private float horizontalInput;
     private float verticalInput;
-    private int wallDirection; // 1 = wall on right, -1 = wall on left
+    private int wallDirection; 
 
     [Header("Animation States")]
     public Animator animator;
@@ -50,7 +50,7 @@ public class PlayerMovementRe : MonoBehaviour
 
     public float edgeHopVelocity = 3f;
     public float edgePushHorizontal = 0.8f;
-    public float edgeDetachCooldown = 1.0f; // 1 second cooldown after wall-jump
+    public float edgeDetachCooldown = 1.0f; 
     private float lastEdgeDetachTime = -10f;
 
     void Start()
@@ -68,18 +68,17 @@ public class PlayerMovementRe : MonoBehaviour
         // Update wall presence & direction (respects cooldown)
         CheckWall();
 
-        // Ground jump as before
+        // jump
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || isIced))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
-
-        // ------------ Wall cling / detach / wall-jump logic ------------
-        // Determine whether the player is intentionally pressing INTO the wall (to cling)
+        
+        // Determine whether the player is pressing into the wall
         bool pressingTowardWall = (wallDirection == 1 && horizontalInput > 0.1f)
                                || (wallDirection == -1 && horizontalInput < -0.1f);
 
-        // Determine whether the player is pressing AWAY from the wall (either hold or key-down)
+        // Determine whether the player is pressing away from the wall 
         bool pressingAwayHold = (wallDirection == 1 && horizontalInput < -0.1f)
                              || (wallDirection == -1 && horizontalInput > 0.1f);
 
@@ -101,20 +100,18 @@ public class PlayerMovementRe : MonoBehaviour
         // If currently clinging: check for detach or wall-jump
         if (isWallClinging)
         {
-            // NEW: Wall-jump triggers on Space regardless of horizontal input.
-            // This makes the player launch away diagonally even if still holding into-wall.
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 WallJump();
             }
-            // If player presses away (hold or tap) without Space => detach naturally and fall
+            // If player presses away but not Space, detach and fall
             else if (pressingAwayHold || pressingAwayDown)
             {
                 DetachAndFall();
             }
         }
 
-        // ------------ Animation flags (unchanged logic) ------------
+        // Jump & fall anim
         if (rb.velocity.y > 0 && (!isGrounded || !isIced))
         {
             isJumping = true;
@@ -163,7 +160,7 @@ public class PlayerMovementRe : MonoBehaviour
             SetAnimatorState();
         }
 
-        // Flip sprite based on movement
+        // Flip
         if (!facingRight && horizontalInput > 0.1f)
             Flip();
         else if (facingRight && horizontalInput < -0.1f)
@@ -189,7 +186,7 @@ public class PlayerMovementRe : MonoBehaviour
 
     public void CheckWall()
     {
-        // Respect cooldown after detaching/jumping
+        // cooldown after detaching/jumping
         if (Time.time - lastEdgeDetachTime < edgeDetachCooldown)
         {
             isTouchingWall = false;
@@ -217,7 +214,7 @@ public class PlayerMovementRe : MonoBehaviour
             isTouchingWall = false;
         }
 
-        // If wall disappears while clinging, treat like an edge detach (hop + cooldown)
+        // If wall disappears while clinging, treat like an edge detach
         if (!isTouchingWall && wasTouching && isWallClinging)
         {
             DetachFromWall();
@@ -335,7 +332,7 @@ public class PlayerMovementRe : MonoBehaviour
         if (spriteRenderer) spriteRenderer.flipX = !spriteRenderer.flipX;
     }
 
-    // Detach with hop/push (used when wall disappears or at edge)
+    // Detach with hop when wall disappears or at edge
     void DetachFromWall()
     {
         isWallClinging = false;
@@ -345,19 +342,16 @@ public class PlayerMovementRe : MonoBehaviour
         lastEdgeDetachTime = Time.time;
     }
 
-    // Detach naturally and fall (no hop/push), used when pressing away
+    // Detach naturally and fall when pressing away
     void DetachAndFall()
     {
         if (!isWallClinging) return;
         isWallClinging = false;
         rb.gravityScale = normalGravity;
-        // keep velocity unchanged so physics handles natural fall
-        lastEdgeDetachTime = Time.time; // still apply cooldown to prevent instant re-grab
+        lastEdgeDetachTime = Time.time; // still apply cooldown
     }
 
-    // Diagonal wall-jump away from the wall.
-    // IMPORTANT: This ignores current horizontal input so it will always launch opposite the wall
-    // even if the player is still holding the key into the wall.
+    // wall-jump
     void WallJump()
     {
         if (!isWallClinging) return;

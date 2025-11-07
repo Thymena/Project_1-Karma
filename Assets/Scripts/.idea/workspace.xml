@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588be398-85de-479b-acf7-6d1a1176da6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Prefabs/Main Camera 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Main Camera 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Layer0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Layer0.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IceWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IceWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FireScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerMovementRe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerMovementRe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpikesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpikesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Mossberry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovingPlatform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PlayerMovementRe.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PlayerMovementRe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SceneControllerScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpikesScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestClimb.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,7 +77,9 @@
       <workItem from="1761904289932" duration="485000" />
       <workItem from="1761904792215" duration="308000" />
       <workItem from="1762229512545" duration="136000" />
-      <workItem from="1762229660389" duration="17183000" />
+      <workItem from="1762229660389" duration="25180000" />
+      <workItem from="1762502675081" duration="295000" />
+      <workItem from="1762502982157" duration="36000" />
     </task>
     <servers />
   </component>
