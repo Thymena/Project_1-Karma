@@ -4,21 +4,21 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class FireScript : MonoBehaviour
 {
     public const float KILL_TIME = 2f;
-    public GameObject player;
     public Transform respawnPoint;
+    public PlayerHP playerHP;
+    public float damage = 100;
 
-    private float timer = 0f;
-    private int healthFire = 100; 
+    private float timer;
+
     
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     // Update is called once per frame
@@ -30,20 +30,16 @@ public class FireScript : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log(other.name);
         if (other.CompareTag("Player"))
         {
             timer += Time.deltaTime;
             
-            
             if (timer >= KILL_TIME)
             {
-                healthFire = (int)(100 - timer * 50);
-                if ((healthFire = 0) != 0)
-                {
-                    Debug.Log("Player Died");
-                    SceneManager.LoadScene("Layer0");
-                }
+                playerHP = other.GetComponent<PlayerHP>();
+                playerHP.health -= damage;
+                Debug.Log("Player Died");
+              
             }
         }
         
@@ -53,8 +49,7 @@ public class FireScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            timer = 0f; 
-            healthFire = 100;
+            timer = 0f;
         }
     }
 }

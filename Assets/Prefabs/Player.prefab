@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6032958206699107330}
   - component: {fileID: 8991539805111918881}
   - component: {fileID: 4220486671582934798}
+  - component: {fileID: -2645443614897510702}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -211,7 +212,6 @@ MonoBehaviour:
   wallClimbSpeed: 3
   normalGravity: 3
   wallJumpHorizontal: 8
-  isWallClinging: 0
   animator: {fileID: 0}
   isRunning: 0
   isJumping: 0
@@ -221,3 +221,17 @@ MonoBehaviour:
   edgeHopVelocity: 9
   edgePushHorizontal: 0
   edgeDetachCooldown: 0.5
+--- !u!114 &-2645443614897510702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472138762689265279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d7de60210e7ca449d68daedcde37c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 100

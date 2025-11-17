@@ -1,11 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
+
 public class SpikesScript : MonoBehaviour
 {
+    public PlayerHP playerHP;
+    public float damage = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +22,10 @@ public class SpikesScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("你被扎死了");
-            UnityEditor.EditorApplication.isPlaying = false;
+            playerHP = other.GetComponent<PlayerHP>();
+            playerHP.health -= damage;
+            Debug.Log("Player Died");
         }
-		if (other.CompareTag("Ice"))
-		{
-			 Destroy(gameObject,0.3F);
-		}
+        
     }
 }
