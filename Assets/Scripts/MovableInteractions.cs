@@ -1,36 +1,16 @@
 using System.Collections;
 using UnityEngine;
 
-public class MoveObjectOppositePlayer : MonoBehaviour
+public class MovableInteractions : MonoBehaviour
 {
     [Header("Target")] public Transform movedObject;
-    public string movedObjectName = "Movable"; // Auto-find if not assigned
 
-    [Header("Motion")] public float moveDistance = 2f;
-    public float moveSpeed = 3f;
-    public bool useRigidbody2D = false;
-
-    [Header("Return")] public bool returnAfter = false;
-    public float returnDelay = 1f;
+    [Header("Motion")] public float moveSpeed = 10f;
 
     private bool playerInside = false;
     private Transform playerTransform;
     private bool isMoving = false;
-    private Vector3 originalPosition;
-
-    void Awake()
-    {
-        if (movedObject == null) TryAutoFindSibling();
-        if (movedObject != null) originalPosition = movedObject.position;
-    }
-
-    void TryAutoFindSibling()
-    {
-        if (transform.parent == null) return;
-        Transform found = transform.parent.Find(movedObjectName);
-        if (found != null) movedObject = found;
-        else Debug.LogWarning($"MoveObjectOppositePlayer2D: No sibling named '{movedObjectName}' found.");
-    }
+    
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -67,6 +47,7 @@ public class MoveObjectOppositePlayer : MonoBehaviour
     {
         isMoving = true;
 
+        // Determine direction
         Vector2 dir = (Vector2)(movedObject.position - playerTransform.position);
         if (dir == Vector2.zero) dir = Vector2.up;
         dir = dir.normalized;
@@ -77,25 +58,20 @@ public class MoveObjectOppositePlayer : MonoBehaviour
         else
             dir = new Vector2(0f, Mathf.Sign(dir.y));
 
-        Rigidbody2D rb = movedObject.GetComponent<Rigidbody2D>();
-
-        // move until hitting a tagged object
+        // Move infinitely until hitting a tagged object
         bool hit = false;
         while (!hit)
         {
             Vector2 nextPos = (Vector2)movedObject.position + dir * moveSpeed * Time.deltaTime;
 
-            // Advance movement
-            if (useRigidbody2D && rb != null)
-                rb.MovePosition(nextPos);
-            else
-                movedObject.position = nextPos;
+            // Move directly (no rigidbody)
+            movedObject.position = nextPos;
 
-            // Check collision with stop-tag objects
+            // Check collision with floor objects
             Collider2D[] hits = Physics2D.OverlapCircleAll(nextPos, 0.1f);
             foreach (var h in hits)
             {
-                if (h.CompareTag("Floor")) // CHANGE THIS TAG NAME
+                if (h.CompareTag("Floor")) // CHANGE TAG HERE
                 {
                     hit = true;
                     break;
@@ -108,4 +84,3 @@ public class MoveObjectOppositePlayer : MonoBehaviour
         isMoving = false;
     }
 }
-

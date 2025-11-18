@@ -83,8 +83,8 @@ public class PlayerMovementRe : MonoBehaviour
                              || (wallDirection == -1 && horizontalInput > 0.1f);
 
         bool pressingAwayDown =
-            (wallDirection == 1 && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)))
-         || (wallDirection == -1 && (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)));
+            (wallDirection == 1 && (Input.GetKeyDown(KeyCode.A)))
+         || (wallDirection == -1 && (Input.GetKeyDown(KeyCode.D)));
 
         // Only allow entering cling when touching a wall, not grounded, and player is pressing toward the wall
         if (isTouchingWall && !isGrounded && pressingTowardWall && (Time.time - lastEdgeDetachTime > edgeDetachCooldown))
@@ -306,11 +306,23 @@ public class PlayerMovementRe : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag("Floor") && contactBelow)
+        {
             isGrounded = true;
+        }
 
         if (collision.gameObject.CompareTag("Ice"))
         {
             isIced = true;
+            if (contactBelow) isGrounded = true;
+        }
+
+        if (collision.gameObject.CompareTag("Fire"))
+        {
+            if (contactBelow) isGrounded = true;
+        }
+        
+        if (collision.gameObject.CompareTag("SpikeBack"))
+        {
             if (contactBelow) isGrounded = true;
         }
     }
@@ -318,10 +330,21 @@ public class PlayerMovementRe : MonoBehaviour
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Floor"))
+        {
             isGrounded = false;
+        }
         if (collision.gameObject.CompareTag("Ice"))
         {
             isIced = false;
+            isGrounded = false;
+        }
+        if (collision.gameObject.CompareTag("Fire"))
+        {
+            isGrounded = false;
+        }
+
+        if (collision.gameObject.CompareTag("SpikeBack"))
+        {
             isGrounded = false;
         }
     }

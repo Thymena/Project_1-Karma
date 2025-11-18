@@ -7,6 +7,9 @@ TagManager:
   - Floor
   - Wall
   - Ice
+  - Fire
+  - Spikes
+  - SpikeBack
   layers:
   - Default
   - TransparentFX

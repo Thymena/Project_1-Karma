@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3217219958706957929}
   - component: {fileID: 2828125604763834654}
+  - component: {fileID: 5285316979653176160}
+  - component: {fileID: 679136258977891909}
   - component: {fileID: 7413224945395978076}
   - component: {fileID: 6032958206699107330}
   - component: {fileID: 8991539805111918881}
@@ -89,6 +91,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5285316979653176160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472138762689265279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7ca058505660240adea51cec38e501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHP: {fileID: -2645443614897510702}
+  damage: 100
+--- !u!114 &679136258977891909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472138762689265279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3504eef3da1ae46979d258e0d7293b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
+  playerHP: {fileID: -2645443614897510702}
+  damage: 100
 --- !u!50 &7413224945395978076
 Rigidbody2D:
   serializedVersion: 4
