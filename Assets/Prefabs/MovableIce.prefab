@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2469553751865871976}
   - component: {fileID: 1654336699391618176}
-  - component: {fileID: 295687534725837146}
+  - component: {fileID: 4830871006600882443}
   m_Layer: 0
   m_Name: IceMoveTest
   m_TagString: Untagged
@@ -78,7 +78,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8153008, y: 14.023506}
   m_EdgeRadius: 0
---- !u!114 &295687534725837146
+--- !u!114 &4830871006600882443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,11 +87,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1482505418636354604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00c09e18dcce7024cbba003c472dc36d, type: 3}
+  m_Script: {fileID: 11500000, guid: c3c122f25da346549aed1eeb0dacbad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movedObject: {fileID: 8274909403853975255}
   moveSpeed: 10
+  isMoving: 0
+  hit: 0
+  changedObject: {fileID: 4759396924305335613}
 --- !u!1 &3826748142695760340
 GameObject:
   m_ObjectHideFlags: 0

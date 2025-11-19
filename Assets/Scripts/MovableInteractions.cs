@@ -9,7 +9,9 @@ public class MovableInteractions : MonoBehaviour
 
     private bool playerInside = false;
     private Transform playerTransform;
-    private bool isMoving = false;
+
+    public bool isMoving = false;
+    public  bool hit = false;
     
 
     void OnTriggerEnter2D(Collider2D other)
@@ -34,13 +36,14 @@ public class MovableInteractions : MonoBehaviour
     {
         if (playerInside && !isMoving && Input.GetKeyDown(KeyCode.F))
         {
-            if (movedObject == null)
-            {
-                Debug.LogWarning("No movedObject assigned.");
-                return;
-            }
             StartCoroutine(MoveAwayCoroutine());
         }
+    }
+    
+    public void StopMovement()
+    {
+        hit = true;
+        isMoving = false;
     }
 
     IEnumerator MoveAwayCoroutine()
@@ -59,7 +62,6 @@ public class MovableInteractions : MonoBehaviour
             dir = new Vector2(0f, Mathf.Sign(dir.y));
 
         // Move infinitely until hitting a tagged object
-        bool hit = false;
         while (!hit)
         {
             Vector2 nextPos = (Vector2)movedObject.position + dir * moveSpeed * Time.deltaTime;
@@ -71,11 +73,12 @@ public class MovableInteractions : MonoBehaviour
             Collider2D[] hits = Physics2D.OverlapCircleAll(nextPos, 0.1f);
             foreach (var h in hits)
             {
-                if (h.CompareTag("Floor")) // CHANGE TAG HERE
+                if (h.CompareTag("Floor")) 
                 {
                     hit = true;
                     break;
                 }
+			
             }
 
             yield return null;

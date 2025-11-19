@@ -105,7 +105,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.04192543, y: -0.52342916, z: -0.20925978}
-  m_LocalScale: {x: 0.81144, y: 0.81143993, z: 0.81144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8453239732448232470}
@@ -218,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8453239732448232470}
   - component: {fileID: 6925689877230582644}
-  - component: {fileID: 1385518930395676680}
+  - component: {fileID: 1427364800437086271}
   m_Layer: 0
   m_Name: MoveSpikeTrigger
   m_TagString: Untagged
@@ -273,7 +273,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000047683716, y: -0.024112344}
+  m_Offset: {x: 0.00000047683716, y: 0.28021997}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -284,9 +284,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2531796, y: 1.0482247}
+  m_Size: {x: 1.2531796, y: 1.6568893}
   m_EdgeRadius: 0
---- !u!114 &1385518930395676680
+--- !u!114 &1427364800437086271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -295,11 +295,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 3418886445001451945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00c09e18dcce7024cbba003c472dc36d, type: 3}
+  m_Script: {fileID: 11500000, guid: f3cc58da21c6ea9449f1406e50c7c6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movedObject: {fileID: 0}
+  movedObject: {fileID: 8030338106078721734}
   moveSpeed: 10
+  isMoving: 0
+  hit: 0
+  changedObject1: {fileID: 4234487114486235395}
+  changedObject2: {fileID: 2842338372056683875}
+  isHitFire: 0
+  isHitIce: 0
 --- !u!1 &4234487114486235395
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,8 +332,8 @@ Transform:
   m_GameObject: {fileID: 4234487114486235395}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0341568, y: 0.2005459, z: -0.20925978}
-  m_LocalScale: {x: 0.77687776, y: 1.225, z: 1}
+  m_LocalPosition: {x: 0.044, y: 0.316, z: -0.20925978}
+  m_LocalScale: {x: 0.9554043, y: 1.506505, z: 1.2298}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 141441812800160686}
