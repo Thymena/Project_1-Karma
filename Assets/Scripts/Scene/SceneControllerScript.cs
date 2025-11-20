@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneControllerScript : MonoBehaviour
 {
-    public void LoadScene(string sceneName)
+    public void NextScene()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    
+    public void LoadScene(string SceneName)
+    {
+        SceneManager.LoadScene(SceneName);
+    }
+    
 }
 //public static SceneController instance;
 

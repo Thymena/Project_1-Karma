@@ -29,7 +29,7 @@ public class OnFire : MonoBehaviour
     {
         if (other.CompareTag("Fire"))
         {
-            timer += Time.deltaTime;
+           timer += Time.deltaTime; 
             
             if (timer >= KILL_TIME)
             {

@@ -17,7 +17,13 @@ public class FireSpikeInteraction : MonoBehaviour
     {
         if (onFire.isHitSpikes == true)
         {
-            
+            this.tag = "Floor";
+            Debug.Log("I hit spikes");
+        }
+
+        if (onIce.isHitSpikes == true)
+        {
+            this.tag = "Ice";
         }
     }
 }

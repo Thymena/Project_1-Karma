@@ -80,6 +80,7 @@ public class IceMove : MonoBehaviour
                     break;
                 }
                 
+				//check collision with fire
                 if (h.CompareTag("Fire"))
                 {
                     hit = true;
@@ -90,6 +91,7 @@ public class IceMove : MonoBehaviour
                     break;
                 }
 
+				//check collision with spikes
                 if (h.CompareTag("Spikes"))
                 {
                     hit = true;

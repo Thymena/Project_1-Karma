@@ -65,15 +65,13 @@ public class FireMove : MonoBehaviour
         else
             dir = new Vector2(0f, Mathf.Sign(dir.y));
 
-        // Move infinitely until hitting a tagged object
+        // Move infinitely until hitting
         while (!hit)
         {
             Vector2 nextPos = (Vector2)movedObject.position + dir * moveSpeed * Time.deltaTime;
-
-            // Move directly (no rigidbody)
             movedObject.position = nextPos;
 
-            // Check collision with floor objects
+            // Check collision with floor
             Collider2D[] hits = Physics2D.OverlapCircleAll(nextPos, 0.1f);
             foreach (var h in hits)
             {
@@ -83,6 +81,7 @@ public class FireMove : MonoBehaviour
                     break;
                 }
                 
+				// Check collision with Ice
                 if (h.CompareTag("Ice"))
                 {
                     hit = true;
@@ -93,6 +92,7 @@ public class FireMove : MonoBehaviour
                     break;
                 }
 
+				// Check collision with Spikes
                 if (h.CompareTag("Spikes"))
                 {
                     hit = true;
@@ -103,7 +103,8 @@ public class FireMove : MonoBehaviour
                     Destroy(changedObject1);
                     break;
                 }
-
+				
+				// Check collision with the back of Spikes
                 if (h.CompareTag("SpikeBack"))
                 {
                     hit = true;

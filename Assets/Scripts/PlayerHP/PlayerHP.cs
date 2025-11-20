@@ -17,7 +17,7 @@ public class PlayerHP : MonoBehaviour
     {
         if (health <= 0)
         {
-            SceneManager.LoadScene("Layer0");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

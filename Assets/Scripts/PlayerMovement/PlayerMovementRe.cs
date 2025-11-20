@@ -131,7 +131,7 @@ public class PlayerMovementRe : MonoBehaviour
         }
 
         // Run animation
-        if (!isJumping && (isGrounded || isIced) && Mathf.Abs(rb.velocity.x) > 3.5f)
+        if ((isGrounded || isIced) && Mathf.Abs(rb.velocity.x) > 3.5f)
         {
             isJumping = false;
             isFalling = false;
@@ -387,13 +387,8 @@ public class PlayerMovementRe : MonoBehaviour
         // apply diagonal velocity (away + upward)
         rb.velocity = new Vector2(horizontalPush, jumpForce);
 
-        // prevent immediate re-cling
+        // prevent recling
         lastEdgeDetachTime = Time.time;
-
-        // animation
-        isJumping = true;
-        isFalling = false;
-        SetAnimatorState();
     }
 
     public void SetAnimatorState()
