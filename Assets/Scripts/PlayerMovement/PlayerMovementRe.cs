@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -111,8 +112,8 @@ public class PlayerMovementRe : MonoBehaviour
             }
         }
 
-        // Jump & fall anim
-        if (rb.velocity.y > 0 && (!isGrounded || !isIced))
+        //Jump & fall anim
+        if (rb.velocity.y > 0 && !(isGrounded || isIced))
         {
             isJumping = true;
             isFalling = false;
@@ -120,6 +121,7 @@ public class PlayerMovementRe : MonoBehaviour
             isCrouching = false;
             SetAnimatorState();
         }
+        
 
         if (rb.velocity.y < 0 && (!isGrounded || !isIced))
         {
@@ -141,7 +143,7 @@ public class PlayerMovementRe : MonoBehaviour
         }
 
         // Idle
-        if (Mathf.Abs(rb.velocity.magnitude) <= 3.5f && (isGrounded || isIced))
+        if (Mathf.Abs(rb.velocity.x) <= 3.5f && (isGrounded || isIced))
         {
             isJumping = false;
             isFalling = false;
@@ -305,45 +307,91 @@ public class PlayerMovementRe : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.CompareTag("Floor") && contactBelow)
-        {
-            isGrounded = true;
-        }
+        // if (collision.gameObject.CompareTag("Floor") && contactBelow)
+        // {
+        //     isGrounded = true;
+        // }
 
-        if (collision.gameObject.CompareTag("Ice"))
-        {
-            isIced = true;
-            if (contactBelow) isGrounded = true;
-        }
-
-        if (collision.gameObject.CompareTag("Fire"))
-        {
-            if (contactBelow) isGrounded = true;
-        }
-        
-        if (collision.gameObject.CompareTag("SpikeBack"))
-        {
-            if (contactBelow) isGrounded = true;
-        }
+        // if (collision.gameObject.CompareTag("Ice"))
+        // {
+        //     isIced = true;
+        //     if (contactBelow) isGrounded = true;
+        // }
+        //
+        // if (collision.gameObject.CompareTag("Fire"))
+        // {
+        //     if (contactBelow) isGrounded = true;
+        // }
+        //
+        // if (collision.gameObject.CompareTag("SpikeBack"))
+        // {
+        //     if (contactBelow) isGrounded = true;
+        // }
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        // if (collision.gameObject.CompareTag("Floor"))
+        // {
+        //     isGrounded = false;
+        // }
+        // if (collision.gameObject.CompareTag("Ice"))
+        // {
+        //     isIced = false;
+        //     isGrounded = false;
+        // }
+        // if (collision.gameObject.CompareTag("Fire"))
+        // {
+        //     isGrounded = false;
+        // }
+        //
+        // if (collision.gameObject.CompareTag("SpikeBack"))
+        // {
+        //     isGrounded = false;
+        // }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Floor"))
         {
-            isGrounded = false;
+            isGrounded = true;
+            //Debug.Log("Floor");
         }
-        if (collision.gameObject.CompareTag("Ice"))
+        if (other.gameObject.CompareTag("Ice"))
         {
-            isIced = false;
-            isGrounded = false;
-        }
-        if (collision.gameObject.CompareTag("Fire"))
-        {
-            isGrounded = false;
+            isIced = true;
         }
 
-        if (collision.gameObject.CompareTag("SpikeBack"))
+        if (other.gameObject.CompareTag("Fire"))
+        {
+           isGrounded = true;
+        }
+        
+        if (other.gameObject.CompareTag("SpikeBack"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Floor"))
+        {
+            isGrounded = false;
+            //Debug.Log("Floor");
+        }
+        if (other.gameObject.CompareTag("Ice"))
+        {
+            isIced = false;
+        }
+
+        if (other.gameObject.CompareTag("Fire"))
+        {
+            isGrounded = false;
+        }
+        
+        if (other.gameObject.CompareTag("SpikeBack"))
         {
             isGrounded = false;
         }

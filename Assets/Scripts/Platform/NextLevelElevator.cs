@@ -12,12 +12,28 @@ public class NextLevelElevator: MonoBehaviour
     
     private float timer;
     private float timerDelay;
-    private Vector3 startPos;
+    private Vector2 startPos;
+    private Rigidbody2D movedRigidbody;
     
     // Start is called before the first frame update
     void Start()
     {
-        startPos = movedObject.position;
+        if (movedObject == null)
+        {
+            movedObject = transform;
+        }
+        
+        movedRigidbody = movedObject.GetComponent<Rigidbody2D>();
+        
+        if (movedRigidbody == null)
+        {
+            Debug.LogError("NextLevelElevator requires a Rigidbody2D on the moved object.", this);
+            enabled = false;
+            return;
+        }
+        
+        movedRigidbody.isKinematic = true;
+        startPos = movedRigidbody.position;
     }
 
     void Update()
@@ -34,11 +50,12 @@ public class NextLevelElevator: MonoBehaviour
         {
             timerDelay += Time.deltaTime;
             
-            if (timerDelay > 1f)
+            if (timerDelay > 0.5f)
             {
                 timer += Time.deltaTime; 
                 //collision.transform.SetParent(transform);
-                movedObject.position += Vector3.up * riseSpeed * Time.deltaTime;
+                Vector2 nextPosition = movedRigidbody.position + Vector2.up * riseSpeed * Time.deltaTime;
+                movedRigidbody.MovePosition(nextPosition);
             
                 if (timer >= changeTime)
                 {
@@ -54,9 +71,10 @@ public class NextLevelElevator: MonoBehaviour
         if (other.CompareTag("Player"))
         {
             timer = 0;
+            timerDelay = 0;
             //collision.transform.SetParent(null);
-            Vector3 newPos = Vector3.MoveTowards(movedObject.position, startPos, returnSpeed * Time.deltaTime);
-            transform.position = newPos;
+            Vector2 newPos = Vector2.MoveTowards(movedRigidbody.position, startPos, returnSpeed * Time.deltaTime);
+            movedRigidbody.MovePosition(newPos);
         }
     }
 }
