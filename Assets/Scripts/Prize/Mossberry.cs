@@ -6,9 +6,13 @@ public class Mossberry : MonoBehaviour
     public CollectibleManager manager;
     private AudioSource audioSource;
     private bool playerInside = false;
+    private bool isCollecting = false; // prevents double triggers
 
     public GameObject berry;
     public AudioClip[] audioClips;
+
+    // Delay before registering the collect (seconds)
+    public float collectDelay = 0.3f;
 
     void Start()
     {
@@ -17,37 +21,40 @@ public class Mossberry : MonoBehaviour
 
     void Update()
     {
-        if (playerInside && Input.GetKeyDown(KeyCode.F))
+        if (playerInside && !isCollecting && Input.GetKeyDown(KeyCode.F))
         {
-            audioSource.clip = audioClips[0];
-            audioSource.Play();
-
-            manager.OnCollectiblePicked();
-
-            // Start coroutine to delay disabling the object
-            StartCoroutine(DisableBerryWithDelay(0.3f));
+            // Start the audio + collect coroutine BEFORE telling manager
+            StartCoroutine(PlayAndCollect());
         }
     }
 
-    private IEnumerator DisableBerryWithDelay(float delay)
+    private IEnumerator PlayAndCollect()
     {
-        yield return new WaitForSeconds(delay);
-        berry.SetActive(false);
+        isCollecting = true;
+
+        if (audioClips != null && audioClips.Length > 0)
+        {
+            audioSource.PlayOneShot(audioClips[0]);
+        }
+
+        // Wait for audio to play (or fixed small delay)
+        yield return new WaitForSeconds(collectDelay);
+
+        // Tell the manager AFTER audio/delay — manager can now safely disable this berry
+        manager.OnCollectiblePicked();
+        
+        isCollecting = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-        {
             playerInside = true;
-        }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-        {
             playerInside = false;
-        }
     }
 }
