@@ -299,16 +299,10 @@ public class PlayerMovementRe : MonoBehaviour
         if (other.gameObject.CompareTag("Floor"))
         {
             isGrounded = true;
-            //Debug.Log("Floor");
         }
         if (other.gameObject.CompareTag("Ice"))
         {
             isIced = true;
-        }
-
-        if (other.gameObject.CompareTag("Fire"))
-        {
-           isGrounded = true;
         }
         
         if (other.gameObject.CompareTag("SpikeBack"))
@@ -322,16 +316,10 @@ public class PlayerMovementRe : MonoBehaviour
         if (other.gameObject.CompareTag("Floor"))
         {
             isGrounded = false;
-            //Debug.Log("Floor");
         }
         if (other.gameObject.CompareTag("Ice"))
         {
             isIced = false;
-        }
-
-        if (other.gameObject.CompareTag("Fire"))
-        {
-            isGrounded = false;
         }
         
         if (other.gameObject.CompareTag("SpikeBack"))

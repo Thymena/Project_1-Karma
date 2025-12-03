@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 1259477732513599769}
   - component: {fileID: 707233169868850741}
   - component: {fileID: 7262988244987970386}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: SpikeBack
   m_TagString: SpikeBack
   m_Icon: {fileID: 0}
