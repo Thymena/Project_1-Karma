@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OnFire : MonoBehaviour
 {
-    public const float KILL_TIME = 2f;
+    public const float KILL_TIME = 3f;
     public Transform respawnPoint;
     public PlayerHP playerHP;
     public float damage = 100;
@@ -35,7 +35,6 @@ public class OnFire : MonoBehaviour
             {
                 playerHP = GetComponent<PlayerHP>();
                 playerHP.health -= damage;
-                Debug.Log("Player Died");
               
             }
         }

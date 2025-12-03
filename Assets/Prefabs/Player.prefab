@@ -147,7 +147,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &6032958206699107330
 Animator:
@@ -237,10 +237,10 @@ MonoBehaviour:
   iceMaxSpeed: 10
   iceStopThreshold: 0.05
   wallCheck: {fileID: 3154868146215986575}
-  wallCheckDistance: 0.6
+  wallCheckDistance: 0.55
   wallLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   wallSlideSpeed: 2
   wallClimbSpeed: 3
   normalGravity: 3

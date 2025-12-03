@@ -294,63 +294,6 @@ public class PlayerMovementRe : MonoBehaviour
             rb.velocity = new Vector2(0, -wallSlideSpeed);
     }
 
-    // Use collision contacts to detect ground/ice from below
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        bool contactBelow = false;
-        foreach (ContactPoint2D cp in collision.contacts)
-        {
-            if (cp.normal.y > 0.5f)
-            {
-                contactBelow = true;
-                break;
-            }
-        }
-
-        // if (collision.gameObject.CompareTag("Floor") && contactBelow)
-        // {
-        //     isGrounded = true;
-        // }
-
-        // if (collision.gameObject.CompareTag("Ice"))
-        // {
-        //     isIced = true;
-        //     if (contactBelow) isGrounded = true;
-        // }
-        //
-        // if (collision.gameObject.CompareTag("Fire"))
-        // {
-        //     if (contactBelow) isGrounded = true;
-        // }
-        //
-        // if (collision.gameObject.CompareTag("SpikeBack"))
-        // {
-        //     if (contactBelow) isGrounded = true;
-        // }
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        // if (collision.gameObject.CompareTag("Floor"))
-        // {
-        //     isGrounded = false;
-        // }
-        // if (collision.gameObject.CompareTag("Ice"))
-        // {
-        //     isIced = false;
-        //     isGrounded = false;
-        // }
-        // if (collision.gameObject.CompareTag("Fire"))
-        // {
-        //     isGrounded = false;
-        // }
-        //
-        // if (collision.gameObject.CompareTag("SpikeBack"))
-        // {
-        //     isGrounded = false;
-        // }
-    }
-
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Floor"))

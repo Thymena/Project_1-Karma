@@ -24,7 +24,6 @@ public class OnSpike : MonoBehaviour
         {
             playerHP = GetComponent<PlayerHP>();
             playerHP.health -= damage;
-            Debug.Log("Player Died");
         }
         
     }

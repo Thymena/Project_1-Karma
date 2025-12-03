@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isJumping;
     public bool isFalling;
     public bool isCrouching;
-
+    
     private SpriteRenderer spriteRenderer;
     private bool facingRight = true;
 
@@ -104,8 +104,7 @@ public class PlayerMovement : MonoBehaviour
 
         
     }
-    
- 
+
     //跳跃限制：测试是否在地面
     void OnCollisionStay2D(Collision2D collision)
     {
@@ -113,6 +112,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
+
     }
 
     void OnCollisionExit2D(Collision2D collision)
@@ -122,8 +122,6 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
-
-
 
 
 
