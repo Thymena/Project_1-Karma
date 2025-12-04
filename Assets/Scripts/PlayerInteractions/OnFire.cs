@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OnFire : MonoBehaviour
 {
-    public const float KILL_TIME = 3f;
+    public const float KILL_TIME = 3.5f;
     public Transform respawnPoint;
     public PlayerHP playerHP;
     public float damage = 100;
