@@ -39379,6 +39379,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4220486671582934798, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
+      propertyPath: wallCoyoteTime
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220486671582934798, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
+      propertyPath: groundCoyoteTime
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220486671582934798, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
       propertyPath: wallJumpStrength
       value: 15
       objectReference: {fileID: 0}
@@ -41442,19 +41450,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 741979207259465870, guid: 4939d01a4a1e3494b9226a3ee888e9d3, type: 3}
       propertyPath: m_Size.x
-      value: 1.0430193
+      value: 0.99716747
       objectReference: {fileID: 0}
     - target: {fileID: 741979207259465870, guid: 4939d01a4a1e3494b9226a3ee888e9d3, type: 3}
       propertyPath: m_Size.y
-      value: 4.6975293
+      value: 2.323518
       objectReference: {fileID: 0}
     - target: {fileID: 741979207259465870, guid: 4939d01a4a1e3494b9226a3ee888e9d3, type: 3}
       propertyPath: m_Offset.x
-      value: -0.016427845
+      value: 0.006498024
       objectReference: {fileID: 0}
     - target: {fileID: 741979207259465870, guid: 4939d01a4a1e3494b9226a3ee888e9d3, type: 3}
       propertyPath: m_Offset.y
-      value: 1.7204621
+      value: 0.53345656
       objectReference: {fileID: 0}
     - target: {fileID: 3313529230767329410, guid: 4939d01a4a1e3494b9226a3ee888e9d3, type: 3}
       propertyPath: m_Layer

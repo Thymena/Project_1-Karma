@@ -60,6 +60,12 @@ public class PlayerMovement: MonoBehaviour
     private bool isWallSliding = false;
     private bool justTouchedWall = false; 
 
+    [Header("Coyote Time Settings")]
+    public float groundCoyoteTime = 0.12f;
+    public float wallCoyoteTime = 0.12f;
+    private float lastGroundedTime = -10f;
+    private float lastWallContactTime = -10f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -74,10 +80,21 @@ public class PlayerMovement: MonoBehaviour
 
         CheckWall();
 
-        // Jump
-        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || isIced))
+        // Jump input with coyote time support (ground + wall)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            // Ground jump (normal or coyote or ice)
+            if (isGrounded || isIced || (Time.time - lastGroundedTime <= groundCoyoteTime))
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                lastGroundedTime = -10f; // consume coyote
+            }
+            // Wall jump: either currently clinging or within wall coyote window
+            else if (isWallClinging || (Time.time - lastWallContactTime <= wallCoyoteTime))
+            {
+                WallJump();
+                lastWallContactTime = -10f; // consume wall coyote
+            }
         }
 
         bool pressingTowardWall = (wallDirection == 1 && horizontalInput > 0.1f)
@@ -110,7 +127,7 @@ public class PlayerMovement: MonoBehaviour
             isWallSliding = false;
         }
 
-        // Handle wall jump & detach
+        // Handle wall jump & detach (also allowed during cling)
         if (isWallClinging)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -165,11 +182,13 @@ public class PlayerMovement: MonoBehaviour
         {
             isTouchingWall = true;
             wallDirection = 1;
+            lastWallContactTime = Time.time; // record last wall contact
         }
         else if (hitLeft.collider != null)
         {
             isTouchingWall = true;
             wallDirection = -1;
+            lastWallContactTime = Time.time; // record last wall contact
         }
         else
         {
@@ -256,11 +275,20 @@ public class PlayerMovement: MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Floor"))
+        {
             isGrounded = true;
+            lastGroundedTime = Time.time; // update ground contact time for coyote
+        }
         if (other.gameObject.CompareTag("Ice"))
+        {
             isIced = true;
+            lastGroundedTime = Time.time; // ice counts as grounded for coyote
+        }
         if (other.gameObject.CompareTag("SpikeBack"))
+        {
             isGrounded = true;
+            lastGroundedTime = Time.time;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -302,7 +330,8 @@ public class PlayerMovement: MonoBehaviour
 
     void WallJump()
     {
-        if (!isWallClinging) return;
+        // allow wall jump if clinging (Update already checks coyote before calling)
+        // consume cling and apply velocity
         isWallClinging = false;
         isWallSliding = false;
         wallStickTimer = 0f;
