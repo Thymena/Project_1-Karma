@@ -54,6 +54,12 @@ public class PlayerMovementRe : MonoBehaviour
     public float edgeDetachCooldown = 1.0f; 
     private float lastEdgeDetachTime = -10f;
 
+    // Wall stick delay
+    private float wallStickTime = 0.3f; 
+    private float wallStickTimer = 0f;  
+    private bool isWallSliding = false;
+    private bool justTouchedWall = false; // NEW: tracks first frame of wall cling
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -66,109 +72,66 @@ public class PlayerMovementRe : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        // Update wall presence & direction (respects cooldown)
         CheckWall();
 
-        // jump
+        // Jump
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || isIced))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
-        
-        // Determine whether the player is pressing into the wall
+
         bool pressingTowardWall = (wallDirection == 1 && horizontalInput > 0.1f)
                                || (wallDirection == -1 && horizontalInput < -0.1f);
 
-        // Determine whether the player is pressing away from the wall 
         bool pressingAwayHold = (wallDirection == 1 && horizontalInput < -0.1f)
                              || (wallDirection == -1 && horizontalInput > 0.1f);
 
-        bool pressingAwayDown =
-            (wallDirection == 1 && (Input.GetKeyDown(KeyCode.A)))
-         || (wallDirection == -1 && (Input.GetKeyDown(KeyCode.D)));
+        bool pressingAwayDown = (wallDirection == 1 && Input.GetKeyDown(KeyCode.A))
+                             || (wallDirection == -1 && Input.GetKeyDown(KeyCode.D));
 
-        // Only allow entering cling when touching a wall, not grounded, and player is pressing toward the wall
+        // Enter cling
         if (isTouchingWall && !isGrounded && pressingTowardWall && (Time.time - lastEdgeDetachTime > edgeDetachCooldown))
         {
-            isWallClinging = true;
+            if (!isWallClinging)
+            {
+                isWallClinging = true;
+                justTouchedWall = true; // mark first frame of cling
+            }
+
+            // Start stick timer only on first frame of cling
+            if (justTouchedWall)
+            {
+                wallStickTimer = wallStickTime;
+                justTouchedWall = false; // reset
+            }
         }
-        else if (isGrounded || !pressingTowardWall)
+        else
         {
-            // stop clinging if grounded or not pressing toward the wall
             isWallClinging = false;
+            isWallSliding = false;
         }
 
-        // If currently clinging: check for detach or wall-jump
+        // Handle wall jump & detach
         if (isWallClinging)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 WallJump();
             }
-            // If player presses away but not Space, detach and fall
             else if (pressingAwayHold || pressingAwayDown)
             {
                 DetachAndFall();
             }
         }
 
-        //Jump & fall anim
-        if (rb.velocity.y > 0 && !(isGrounded || isIced))
-        {
-            isJumping = true;
-            isFalling = false;
-            isRunning = false;
-            isCrouching = false;
-            SetAnimatorState();
-        }
-        
-
-        if (rb.velocity.y < 0 && (!isGrounded || !isIced))
-        {
-            isJumping = false;
-            isFalling = true;
-            isRunning = false;
-            isCrouching = false;
-            SetAnimatorState();
-        }
-
-        // Run animation
-        if ((isGrounded || isIced) && Mathf.Abs(rb.velocity.x) > 3.5f)
-        {
-            isJumping = false;
-            isFalling = false;
-            isRunning = true;
-            isCrouching = false;
-            SetAnimatorState();
-        }
-
-        // Idle
-        if (Mathf.Abs(rb.velocity.x) <= 3.5f && (isGrounded || isIced))
-        {
-            isJumping = false;
-            isFalling = false;
-            isRunning = false;
-            isCrouching = false;
-            SetAnimatorState();
-        }
-
-        // Crouch
-        if (Input.GetKey(KeyCode.R) && isGrounded)
-        {
-            isJumping = false;
-            isFalling = false;
-            isRunning = false;
-            isCrouching = true;
-            SetAnimatorState();
-        }
+        // Animation updates
+        UpdateAnimatorStates();
 
         // Flip
         if (!facingRight && horizontalInput > 0.1f)
             Flip();
         else if (facingRight && horizontalInput < -0.1f)
             Flip();
-
-        SetAnimatorState();
     }
 
     void FixedUpdate()
@@ -179,16 +142,15 @@ public class PlayerMovementRe : MonoBehaviour
         }
         else
         {
-            if (isIced && (isGrounded || !isGrounded))
+            if (isIced)
                 HandleIceMovement();
             else
                 HandleNormalMovement();
         }
     }
 
-    public void CheckWall()
+    void CheckWall()
     {
-        // cooldown after detaching/jumping
         if (Time.time - lastEdgeDetachTime < edgeDetachCooldown)
         {
             isTouchingWall = false;
@@ -216,7 +178,6 @@ public class PlayerMovementRe : MonoBehaviour
             isTouchingWall = false;
         }
 
-        // If wall disappears while clinging, treat like an edge detach
         if (!isTouchingWall && wasTouching && isWallClinging)
         {
             DetachFromWall();
@@ -238,8 +199,7 @@ public class PlayerMovementRe : MonoBehaviour
     void HandleNormalMovement()
     {
         rb.gravityScale = normalGravity;
-        float targetX = horizontalInput * speed * currentSpeedMultiplier;
-        rb.velocity = new Vector2(targetX, rb.velocity.y);
+        rb.velocity = new Vector2(horizontalInput * speed * currentSpeedMultiplier, rb.velocity.y);
     }
 
     void HandleIceMovement()
@@ -271,61 +231,62 @@ public class PlayerMovementRe : MonoBehaviour
 
     void HandleWallCling()
     {
-        if (!isTouchingWall)
+        if (!isTouchingWall || IsAtWallEdge())
         {
             DetachFromWall();
             return;
         }
 
-        if (IsAtWallEdge())
-        {
-            DetachFromWall();
-            return;
-        }
-
-        // Freeze gravity and allow controlled climb/slide while clinging
         rb.gravityScale = 0f;
 
+        // Vertical input allows climbing any time
         if (verticalInput > 0.1f)
+        {
             rb.velocity = new Vector2(0, wallClimbSpeed);
+            isWallSliding = false;
+            wallStickTimer = 0f;
+            return;
+        }
         else if (verticalInput < -0.1f)
+        {
             rb.velocity = new Vector2(0, -wallClimbSpeed);
-        else
-            rb.velocity = new Vector2(0, -wallSlideSpeed);
+            isWallSliding = false;
+            wallStickTimer = 0f;
+            return;
+        }
+
+        // Stick timer reduces vertical movement temporarily
+        if (wallStickTimer > 0f)
+        {
+            wallStickTimer -= Time.fixedDeltaTime;
+            rb.velocity = new Vector2(0, 0); // stick
+            isWallSliding = false;
+            return;
+        }
+
+        // After stick ends, enter wall sliding automatically
+        rb.velocity = new Vector2(0, -wallSlideSpeed);
+        isWallSliding = true;
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Floor"))
-        {
             isGrounded = true;
-        }
         if (other.gameObject.CompareTag("Ice"))
-        {
             isIced = true;
-        }
-        
         if (other.gameObject.CompareTag("SpikeBack"))
-        {
             isGrounded = true;
-        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Floor"))
-        {
             isGrounded = false;
-        }
         if (other.gameObject.CompareTag("Ice"))
-        {
             isIced = false;
-        }
-        
         if (other.gameObject.CompareTag("SpikeBack"))
-        {
             isGrounded = false;
-        }
     }
 
     void Flip()
@@ -334,40 +295,75 @@ public class PlayerMovementRe : MonoBehaviour
         if (spriteRenderer) spriteRenderer.flipX = !spriteRenderer.flipX;
     }
 
-    // Detach with hop when wall disappears or at edge
     void DetachFromWall()
     {
         isWallClinging = false;
+        isWallSliding = false;
+        wallStickTimer = 0f;
         rb.gravityScale = normalGravity;
-        float pushX = facingRight ? -edgePushHorizontal : edgePushHorizontal; // push away from wall
+        float pushX = facingRight ? -edgePushHorizontal : edgePushHorizontal;
         rb.velocity = new Vector2(pushX, edgeHopVelocity);
         lastEdgeDetachTime = Time.time;
     }
 
-    // Detach naturally and fall when pressing away
     void DetachAndFall()
     {
         if (!isWallClinging) return;
         isWallClinging = false;
+        isWallSliding = false;
+        wallStickTimer = 0f;
         rb.gravityScale = normalGravity;
-        lastEdgeDetachTime = Time.time; // still apply cooldown
+        lastEdgeDetachTime = Time.time;
     }
 
-    // wall-jump
     void WallJump()
     {
         if (!isWallClinging) return;
         isWallClinging = false;
+        isWallSliding = false;
+        wallStickTimer = 0f;
         rb.gravityScale = normalGravity;
 
-        // wallDirection == 1 (wall on right) -> jump left (-1)
         float horizontalPush = -wallDirection * Mathf.Abs(wallJumpHorizontal);
-
-        // apply diagonal velocity (away + upward)
         rb.velocity = new Vector2(horizontalPush, jumpForce);
 
-        // prevent recling
         lastEdgeDetachTime = Time.time;
+    }
+
+    void UpdateAnimatorStates()
+    {
+        // Jump & fall
+        if (rb.velocity.y > 0 && !(isGrounded || isIced))
+        {
+            isJumping = true; isFalling = false; isRunning = false; isCrouching = false;
+            SetAnimatorState();
+        }
+        else if (rb.velocity.y < 0 && (!isGrounded || !isIced))
+        {
+            isJumping = false; isFalling = true; isRunning = false; isCrouching = false;
+            SetAnimatorState();
+        }
+
+        // Running
+        if ((isGrounded || isIced) && Mathf.Abs(rb.velocity.x) > 3.5f)
+        {
+            isJumping = false; isFalling = false; isRunning = true; isCrouching = false;
+            SetAnimatorState();
+        }
+
+        // Idle
+        if (Mathf.Abs(rb.velocity.x) <= 3.5f && (isGrounded || isIced))
+        {
+            isJumping = false; isFalling = false; isRunning = false; isCrouching = false;
+            SetAnimatorState();
+        }
+
+        // Crouch
+        if (Input.GetKey(KeyCode.R) && isGrounded)
+        {
+            isJumping = false; isFalling = false; isRunning = false; isCrouching = true;
+            SetAnimatorState();
+        }
     }
 
     public void SetAnimatorState()

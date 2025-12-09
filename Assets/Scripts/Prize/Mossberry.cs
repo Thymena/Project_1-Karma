@@ -21,7 +21,7 @@ public class Mossberry : MonoBehaviour
 
     void Update()
     {
-        if (playerInside && !isCollecting && Input.GetKeyDown(KeyCode.F))
+        if (playerInside && !isCollecting)
         {
             // Start the audio + collect coroutine BEFORE telling manager
             StartCoroutine(PlayAndCollect());
@@ -37,7 +37,7 @@ public class Mossberry : MonoBehaviour
             audioSource.PlayOneShot(audioClips[0]);
         }
 
-        // Wait for audio to play (or fixed small delay)
+        // Wait for audio to play
         yield return new WaitForSeconds(collectDelay);
 
         // Tell the manager AFTER audio/delay — manager can now safely disable this berry
