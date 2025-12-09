@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovementRe : MonoBehaviour
+public class PlayerMovement: MonoBehaviour
 {
     [Header("Movement Settings")]
     public float speed = 7f;
@@ -23,7 +23,7 @@ public class PlayerMovementRe : MonoBehaviour
     public float wallCheckDistance = 0.6f;
     public LayerMask wallLayer;
     public float wallSlideSpeed = 2f;
-    public float wallClimbSpeed = 3f;
+    public float wallClimbSpeed = 3f; // (unused now but safe to keep)
     public float normalGravity = 3f;
 
     [Header("Wall Jump")]
@@ -58,7 +58,7 @@ public class PlayerMovementRe : MonoBehaviour
     private float wallStickTime = 0.3f; 
     private float wallStickTimer = 0f;  
     private bool isWallSliding = false;
-    private bool justTouchedWall = false; // NEW: tracks first frame of wall cling
+    private bool justTouchedWall = false; 
 
     void Start()
     {
@@ -95,14 +95,13 @@ public class PlayerMovementRe : MonoBehaviour
             if (!isWallClinging)
             {
                 isWallClinging = true;
-                justTouchedWall = true; // mark first frame of cling
+                justTouchedWall = true;
             }
 
-            // Start stick timer only on first frame of cling
             if (justTouchedWall)
             {
                 wallStickTimer = wallStickTime;
-                justTouchedWall = false; // reset
+                justTouchedWall = false;
             }
         }
         else
@@ -124,7 +123,6 @@ public class PlayerMovementRe : MonoBehaviour
             }
         }
 
-        // Animation updates
         UpdateAnimatorStates();
 
         // Flip
@@ -239,32 +237,18 @@ public class PlayerMovementRe : MonoBehaviour
 
         rb.gravityScale = 0f;
 
-        // Vertical input allows climbing any time
-        if (verticalInput > 0.1f)
-        {
-            rb.velocity = new Vector2(0, wallClimbSpeed);
-            isWallSliding = false;
-            wallStickTimer = 0f;
-            return;
-        }
-        else if (verticalInput < -0.1f)
-        {
-            rb.velocity = new Vector2(0, -wallClimbSpeed);
-            isWallSliding = false;
-            wallStickTimer = 0f;
-            return;
-        }
+        // ==== WALL CLIMB REMOVED ====
 
-        // Stick timer reduces vertical movement temporarily
+        // Stick timer
         if (wallStickTimer > 0f)
         {
             wallStickTimer -= Time.fixedDeltaTime;
-            rb.velocity = new Vector2(0, 0); // stick
+            rb.velocity = new Vector2(0, 0);
             isWallSliding = false;
             return;
         }
 
-        // After stick ends, enter wall sliding automatically
+        // Auto wall slide
         rb.velocity = new Vector2(0, -wallSlideSpeed);
         isWallSliding = true;
     }
@@ -332,7 +316,6 @@ public class PlayerMovementRe : MonoBehaviour
 
     void UpdateAnimatorStates()
     {
-        // Jump & fall
         if (rb.velocity.y > 0 && !(isGrounded || isIced))
         {
             isJumping = true; isFalling = false; isRunning = false; isCrouching = false;
@@ -344,21 +327,18 @@ public class PlayerMovementRe : MonoBehaviour
             SetAnimatorState();
         }
 
-        // Running
         if ((isGrounded || isIced) && Mathf.Abs(rb.velocity.x) > 3.5f)
         {
             isJumping = false; isFalling = false; isRunning = true; isCrouching = false;
             SetAnimatorState();
         }
 
-        // Idle
         if (Mathf.Abs(rb.velocity.x) <= 3.5f && (isGrounded || isIced))
         {
             isJumping = false; isFalling = false; isRunning = false; isCrouching = false;
             SetAnimatorState();
         }
 
-        // Crouch
         if (Input.GetKey(KeyCode.R) && isGrounded)
         {
             isJumping = false; isFalling = false; isRunning = false; isCrouching = true;
