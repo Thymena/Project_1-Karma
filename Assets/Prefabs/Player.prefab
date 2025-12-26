@@ -119,9 +119,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3504eef3da1ae46979d258e0d7293b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 0}
   playerHP: {fileID: -2645443614897510702}
   damage: 100
+  maxFlashInterval: 0.2
+  minFlashInterval: 0.03
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!50 &7413224945395978076
 Rigidbody2D:
   serializedVersion: 4
@@ -202,7 +204,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.046488762, y: -0.13394248}
+  m_Offset: {x: 0, y: -0.15613103}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -213,7 +215,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.79999924, y: 0.75056195}
+  m_Size: {x: 0.57305145, y: 0.69763803}
   m_EdgeRadius: 0
 --- !u!114 &4220486671582934798
 MonoBehaviour:
@@ -229,31 +231,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   jumpForce: 12
-  rb: {fileID: 7413224945395978076}
-  isGrounded: 1
+  normalGravity: 3
   isIced: 0
   iceAcceleration: 30
-  iceCoastingFriction: 1.5
+  iceCoastingFriction: 1
   iceMaxSpeed: 10
-  iceStopThreshold: 0.05
+  iceStopThreshold: 0.1
   wallCheck: {fileID: 3154868146215986575}
-  wallCheckDistance: 0.55
+  wallCheckDistance: 0.35
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
   wallSlideSpeed: 2
-  wallClimbSpeed: 3
-  normalGravity: 3
   wallJumpHorizontal: 8
-  animator: {fileID: 0}
-  isRunning: 0
-  isJumping: 0
-  isFalling: 0
-  isCrouching: 0
-  IsRecovering: 0
   edgeHopVelocity: 9
-  edgePushHorizontal: 0
+  edgePushHorizontal: 0.8
   edgeDetachCooldown: 0.5
+  wallStickTime: 0.3
+  groundCoyoteTime: 0.18
+  wallCoyoteTime: 0.18
+  animator: {fileID: 6032958206699107330}
 --- !u!114 &-2645443614897510702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +297,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04684496, y: -0.4935248}
+  m_Offset: {x: 0, y: -0.505064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -311,7 +308,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5430174, y: 0.17274141}
+  m_Size: {x: 0.5430174, y: 0.113762856}
   m_EdgeRadius: 0
 --- !u!1 &5051053448673505037
 GameObject:
@@ -338,7 +335,7 @@ Transform:
   m_GameObject: {fileID: 5051053448673505037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.048, y: -0.168, z: -0.0072844177}
+  m_LocalPosition: {x: 0, y: -0.168, z: -0.0072844177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

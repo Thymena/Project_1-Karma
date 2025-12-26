@@ -39318,6 +39318,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 679136258977891909, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
+      propertyPath: flashColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679136258977891909, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
+      propertyPath: flashColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679136258977891909, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
+      propertyPath: flashColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 679136258977891909, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
+      propertyPath: maxFlashSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 679136258977891909, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
+      propertyPath: minFlashSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1472138762689265279, guid: ebe338ef29111ec4b9b24eb69a269d28, type: 3}
       propertyPath: m_Name
       value: Player

@@ -1,166 +1,127 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement: MonoBehaviour
+public class PlayerMovementRe : MonoBehaviour
 {
-    [Header("Movement Settings")]
+    [Header("Movement")]
     public float speed = 7f;
     public float jumpForce = 15f;
-    public Rigidbody2D rb;
-    public bool isGrounded = true;
-    public bool isIced = false;
+    public float normalGravity = 3f;
 
-    [Header("Ice Settings (slippery)")]
+    [Header("Ice")]
+    public bool isIced;
     public float iceAcceleration = 30f;
-    public float iceCoastingFriction = 1.5f;
-    public float iceMaxSpeed = 10f;
-    public float iceStopThreshold = 0.05f;
+    public float iceCoastingFriction = 0.6f;
+    public float iceMaxSpeed = 11f;
+    public float iceStopThreshold = 0.02f;
 
-    [Header("Wall Settings")]
+    [Header("Wall")]
     public Transform wallCheck;
     public float wallCheckDistance = 0.6f;
     public LayerMask wallLayer;
     public float wallSlideSpeed = 2f;
-    public float wallClimbSpeed = 3f; // (unused now but safe to keep)
-    public float normalGravity = 3f;
+    public float wallJumpHorizontal = 8f;
 
-    [Header("Wall Jump")]
-    public float wallJumpHorizontal = 8f;  
-
-    private bool isTouchingWall;
-    private bool isWallClinging;
-    private bool facingRight = true;
-    private float horizontalInput;
-    private float verticalInput;
-    private int wallDirection; 
-
-    [Header("Animation States")]
-    public Animator animator;
-    public bool isRunning;
-    public bool isJumping;
-    public bool isFalling;
-    public bool isCrouching;
-
-    [HideInInspector]
-    public bool IsRecovering = false;
-    private float currentSpeedMultiplier = 1f;
-
-    private SpriteRenderer spriteRenderer;
-
+    [Header("Ledge")]
     public float edgeHopVelocity = 3f;
     public float edgePushHorizontal = 0.8f;
-    public float edgeDetachCooldown = 1.0f; 
-    private float lastEdgeDetachTime = -10f;
+    public float edgeDetachCooldown = 1f;
+    public float wallStickTime = 0.3f;
 
-    // Wall stick delay
-    private float wallStickTime = 0.3f; 
-    private float wallStickTimer = 0f;  
-    private bool isWallSliding = false;
-    private bool justTouchedWall = false; 
-
-    [Header("Coyote Time Settings")]
+    [Header("Coyote Time")]
     public float groundCoyoteTime = 0.12f;
     public float wallCoyoteTime = 0.12f;
+
+    [Header("Animation")]
+    public Animator animator;
+
+    private Rigidbody2D rb;
+    private SpriteRenderer sprite;
+
+    private float horizontal;
+    private bool facingRight = true;
+
+    private bool isGrounded;
+    private bool isWallClinging;
+    private bool isTouchingWall;
+    private int wallDirection;
+
+    private float wallStickTimer;
+    private float lastEdgeDetachTime = -10f;
     private float lastGroundedTime = -10f;
     private float lastWallContactTime = -10f;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        horizontal = Input.GetAxisRaw("Horizontal");
 
         CheckWall();
+        HandleJumpInput();
+        HandleWallClingInput();
+        HandleFlip();
+        UpdateAnimator();
+    }
 
-        // Jump input with coyote time support (ground + wall)
-        if (Input.GetKeyDown(KeyCode.Space))
+    void FixedUpdate()
+    {
+        rb.gravityScale = normalGravity;
+
+        // FORCE ledge detach even if cling already dropped
+        if (isTouchingWall && IsAtWallEdge())
         {
-            // Ground jump (normal or coyote or ice)
-            if (isGrounded || isIced || (Time.time - lastGroundedTime <= groundCoyoteTime))
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                lastGroundedTime = -10f; // consume coyote
-            }
-            // Wall jump: either currently clinging or within wall coyote window
-            else if (isWallClinging || (Time.time - lastWallContactTime <= wallCoyoteTime))
-            {
-                WallJump();
-                lastWallContactTime = -10f; // consume wall coyote
-            }
+            EdgeDetach();
+            return;
         }
 
-        bool pressingTowardWall = (wallDirection == 1 && horizontalInput > 0.1f)
-                               || (wallDirection == -1 && horizontalInput < -0.1f);
+        if (isWallClinging)
+            HandleWallCling();
+        else if (isIced)
+            HandleIceMovement();
+        else
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    }
 
-        bool pressingAwayHold = (wallDirection == 1 && horizontalInput < -0.1f)
-                             || (wallDirection == -1 && horizontalInput > 0.1f);
 
-        bool pressingAwayDown = (wallDirection == 1 && Input.GetKeyDown(KeyCode.A))
-                             || (wallDirection == -1 && Input.GetKeyDown(KeyCode.D));
+    void HandleJumpInput()
+    {
+        if (!Input.GetKeyDown(KeyCode.Space)) return;
 
-        // Enter cling
-        if (isTouchingWall && !isGrounded && pressingTowardWall && (Time.time - lastEdgeDetachTime > edgeDetachCooldown))
+        if (isGrounded || Time.time - lastGroundedTime <= groundCoyoteTime)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            lastGroundedTime = -10f;
+        }
+        else if (isWallClinging || Time.time - lastWallContactTime <= wallCoyoteTime)
+        {
+            WallJump();
+        }
+    }
+
+    void HandleWallClingInput()
+    {
+        bool pressingTowardWall =
+            (wallDirection == 1 && horizontal > 0.1f) ||
+            (wallDirection == -1 && horizontal < -0.1f);
+
+        if (isTouchingWall &&
+            !isGrounded &&
+            pressingTowardWall &&
+            Time.time - lastEdgeDetachTime > edgeDetachCooldown)
         {
             if (!isWallClinging)
             {
                 isWallClinging = true;
-                justTouchedWall = true;
-            }
-
-            if (justTouchedWall)
-            {
                 wallStickTimer = wallStickTime;
-                justTouchedWall = false;
             }
         }
         else
         {
             isWallClinging = false;
-            isWallSliding = false;
-        }
-
-        // Handle wall jump & detach (also allowed during cling)
-        if (isWallClinging)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                WallJump();
-            }
-            else if (pressingAwayHold || pressingAwayDown)
-            {
-                DetachAndFall();
-            }
-        }
-
-        UpdateAnimatorStates();
-
-        // Flip
-        if (!facingRight && horizontalInput > 0.1f)
-            Flip();
-        else if (facingRight && horizontalInput < -0.1f)
-            Flip();
-    }
-
-    void FixedUpdate()
-    {
-        if (isWallClinging)
-        {
-            HandleWallCling();
-        }
-        else
-        {
-            if (isIced)
-                HandleIceMovement();
-            else
-                HandleNormalMovement();
         }
     }
 
@@ -172,224 +133,174 @@ public class PlayerMovement: MonoBehaviour
             return;
         }
 
-        Vector2 origin = wallCheck != null ? (Vector2)wallCheck.position : (Vector2)transform.position;
-        RaycastHit2D hitRight = Physics2D.Raycast(origin, Vector2.right, wallCheckDistance, wallLayer);
-        RaycastHit2D hitLeft = Physics2D.Raycast(origin, Vector2.left, wallCheckDistance, wallLayer);
+        Vector2 origin = wallCheck ? wallCheck.position : transform.position;
 
-        bool wasTouching = isTouchingWall;
+        RaycastHit2D right = Physics2D.Raycast(origin, Vector2.right, wallCheckDistance, wallLayer);
+        RaycastHit2D left  = Physics2D.Raycast(origin, Vector2.left,  wallCheckDistance, wallLayer);
 
-        if (hitRight.collider != null)
+        if (right.collider)
         {
             isTouchingWall = true;
             wallDirection = 1;
-            lastWallContactTime = Time.time; // record last wall contact
+            lastWallContactTime = Time.time;
         }
-        else if (hitLeft.collider != null)
+        else if (left.collider)
         {
             isTouchingWall = true;
             wallDirection = -1;
-            lastWallContactTime = Time.time; // record last wall contact
+            lastWallContactTime = Time.time;
         }
         else
         {
             isTouchingWall = false;
         }
-
-        if (!isTouchingWall && wasTouching && isWallClinging)
-        {
-            DetachFromWall();
-        }
     }
+
+    void HandleWallCling()
+    {
+        // Ledge hop FIRST (highest priority)
+        if (IsAtUpperLedge())
+        {
+            EdgeDetach();
+            return;
+        }
+
+        // Lost wall contact → fall
+        if (!isTouchingWall)
+        {
+            isWallClinging = false;
+            return;
+        }
+
+        // Stick delay
+        if (wallStickTimer > 0f)
+        {
+            wallStickTimer -= Time.fixedDeltaTime;
+            rb.velocity = Vector2.zero;
+            return;
+        }
+
+        // Slide
+        rb.velocity = new Vector2(0f, -wallSlideSpeed);
+    }
+
 
     bool IsAtWallEdge()
     {
-        Vector2 dir = (wallDirection == 1) ? Vector2.right : Vector2.left;
-        Vector2 lowOrigin = wallCheck != null ? (Vector2)wallCheck.position : (Vector2)transform.position;
-        Vector2 highOrigin = lowOrigin + Vector2.up * 0.6f;
+        Vector2 dir = wallDirection == 1 ? Vector2.right : Vector2.left;
 
-        RaycastHit2D wallLow = Physics2D.Raycast(lowOrigin, dir, wallCheckDistance, wallLayer);
-        RaycastHit2D wallHigh = Physics2D.Raycast(highOrigin, dir, wallCheckDistance, wallLayer);
+        Vector2 low = wallCheck.position;
+        Vector2 high = low + Vector2.up * 0.7f;
 
-        return (wallLow.collider != null) && (wallHigh.collider == null);
+        bool lowHit = Physics2D.Raycast(low, dir, wallCheckDistance, wallLayer);
+        bool highHit = Physics2D.Raycast(high, dir, wallCheckDistance, wallLayer);
+
+        return lowHit && !highHit && rb.velocity.y >= -0.1f;
     }
-
-    void HandleNormalMovement()
+    
+    bool IsAtUpperLedge()
     {
-        rb.gravityScale = normalGravity;
-        rb.velocity = new Vector2(horizontalInput * speed * currentSpeedMultiplier, rb.velocity.y);
+        Vector2 dir = wallDirection == 1 ? Vector2.right : Vector2.left;
+
+        Vector2 low  = wallCheck.position;
+        Vector2 high = low + Vector2.up * 0.7f;
+
+        bool lowHit  = Physics2D.Raycast(low,  dir, wallCheckDistance, wallLayer);
+        bool highHit = Physics2D.Raycast(high, dir, wallCheckDistance, wallLayer);
+
+        return lowHit && !highHit && rb.velocity.y >= -0.05f;
     }
+
+
+    void WallJump()
+    {
+        isWallClinging = false;
+        rb.velocity = new Vector2(-wallDirection * wallJumpHorizontal, jumpForce);
+        lastEdgeDetachTime = Time.time;
+    }
+
+    void EdgeDetach()
+    {
+        isWallClinging = false;
+        wallStickTimer = 0f;
+
+        rb.velocity = new Vector2(
+            -wallDirection * edgePushHorizontal,
+            Mathf.Max(rb.velocity.y, edgeHopVelocity)
+        );
+
+        lastEdgeDetachTime = Time.time;
+    }
+
+    
 
     void HandleIceMovement()
     {
         rb.gravityScale = normalGravity;
 
-        float currentX = rb.velocity.x;
-        float absInput = Mathf.Abs(horizontalInput);
+        float vx = rb.velocity.x;
 
-        if (absInput > 0.01f)
+        // INPUT: very slow acceleration
+        if (Mathf.Abs(horizontal) > 0.01f)
         {
-            float targetSpeed = horizontalInput * iceMaxSpeed * currentSpeedMultiplier;
-            float newX = Mathf.MoveTowards(currentX, targetSpeed, iceAcceleration * Time.fixedDeltaTime);
-            rb.velocity = new Vector2(newX, rb.velocity.y);
+            float target = horizontal * iceMaxSpeed;
+            vx = Mathf.MoveTowards(vx, target, iceAcceleration * 0.6f * Time.fixedDeltaTime);
         }
+        // NO INPUT: very slow decay
         else
         {
-            float damping = Mathf.Exp(-iceCoastingFriction * Time.fixedDeltaTime);
-            float newX = currentX * damping;
+            // Much weaker friction → longer slide
+            float friction = Mathf.Exp(-iceCoastingFriction * 0.35f * Time.fixedDeltaTime);
+            vx *= friction;
 
-            if (Mathf.Abs(newX) < iceStopThreshold)
-                newX = 0f;
-
-            rb.velocity = new Vector2(newX, rb.velocity.y);
+            // Only stop when almost completely still
+            if (Mathf.Abs(vx) < iceStopThreshold)
+                vx = 0f;
         }
 
-        rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -iceMaxSpeed, iceMaxSpeed), rb.velocity.y);
+        rb.velocity = new Vector2(
+            Mathf.Clamp(vx, -iceMaxSpeed, iceMaxSpeed),
+            rb.velocity.y
+        );
     }
 
-    void HandleWallCling()
+
+    void OnTriggerStay2D(Collider2D other)
     {
-        if (!isTouchingWall || IsAtWallEdge())
-        {
-            DetachFromWall();
-            return;
-        }
-
-        rb.gravityScale = 0f;
-
-        // ==== WALL CLIMB REMOVED ====
-
-        // Stick timer
-        if (wallStickTimer > 0f)
-        {
-            wallStickTimer -= Time.fixedDeltaTime;
-            rb.velocity = new Vector2(0, 0);
-            isWallSliding = false;
-            return;
-        }
-
-        // Auto wall slide
-        rb.velocity = new Vector2(0, -wallSlideSpeed);
-        isWallSliding = true;
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Floor"))
-        {
-            isGrounded = true;
-            lastGroundedTime = Time.time; // update ground contact time for coyote
-        }
-        if (other.gameObject.CompareTag("Ice"))
-        {
-            isIced = true;
-            lastGroundedTime = Time.time; // ice counts as grounded for coyote
-        }
-        if (other.gameObject.CompareTag("SpikeBack"))
+        if (other.CompareTag("Floor") || other.CompareTag("SpikeBack"))
         {
             isGrounded = true;
             lastGroundedTime = Time.time;
         }
+        else if (other.CompareTag("Ice"))
+        {
+            isIced = true;
+            lastGroundedTime = Time.time;
+        }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Floor"))
+        if (other.CompareTag("Floor") || other.CompareTag("SpikeBack"))
             isGrounded = false;
-        if (other.gameObject.CompareTag("Ice"))
+        else if (other.CompareTag("Ice"))
             isIced = false;
-        if (other.gameObject.CompareTag("SpikeBack"))
-            isGrounded = false;
     }
-
-    void Flip()
+    
+    void HandleFlip()
     {
-        facingRight = !facingRight;
-        if (spriteRenderer) spriteRenderer.flipX = !spriteRenderer.flipX;
-    }
-
-    void DetachFromWall()
-    {
-        isWallClinging = false;
-        isWallSliding = false;
-        wallStickTimer = 0f;
-        rb.gravityScale = normalGravity;
-        float pushX = facingRight ? -edgePushHorizontal : edgePushHorizontal;
-        rb.velocity = new Vector2(pushX, edgeHopVelocity);
-        lastEdgeDetachTime = Time.time;
-    }
-
-    void DetachAndFall()
-    {
-        if (!isWallClinging) return;
-        isWallClinging = false;
-        isWallSliding = false;
-        wallStickTimer = 0f;
-        rb.gravityScale = normalGravity;
-        lastEdgeDetachTime = Time.time;
-    }
-
-    void WallJump()
-    {
-        // allow wall jump if clinging (Update already checks coyote before calling)
-        // consume cling and apply velocity
-        isWallClinging = false;
-        isWallSliding = false;
-        wallStickTimer = 0f;
-        rb.gravityScale = normalGravity;
-
-        float horizontalPush = -wallDirection * Mathf.Abs(wallJumpHorizontal);
-        rb.velocity = new Vector2(horizontalPush, jumpForce);
-
-        lastEdgeDetachTime = Time.time;
-    }
-
-    void UpdateAnimatorStates()
-    {
-        if (rb.velocity.y > 0 && !(isGrounded || isIced))
+        if ((facingRight && horizontal < -0.1f) || (!facingRight && horizontal > 0.1f))
         {
-            isJumping = true; isFalling = false; isRunning = false; isCrouching = false;
-            SetAnimatorState();
-        }
-        else if (rb.velocity.y < 0 && (!isGrounded || !isIced))
-        {
-            isJumping = false; isFalling = true; isRunning = false; isCrouching = false;
-            SetAnimatorState();
-        }
-
-        if ((isGrounded || isIced) && Mathf.Abs(rb.velocity.x) > 3.5f)
-        {
-            isJumping = false; isFalling = false; isRunning = true; isCrouching = false;
-            SetAnimatorState();
-        }
-
-        if (Mathf.Abs(rb.velocity.x) <= 3.5f && (isGrounded || isIced))
-        {
-            isJumping = false; isFalling = false; isRunning = false; isCrouching = false;
-            SetAnimatorState();
-        }
-
-        if (Input.GetKey(KeyCode.R) && isGrounded)
-        {
-            isJumping = false; isFalling = false; isRunning = false; isCrouching = true;
-            SetAnimatorState();
+            facingRight = !facingRight;
+            sprite.flipX = !sprite.flipX;
         }
     }
 
-    public void SetAnimatorState()
+    void UpdateAnimator()
     {
-        animator.SetBool("IsJumping", isJumping);
-        animator.SetBool("IsFalling", isFalling);
-        animator.SetBool("IsRunning", isRunning);
-        animator.SetBool("IsCrouching", isCrouching);
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        if (wallCheck != null)
-        {
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * wallCheckDistance);
-            Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.left * wallCheckDistance);
-        }
+        animator.SetBool("IsJumping", rb.velocity.y > 0 && !isGrounded && !isIced);
+        animator.SetBool("IsFalling", rb.velocity.y < 0 && !isGrounded && !isIced);
+        animator.SetBool("IsRunning", Mathf.Abs(rb.velocity.x) > 3.5f && (isGrounded || isIced));
+        animator.SetBool("IsCrouching", Input.GetKey(KeyCode.R) && isGrounded);
     }
 }
