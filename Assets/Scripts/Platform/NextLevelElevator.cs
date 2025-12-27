@@ -68,8 +68,7 @@ public class NextLevelElevator : MonoBehaviour
         // Reset timers
         timer = 0f;
         timerDelay = 0f;
-
-        // Move elevator back smoothly
+        
         Vector2 newPos = Vector2.MoveTowards(
             movedRigidbody.position,
             startPos,
