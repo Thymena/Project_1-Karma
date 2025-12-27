@@ -21,7 +21,6 @@ public class NewLevel: MonoBehaviour
 
         if (_rigidbody2D == null)
         {
-            Debug.LogError($"{nameof(NewLevel)} requires a Rigidbody2D component.", this);
             enabled = false;
         }
     }

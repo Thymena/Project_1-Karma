@@ -1,80 +1,80 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class NextLevelElevator: MonoBehaviour
+public class NextLevelElevator : MonoBehaviour
 {
     public float riseSpeed = 3f;
     public float returnSpeed = 3f;
     public float changeTime = 1f;
+    public float fadeLeadTime = 0.5f;
+
     public Transform movedObject;
-    
-    private float timer;
-    private float timerDelay;
-    private Vector2 startPos;
+
     private Rigidbody2D movedRigidbody;
-    
-    // Start is called before the first frame update
+    private Vector2 startPos;
+
+    private float timer = 0f;
+    private float timerDelay = 0f;
+    private bool fadeStarted = false;
+    private bool triggered = false; // ensures scene loads only once
+
     void Start()
     {
         if (movedObject == null)
-        {
             movedObject = transform;
-        }
-        
+
         movedRigidbody = movedObject.GetComponent<Rigidbody2D>();
-        
         if (movedRigidbody == null)
         {
-            Debug.LogError("NextLevelElevator requires a Rigidbody2D on the moved object.", this);
             enabled = false;
             return;
         }
-        
+
         movedRigidbody.isKinematic = true;
         startPos = movedRigidbody.position;
     }
 
-    void Update()
-    {
-        
-    }
-    
-    
-
-    // 玩家不掉下去
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player") || triggered) return;
+
+        timerDelay += Time.deltaTime;
+
+        if (timerDelay > 0.5f) // player must stay on elevator briefly
         {
-            timerDelay += Time.deltaTime;
-            
-            if (timerDelay > 0.5f)
+            timer += Time.deltaTime;
+
+            // Move elevator up
+            movedRigidbody.MovePosition(
+                movedRigidbody.position + Vector2.up * riseSpeed * Time.deltaTime
+            );
+
+            // Start fade early while elevator is moving
+            if (!fadeStarted && timer >= changeTime - fadeLeadTime)
             {
-                timer += Time.deltaTime; 
-                //collision.transform.SetParent(transform);
-                Vector2 nextPosition = movedRigidbody.position + Vector2.up * riseSpeed * Time.deltaTime;
-                movedRigidbody.MovePosition(nextPosition);
-            
-                if (timer >= changeTime)
-                {
-                    SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-                }
+                fadeStarted = true;
+                SceneControllerScript.instance.BeginTransition(fadeDuration: 1f, sceneLoadDelay: 0f);
             }
-            
+
+            // Mark elevator as triggered when done
+            if (timer >= changeTime)
+                triggered = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            timer = 0;
-            timerDelay = 0;
-            //collision.transform.SetParent(null);
-            Vector2 newPos = Vector2.MoveTowards(movedRigidbody.position, startPos, returnSpeed * Time.deltaTime);
-            movedRigidbody.MovePosition(newPos);
-        }
+        if (!other.CompareTag("Player") || triggered) return;
+
+        // Reset timers
+        timer = 0f;
+        timerDelay = 0f;
+
+        // Move elevator back smoothly
+        Vector2 newPos = Vector2.MoveTowards(
+            movedRigidbody.position,
+            startPos,
+            returnSpeed * Time.deltaTime
+        );
+        movedRigidbody.MovePosition(newPos);
     }
 }
