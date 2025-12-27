@@ -23,12 +23,7 @@ public class SceneControllerScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    /// <summary>
-    /// Starts a fade-out transition and loads the next scene after a delay.
-    /// </summary>
-    /// <param name="fadeDuration">Duration of fade-out animation (optional)</param>
-    /// <param name="sceneLoadDelay">Delay before actually loading the next scene (optional)</param>
+    
     public void BeginTransition(float fadeDuration = 1f, float sceneLoadDelay = 0f)
     {
         if (fadeInProgress) return;
@@ -38,18 +33,18 @@ public class SceneControllerScript : MonoBehaviour
 
     private IEnumerator TransitionCoroutine(float fadeDuration, float sceneLoadDelay)
     {
-        // Start fade-out animation
+        // Start scene transition animation
         if (SceneTransition != null)
         {
             SceneTransition.ResetTrigger("Start");
             SceneTransition.SetTrigger("End");
         }
 
-        // Optional delay before loading scene (for elevator sync)
+        // delay before loading scene for elevator
         if (sceneLoadDelay > 0)
             yield return new WaitForSeconds(sceneLoadDelay);
 
-        // Wait fade duration to sync with animation
+        // Wait fade duration to be same with animation
         if (fadeDuration > 0)
             yield return new WaitForSeconds(fadeDuration);
 
@@ -63,7 +58,7 @@ public class SceneControllerScript : MonoBehaviour
         fadeInProgress = false;
         isLoading = false;
 
-        // Trigger fade-in in the new scene
+        // Start transition in for the new scene
         GameObject transitionObj = GameObject.FindGameObjectWithTag("SceneTransition");
         if (transitionObj != null)
         {

@@ -39,30 +39,25 @@ public class MiniGameElevator : MonoBehaviour
 
         timerDelay += Time.deltaTime;
 
-        // Start the mini-game
+        // start game 
         if (timerDelay > 1.5f && !start.startTest)
         {
             start.startTest = true;
         }
 
-        // Elevator movement + scene fade
+        // Elevator movement and scene transition
         if (timerDelay > 0.5f && start.pastTest)
         {
             timer += Time.deltaTime;
 
             // Move elevator up
-            movedRigidbody.MovePosition(
-                movedRigidbody.position + Vector2.up * riseSpeed * Time.deltaTime
-            );
+            movedRigidbody.MovePosition(movedRigidbody.position + Vector2.up * riseSpeed * Time.deltaTime);
 
-            // Start fade slightly early
+            // start animation early for better effects
             if (!fadeStarted && timer >= changeTime - fadeLeadTime)
             {
                 fadeStarted = true;
-                SceneControllerScript.instance.BeginTransition(
-                    fadeDuration: 1f, // match your FadeOut animation length
-                    sceneLoadDelay: 0f
-                );
+                SceneControllerScript.instance.BeginTransition(fadeDuration: 1f, sceneLoadDelay: 0f);
             }
 
             // Mark elevator as triggered when done
@@ -77,16 +72,11 @@ public class MiniGameElevator : MonoBehaviour
     {
         if (!other.CompareTag("Player") || triggered) return;
 
-        // Reset timers
+        // reset timers
         timer = 0f;
         timerDelay = 0f;
-
-        // Move elevator back smoothly
-        Vector2 newPos = Vector2.MoveTowards(
-            movedRigidbody.position,
-            startPos,
-            returnSpeed * Time.deltaTime
-        );
+        
+        Vector2 newPos = Vector2.MoveTowards(movedRigidbody.position, startPos, returnSpeed * Time.deltaTime);
         movedRigidbody.MovePosition(newPos);
     }
 }

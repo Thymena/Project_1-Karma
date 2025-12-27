@@ -58,6 +58,7 @@ public class PlayerMovementRe : MonoBehaviour
 
     void Update()
     {
+        // move input
         horizontal = Input.GetAxisRaw("Horizontal");
 
         CheckWall();
@@ -71,7 +72,7 @@ public class PlayerMovementRe : MonoBehaviour
     {
         rb.gravityScale = normalGravity;
 
-        // FORCE ledge detach even if cling already dropped
+        // ledge detach even if cling already dropped
         if (isTouchingWall && IsAtWallEdge())
         {
             EdgeDetach();
@@ -79,11 +80,17 @@ public class PlayerMovementRe : MonoBehaviour
         }
 
         if (isWallClinging)
+        {
             HandleWallCling();
+        }
         else if (isIced)
+        {
             HandleIceMovement();
+        }
         else
+        {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
     }
 
 
@@ -104,14 +111,9 @@ public class PlayerMovementRe : MonoBehaviour
 
     void HandleWallClingInput()
     {
-        bool pressingTowardWall =
-            (wallDirection == 1 && horizontal > 0.1f) ||
-            (wallDirection == -1 && horizontal < -0.1f);
+        bool pressingTowardWall = (wallDirection == 1 && horizontal > 0.1f) || (wallDirection == -1 && horizontal < -0.1f);
 
-        if (isTouchingWall &&
-            !isGrounded &&
-            pressingTowardWall &&
-            Time.time - lastEdgeDetachTime > edgeDetachCooldown)
+        if (isTouchingWall && !isGrounded && pressingTowardWall && Time.time - lastEdgeDetachTime > edgeDetachCooldown)
         {
             if (!isWallClinging)
             {
@@ -125,6 +127,7 @@ public class PlayerMovementRe : MonoBehaviour
         }
     }
 
+    // checks wall direction and wall presence
     void CheckWall()
     {
         if (Time.time - lastEdgeDetachTime < edgeDetachCooldown)
@@ -158,14 +161,14 @@ public class PlayerMovementRe : MonoBehaviour
 
     void HandleWallCling()
     {
-        // Ledge hop FIRST (highest priority)
+        // Ledge hop 
         if (IsAtUpperLedge())
         {
             EdgeDetach();
             return;
         }
 
-        // Lost wall contact → fall
+        // Lost wall contact for fall
         if (!isTouchingWall)
         {
             isWallClinging = false;
@@ -184,7 +187,7 @@ public class PlayerMovementRe : MonoBehaviour
         rb.velocity = new Vector2(0f, -wallSlideSpeed);
     }
 
-
+    // Checking if is at wall edge for fall
     bool IsAtWallEdge()
     {
         Vector2 dir = wallDirection == 1 ? Vector2.right : Vector2.left;
@@ -198,6 +201,7 @@ public class PlayerMovementRe : MonoBehaviour
         return lowHit && !highHit && rb.velocity.y >= -0.1f;
     }
     
+    // Checking if is at ledge for ledge jump
     bool IsAtUpperLedge()
     {
         Vector2 dir = wallDirection == 1 ? Vector2.right : Vector2.left;
@@ -205,13 +209,12 @@ public class PlayerMovementRe : MonoBehaviour
         Vector2 low  = wallCheck.position;
         Vector2 high = low + Vector2.up * 0.7f;
 
-        bool lowHit  = Physics2D.Raycast(low,  dir, wallCheckDistance, wallLayer);
+        bool lowHit = Physics2D.Raycast(low,  dir, wallCheckDistance, wallLayer);
         bool highHit = Physics2D.Raycast(high, dir, wallCheckDistance, wallLayer);
 
         return lowHit && !highHit && rb.velocity.y >= -0.05f;
     }
-
-
+    
     void WallJump()
     {
         isWallClinging = false;
@@ -224,15 +227,10 @@ public class PlayerMovementRe : MonoBehaviour
         isWallClinging = false;
         wallStickTimer = 0f;
 
-        rb.velocity = new Vector2(
-            -wallDirection * edgePushHorizontal,
-            Mathf.Max(rb.velocity.y, edgeHopVelocity)
-        );
+        rb.velocity = new Vector2(-wallDirection * edgePushHorizontal, Mathf.Max(rb.velocity.y, edgeHopVelocity));
 
         lastEdgeDetachTime = Time.time;
     }
-
-    
 
     void HandleIceMovement()
     {
@@ -240,16 +238,15 @@ public class PlayerMovementRe : MonoBehaviour
 
         float vx = rb.velocity.x;
 
-        // INPUT: very slow acceleration
+        // slow acceleration
         if (Mathf.Abs(horizontal) > 0.01f)
         {
             float target = horizontal * iceMaxSpeed;
             vx = Mathf.MoveTowards(vx, target, iceAcceleration * 0.6f * Time.fixedDeltaTime);
         }
-        // NO INPUT: very slow decay
+        // slow decay when no input
         else
         {
-            // Much weaker friction → longer slide
             float friction = Mathf.Exp(-iceCoastingFriction * 0.35f * Time.fixedDeltaTime);
             vx *= friction;
 
@@ -264,7 +261,7 @@ public class PlayerMovementRe : MonoBehaviour
         );
     }
 
-
+    // tests for floors or ice
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Floor") || other.CompareTag("SpikeBack"))
@@ -296,6 +293,7 @@ public class PlayerMovementRe : MonoBehaviour
         }
     }
 
+    //updates animator
     void UpdateAnimator()
     {
         animator.SetBool("IsJumping", rb.velocity.y > 0 && !isGrounded && !isIced);
