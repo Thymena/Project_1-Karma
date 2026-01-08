@@ -241,7 +241,7 @@ MonoBehaviour:
   wallCheckDistance: 0.35
   wallLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   wallSlideSpeed: 2
   wallJumpHorizontal: 8
   edgeHopVelocity: 9

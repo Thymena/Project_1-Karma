@@ -42,7 +42,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8463429509954058087}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -192,6 +192,7 @@ MonoBehaviour:
   berry: {fileID: 8463429509954058087}
   audioClips:
   - {fileID: 8300000, guid: 7bd6b897eb5ca4b7d88a205c4a51640c, type: 3}
+  collectDelay: 0.3
 --- !u!212 &8396457383231352786
 SpriteRenderer:
   m_ObjectHideFlags: 0

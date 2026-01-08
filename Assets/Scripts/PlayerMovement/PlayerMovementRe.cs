@@ -161,12 +161,12 @@ public class PlayerMovementRe : MonoBehaviour
 
     void HandleWallCling()
     {
-        // Ledge hop 
-        if (IsAtUpperLedge())
-        {
-            EdgeDetach();
-            return;
-        }
+        // // Ledge hop 
+        // if (IsAtUpperLedge())
+        // {
+        //     EdgeDetach();
+        //     return;
+        // }
 
         // Lost wall contact for fall
         if (!isTouchingWall)
@@ -202,18 +202,18 @@ public class PlayerMovementRe : MonoBehaviour
     }
     
     // Checking if is at ledge for ledge jump
-    bool IsAtUpperLedge()
-    {
-        Vector2 dir = wallDirection == 1 ? Vector2.right : Vector2.left;
-
-        Vector2 low  = wallCheck.position;
-        Vector2 high = low + Vector2.up * 0.7f;
-
-        bool lowHit = Physics2D.Raycast(low,  dir, wallCheckDistance, wallLayer);
-        bool highHit = Physics2D.Raycast(high, dir, wallCheckDistance, wallLayer);
-
-        return lowHit && !highHit && rb.velocity.y >= -0.05f;
-    }
+    // bool IsAtUpperLedge()
+    // {
+    //     Vector2 dir = wallDirection == 1 ? Vector2.right : Vector2.left;
+    //
+    //     Vector2 low  = wallCheck.position;
+    //     Vector2 high = low + Vector2.up * 0.7f;
+    //
+    //     bool lowHit = Physics2D.Raycast(low,  dir, wallCheckDistance, wallLayer);
+    //     bool highHit = Physics2D.Raycast(high, dir, wallCheckDistance, wallLayer);
+    //
+    //     return lowHit && !highHit && rb.velocity.y >= -0.05f;
+    // }
     
     void WallJump()
     {

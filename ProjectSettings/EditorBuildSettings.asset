@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Layer5.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/TemporaryEnd.unity
+    guid: c4b2e37a7c300ca458334998972978cd
+  - enabled: 1
     path: Assets/Scenes/Layer6.unity
     guid: 163d6331ff4054d4091c5c69371e8314
   - enabled: 1
