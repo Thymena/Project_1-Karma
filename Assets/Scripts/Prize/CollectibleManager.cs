@@ -1,8 +1,20 @@
 using System;
 using UnityEngine;
+using Cinemachine;
+using System.Collections;
+using Unity.VisualScripting;
 
 public class CollectibleManager : MonoBehaviour
 {
+    public CinemachineVirtualCamera virtualCamera;
+    public Transform player;
+    public PlayerMovementRe playerMovement;
+    public Transform focusTarget;
+    public float focusDuration = 0.5f;
+
+    private Transform originalFollow;
+    private bool finishCameraMove = false;
+    
     public GameObject[] collectibles;
     public float baseTimer = 90f;
 
@@ -19,6 +31,11 @@ public class CollectibleManager : MonoBehaviour
     public event Action<float> OnTimerChanged;
     private GameObject currentActiveCollectible;
 
+    void Awake()
+    {
+        originalFollow = virtualCamera.Follow;
+    }
+
     void Start()
     {
         // Disable all collectibles at the start
@@ -27,7 +44,7 @@ public class CollectibleManager : MonoBehaviour
 
         CurrentTimer = baseTimer;
 
-        // Do NOT spawn here — wait until external script tells you to start
+        // wait until external script tells to start
         hasStartedSpawning = false;  
     }
 
@@ -113,8 +130,28 @@ public class CollectibleManager : MonoBehaviour
         {
             hasStartedSpawning = true;
             SpawnRandomCollectible();
+            
+            if (!finishCameraMove)
+            {
+                StartCoroutine(FocusRoutine());
+            }
         }
+        
     }
 
+    IEnumerator FocusRoutine()
+    {
+        virtualCamera.Follow = currentActiveCollectible.transform;
+        virtualCamera.LookAt = currentActiveCollectible.transform;
+            
+        yield return new WaitForSeconds(1.5f);
 
+        virtualCamera.Follow = player;
+        virtualCamera.LookAt = player;
+
+        yield return new WaitForSeconds(1.5f);
+            
+        finishCameraMove = true;
+    }
+    
 }

@@ -12,6 +12,7 @@ TagManager:
   - SpikeBack
   - Berry
   - SceneTransition
+  - PlayerDetector
   layers:
   - Default
   - TransparentFX

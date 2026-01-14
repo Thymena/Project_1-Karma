@@ -19,7 +19,11 @@ public class PlayerMovementRe : MonoBehaviour
     public float wallCheckDistance = 0.6f;
     public LayerMask wallLayer;
     public float wallSlideSpeed = 2f;
-    public float wallJumpHorizontal = 8f;
+    public Vector2 wallJumpForce;
+    
+    private bool isWallJumping;
+    private float wallJumpLockTime = 0.15f;
+
 
     [Header("Ledge")]
     public float edgeHopVelocity = 3f;
@@ -75,7 +79,13 @@ public class PlayerMovementRe : MonoBehaviour
         // ledge detach even if cling already dropped
         if (isTouchingWall && IsAtWallEdge())
         {
-            EdgeDetach();
+            EdgeDetach(false); // soft detach at upper ledge
+            return;
+        }
+
+        if (isWallJumping)
+        {
+            // Let physics handle the hop without interference
             return;
         }
 
@@ -91,6 +101,7 @@ public class PlayerMovementRe : MonoBehaviour
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         }
+
     }
 
 
@@ -161,14 +172,6 @@ public class PlayerMovementRe : MonoBehaviour
 
     void HandleWallCling()
     {
-        // // Ledge hop 
-        // if (IsAtUpperLedge())
-        // {
-        //     EdgeDetach();
-        //     return;
-        // }
-
-        // Lost wall contact for fall
         if (!isTouchingWall)
         {
             isWallClinging = false;
@@ -201,36 +204,44 @@ public class PlayerMovementRe : MonoBehaviour
         return lowHit && !highHit && rb.velocity.y >= -0.1f;
     }
     
-    // Checking if is at ledge for ledge jump
-    // bool IsAtUpperLedge()
-    // {
-    //     Vector2 dir = wallDirection == 1 ? Vector2.right : Vector2.left;
-    //
-    //     Vector2 low  = wallCheck.position;
-    //     Vector2 high = low + Vector2.up * 0.7f;
-    //
-    //     bool lowHit = Physics2D.Raycast(low,  dir, wallCheckDistance, wallLayer);
-    //     bool highHit = Physics2D.Raycast(high, dir, wallCheckDistance, wallLayer);
-    //
-    //     return lowHit && !highHit && rb.velocity.y >= -0.05f;
-    // }
     
     void WallJump()
     {
         isWallClinging = false;
-        rb.velocity = new Vector2(-wallDirection * wallJumpHorizontal, jumpForce);
-        lastEdgeDetachTime = Time.time;
-    }
+        isWallJumping = true;
 
-    void EdgeDetach()
+        lastEdgeDetachTime = Time.time;
+
+        rb.velocity = new Vector2(
+            -wallDirection * wallJumpForce.x,
+            wallJumpForce.y
+        );
+
+        Invoke(nameof(EndWallJump), wallJumpLockTime);
+    }
+    
+    void EndWallJump()
+    {
+        isWallJumping = false;
+    }
+    
+    void EdgeDetach(bool applyCooldown = true)
     {
         isWallClinging = false;
         wallStickTimer = 0f;
 
-        rb.velocity = new Vector2(-wallDirection * edgePushHorizontal, Mathf.Max(rb.velocity.y, edgeHopVelocity));
+        // Detach horizontally only
+        rb.velocity = new Vector2(
+            -wallDirection * edgePushHorizontal,
+            rb.velocity.y
+        );
 
-        lastEdgeDetachTime = Time.time;
+        if (applyCooldown)
+        {
+            lastEdgeDetachTime = Time.time;
+        }
     }
+
 
     void HandleIceMovement()
     {

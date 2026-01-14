@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class NextLevelElevator : MonoBehaviour
 {
     public float riseSpeed = 3f;

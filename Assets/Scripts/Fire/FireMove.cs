@@ -9,6 +9,7 @@ public class FireMove : MonoBehaviour
     public GameObject changedObject1;
     public GameObject changedObject2;
 
+    private Collider2D col;
     private Rigidbody2D rb;
 
     private bool playerInside;
@@ -25,7 +26,7 @@ public class FireMove : MonoBehaviour
 
     void Update()
     {
-        if (playerInside && !isMoving && !hasStopped && Input.GetKeyDown(KeyCode.F))
+        if (playerInside && !isMoving && !hasStopped)
         {
             CalculateMoveDirection();
             isMoving = true;
@@ -66,7 +67,7 @@ public class FireMove : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
             return;
 
-        Debug.Log("HIT: " + collision.collider.name);
+        Debug.Log("hit " + collision.collider.name);
 
         if (hasStopped) return;
 
