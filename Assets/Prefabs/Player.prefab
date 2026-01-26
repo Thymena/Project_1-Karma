@@ -246,7 +246,7 @@ MonoBehaviour:
   wallJumpForce: {x: 5, y: 12}
   edgeHopVelocity: 9
   edgePushHorizontal: 0.8
-  edgeDetachCooldown: 0.5
+  edgeDetachCooldown: 0.4
   wallStickTime: 0.3
   groundCoyoteTime: 0.18
   wallCoyoteTime: 0.18
