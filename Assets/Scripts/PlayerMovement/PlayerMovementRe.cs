@@ -261,7 +261,7 @@ public class PlayerMovementRe : MonoBehaviour
             float friction = Mathf.Exp(-iceCoastingFriction * 0.35f * Time.fixedDeltaTime);
             vx *= friction;
 
-            // Only stop when almost completely still
+            // only stop when almost completely still
             if (Mathf.Abs(vx) < iceStopThreshold)
                 vx = 0f;
         }
@@ -307,9 +307,10 @@ public class PlayerMovementRe : MonoBehaviour
     //updates animator
     void UpdateAnimator()
     {
-        animator.SetBool("IsJumping", rb.velocity.y > 0 && !isGrounded && !isIced);
-        animator.SetBool("IsFalling", rb.velocity.y < 0 && !isGrounded && !isIced);
+        animator.SetBool("IsJumping", rb.velocity.y > 0 && !isGrounded && !isIced && !isWallClinging);
+        animator.SetBool("IsFalling", rb.velocity.y < 0 && !isGrounded && !isIced && !isWallClinging);
         animator.SetBool("IsRunning", Mathf.Abs(rb.velocity.x) > 3.5f && (isGrounded || isIced));
         animator.SetBool("IsCrouching", Input.GetKey(KeyCode.R) && isGrounded);
+        animator.SetBool("IsWallSliding", isWallClinging);
     }
 }

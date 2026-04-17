@@ -10,5 +10,10 @@ public class SettingSceneController : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
     }
-    
+
+    public void ReloadScene()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

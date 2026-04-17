@@ -22,7 +22,7 @@ TagManager:
   - UI
   - Wall
   - FireBlock
-  - 
+  - ForegroundLayer
   - 
   - 
   - 
@@ -49,4 +49,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3644178751
+    locked: 0
+  - name: Layer3
+    uniqueID: 53180269
+    locked: 0
+  - name: Layer2
+    uniqueID: 2344885281
+    locked: 0
+  - name: PlayerEffect
+    uniqueID: 221535245
+    locked: 0
+  - name: Player
+    uniqueID: 1123449985
+    locked: 0
+  - name: Elevator
+    uniqueID: 963087621
+    locked: 0
+  - name: Foreground
+    uniqueID: 1405651381
     locked: 0

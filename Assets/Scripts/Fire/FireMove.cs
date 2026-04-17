@@ -46,7 +46,7 @@ public class FireMove : MonoBehaviour
         Vector2 dir = (Vector2)(transform.position - playerTransform.position);
         if (dir == Vector2.zero) dir = Vector2.up;
 
-        // Lock to X or Y
+        //lock to X or Y
         if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
             moveDir = new Vector2(Mathf.Sign(dir.x), 0f);
         else
@@ -58,12 +58,12 @@ public class FireMove : MonoBehaviour
         isMoving = false;
         hasStopped = true;
         rb.velocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Static; // 🔒 permanently stop
+        rb.bodyType = RigidbodyType2D.Static; //permanently stop
     }
     
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Ignore player completely
+        //ignore player completely
         if (collision.collider.CompareTag("Player"))
             return;
 
