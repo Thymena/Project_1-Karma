@@ -1,0 +1,622 @@
+{
+  "batchIndex": 1,
+  "nodes": [
+    {
+      "id": "file:Audio/AudioManager.cs",
+      "type": "file",
+      "name": "AudioManager.cs",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "背景音乐管理器，在 Start 时获取 AudioSource 并循环播放首个 AudioClip。",
+      "tags": ["音频", "MonoBehaviour", "BGM"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Audio/AudioManager.cs:AudioManager",
+      "type": "class",
+      "name": "AudioManager",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "挂载于场景对象，通过 AudioSource 播放 audioClips 数组中的背景音乐。",
+      "tags": ["音频", "MonoBehaviour"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Camera/FollowCamera.cs",
+      "type": "file",
+      "name": "FollowCamera.cs",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "简单相机跟随脚本，每帧将相机位置锁定为目标对象加固定 Z 偏移。",
+      "tags": ["相机", "跟随", "MonoBehaviour"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Camera/FollowCamera.cs:FollowCamera",
+      "type": "class",
+      "name": "FollowCamera",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "在 Update 中同步 m_target 的世界坐标，保持 -10 的 Z 轴偏移。",
+      "tags": ["相机", "跟随"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Camera/Parallax.cs",
+      "type": "file",
+      "name": "Parallax.cs",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "单层视差背景脚本，支持无限滚动、垂直视差及 Cinemachine 边界相机兼容。",
+      "tags": ["相机", "视差", "Cinemachine", "背景"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Camera/Parallax.cs:Parallax",
+      "type": "class",
+      "name": "Parallax",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "LateUpdate 中根据相机位移乘以 parallaxMultiplier 移动背景层，可选无限循环。",
+      "tags": ["视差", "SpriteRenderer", "反射"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Camera/ParallaxManager.cs",
+      "type": "file",
+      "name": "ParallaxManager.cs",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "批量配置多个视差层的管理器，自动为层对象添加或更新 Parallax 组件。",
+      "tags": ["相机", "视差", "管理器"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "type": "class",
+      "name": "ParallaxManager",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "Start 时遍历 parallaxLayers 列表，统一设置相机引用与视差参数。",
+      "tags": ["视差", "配置", "MonoBehaviour"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Camera/ParallaxManager.cs:AddParallaxLayer",
+      "type": "function",
+      "name": "AddParallaxLayer",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "运行时动态添加视差层，创建 ParallaxLayer 条目并配置 Parallax 组件。",
+      "tags": ["视差", "运行时", "公共API"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Fire/FireMove.cs",
+      "type": "file",
+      "name": "FireMove.cs",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "火焰方块移动逻辑：玩家进入触发区后沿 X/Y 轴远离玩家移动，碰撞后停止并触发环境变化。",
+      "tags": ["火焰", "物理", "Trigger", "Tag交互"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Fire/FireMove.cs:FireMove",
+      "type": "class",
+      "name": "FireMove",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "使用 Rigidbody2D 沿主轴移动，与 Ice/Spikes/SpikeBack 标签碰撞时修改或销毁关联对象。",
+      "tags": ["火焰", "Rigidbody2D", "碰撞"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Ice/IceMove.cs",
+      "type": "file",
+      "name": "IceMove.cs",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "冰块推动机制：玩家进入区域后按 F 键使 movedObject 沿轴远离玩家移动直至碰撞停止。",
+      "tags": ["冰块", "输入", "协程", "Tag交互"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Ice/IceMove.cs:IceMove",
+      "type": "class",
+      "name": "IceMove",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "协程驱动 Transform 位移，OverlapCircle 检测 Floor/Fire/Spikes 标签并执行对应反应。",
+      "tags": ["冰块", "协程", "Physics2D"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "外部调用以强制停止移动协程，设置 hit 与 isMoving 标志。",
+      "tags": ["冰块", "公共API", "停止"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/MiniGameElevator.cs",
+      "type": "file",
+      "name": "MiniGameElevator.cs",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "小游戏关卡电梯：玩家停留后启动 GameController 测试，通过后上升并触发场景过渡。",
+      "tags": ["平台", "电梯", "场景切换", "小游戏"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "type": "class",
+      "name": "MiniGameElevator",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "OnTriggerStay2D 检测玩家停留时间，联动 GameController 状态并调用 SceneControllerScript 淡入淡出。",
+      "tags": ["电梯", "Trigger", "Rigidbody2D"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Platform/NextLevelElevator.cs",
+      "type": "file",
+      "name": "NextLevelElevator.cs",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "下一关电梯：玩家停留 4 秒后平台上升，提前启动场景过渡动画。",
+      "tags": ["平台", "电梯", "场景切换"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "type": "class",
+      "name": "NextLevelElevator",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "与 MiniGameElevator 类似但无 GameController 依赖，停留 4 秒后上升并触发 SceneControllerScript。",
+      "tags": ["电梯", "Trigger", "场景过渡"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Platform/NewLevel.cs",
+      "type": "file",
+      "name": "NewLevel.cs",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "关卡内移动平台，Rigidbody2D 从当前位置 MoveTowards 至 stopPoint 后停止。",
+      "tags": ["平台", "移动", "Rigidbody2D"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Platform/NewLevel.cs:NewLevel",
+      "type": "class",
+      "name": "NewLevel",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "FixedUpdate 中平滑移动到目标点，到达阈值后调用 StopMovement 并禁用脚本。",
+      "tags": ["平台", "移动", "MonoBehaviour"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "停止移动，清零 Rigidbody2D 速度并锁定到目标位置，禁用组件。",
+      "tags": ["平台", "公共API", "停止"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:IsMoving",
+      "type": "function",
+      "name": "IsMoving",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "返回平台是否仍在移动中的布尔状态。",
+      "tags": ["平台", "公共API", "状态查询"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/JumpJumpHappy.cs",
+      "type": "file",
+      "name": "JumpJumpHappy.cs",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "弹跳平台：玩家站在触发区内按 Space 时给 Rigidbody2D 施加 burstForce 向上速度。",
+      "tags": ["平台", "跳跃", "输入", "Trigger"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "type": "class",
+      "name": "JumpJumpHappy",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "检测玩家进入/离开触发区，在区内按 Space 修改 rb.velocity.y 实现弹跳。",
+      "tags": ["平台", "跳跃", "Rigidbody2D"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/MovingPlatform.cs",
+      "type": "file",
+      "name": "MovingPlatform.cs",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "在 pointA 与 pointB 之间 PingPong 插值往复移动，玩家碰撞时设为子对象以防滑落。",
+      "tags": ["平台", "往复移动", "SetParent"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "type": "class",
+      "name": "MovingPlatform",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "Update 中 Lerp 移动，OnCollisionEnter2D/Exit2D 对 Player 标签执行 SetParent 绑定/解绑。",
+      "tags": ["平台", "移动", "碰撞"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/DeathTimesCount.cs",
+      "type": "file",
+      "name": "DeathTimesCount.cs",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "全局死亡计数单例，跨场景持久化并通过 TextMeshProUGUI 显示死亡次数。",
+      "tags": ["UI", "单例", "DontDestroyOnLoad", "死亡统计"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "type": "class",
+      "name": "DeathTimesCounter",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "Awake 建立 Instance 单例并 DontDestroyOnLoad，AddDeath 递增静态计数并刷新 UI。",
+      "tags": ["单例", "TMPro", "持久化"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/DeathTimesCount.cs:AddDeath",
+      "type": "function",
+      "name": "AddDeath",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "死亡计数加一并调用 UpdateUI 刷新 TextMeshProUGUI 显示。",
+      "tags": ["死亡统计", "公共API", "UI"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/PlayerHP.cs",
+      "type": "file",
+      "name": "PlayerHP.cs",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "玩家生命值管理：health 归零时记录死亡并重新加载当前场景。",
+      "tags": ["玩家", "生命值", "场景重载"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "class",
+      "name": "PlayerHP",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "维护 health/maxHealth，Update 检测死亡并调用 DeathTimesCounter 与 SceneManager.LoadScene。",
+      "tags": ["玩家", "生命值", "MonoBehaviour"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PlayerHP.cs:TakeDamage",
+      "type": "function",
+      "name": "TakeDamage",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "扣除指定伤害值，health 被 Clamp 在 0 到 maxHealth 之间。",
+      "tags": ["玩家", "伤害", "公共API"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/PersistUI.cs",
+      "type": "file",
+      "name": "PersistUI.cs",
+      "filePath": "PlayerHP/PersistUI.cs",
+      "summary": "UI 持久化脚本，Awake 时对 GameObject 调用 DontDestroyOnLoad。",
+      "tags": ["UI", "DontDestroyOnLoad", "持久化"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerHP/PersistUI.cs:PersistUI",
+      "type": "class",
+      "name": "PersistUI",
+      "filePath": "PlayerHP/PersistUI.cs",
+      "summary": "最小化跨场景 UI 持久组件，仅 Awake 中执行 DontDestroyOnLoad。",
+      "tags": ["UI", "持久化"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerInteractions/OnFire.cs",
+      "type": "file",
+      "name": "OnFire.cs",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "玩家着火交互：在 Fire 触发区内累积计时，闪烁 SpriteRenderer 并在 KILL_TIME 后扣血。",
+      "tags": ["玩家", "火焰", "伤害", "视觉效果"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "type": "class",
+      "name": "OnFire",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnTriggerStay2D 检测 Fire 标签，HandleFlashing 实现加速闪烁，超时直接修改 playerHP.health。",
+      "tags": ["玩家", "Trigger", "SpriteRenderer"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:PlayerInteractions/OnSpike.cs",
+      "type": "file",
+      "name": "OnSpike.cs",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "玩家刺刺交互：进入 Spikes 触发区时立即扣除 PlayerHP 生命值。",
+      "tags": ["玩家", "刺刺", "伤害", "Trigger"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "type": "class",
+      "name": "OnSpike",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "OnTriggerEnter2D 检测 Spikes 标签，GetComponent<PlayerHP> 并减去 damage。",
+      "tags": ["玩家", "Trigger", "伤害"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerMovement/PlayerMovementRe.cs",
+      "type": "file",
+      "name": "PlayerMovementRe.cs",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "玩家核心移动控制器，含地面/冰面移动、Coyote Time、贴墙滑动、蹬墙跳与 Animator 状态同步。",
+      "tags": ["玩家", "移动", "跳跃", "贴墙", "动画"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "type": "class",
+      "name": "PlayerMovementRe",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "Rigidbody2D 驱动移动，Raycast 检测墙体，Trigger 检测 Floor/Ice/SpikeBack 地面状态。",
+      "tags": ["玩家", "Rigidbody2D", "Animator", "物理"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Prize/CollectibleManager.cs",
+      "type": "file",
+      "name": "CollectibleManager.cs",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "收集品小游戏管理器：随机生成 Mossberry、倒计时、Cinemachine 聚焦与 GameController 进度联动。",
+      "tags": ["收集", "小游戏", "Cinemachine", "计时器"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "class",
+      "name": "CollectibleManager",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "管理 collectibles 数组随机激活、CollectedCount 统计、OnTimerChanged/OnCountChanged 事件通知 UI。",
+      "tags": ["收集", "Cinemachine", "事件"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:OnCollectiblePicked",
+      "type": "function",
+      "name": "OnCollectiblePicked",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "收集品被拾取时递增计数、触发 OnCountChanged 并重新随机生成下一个收集品。",
+      "tags": ["收集", "公共API", "事件"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:BeginSpawning",
+      "type": "function",
+      "name": "BeginSpawning",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "外部调用启动收集品生成，首次调用时启动 FocusRoutine 相机聚焦协程。",
+      "tags": ["收集", "公共API", "相机"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Prize/Mossberry.cs",
+      "type": "file",
+      "name": "Mossberry.cs",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "可收集浆果：玩家进入触发区后播放音效，延迟后通知 CollectibleManager 完成拾取。",
+      "tags": ["收集", "音频", "Trigger", "协程"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Prize/Mossberry.cs:Mossberry",
+      "type": "class",
+      "name": "Mossberry",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "PlayAndCollect 协程播放 AudioClip 并延迟调用 manager.OnCollectiblePicked，防止重复触发。",
+      "tags": ["收集", "AudioSource", "协程"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "type": "file",
+      "name": "PushAwayOnPlayerTrigger2D.cs",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "通用玩家触发推离组件：玩家进入触发区后沿主轴远离移动，碰到 Floor 等标签后永久锁定为 Static。",
+      "tags": ["反应", "物理", "Trigger", "可复用"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "type": "class",
+      "name": "PushAwayOnPlayerTrigger2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "支持 Rigidbody2D 或无刚体 Transform 移动，连续 OverlapCollider 检测停止条件，忽略 TilemapCollider2D。",
+      "tags": ["反应", "Rigidbody2D", "Overlap"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StopAndLock",
+      "type": "function",
+      "name": "StopAndLock",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "永久停止移动，将 Rigidbody2D 设为 Static 并 FreezeAll 约束，禁用组件防止重启。",
+      "tags": ["反应", "公共API", "停止"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Reactions/FireAndIce.cs",
+      "type": "file",
+      "name": "FireAndIce.cs",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "火冰反应：火焰对象接触 Ice 标签时清除 Tilemap 对应格子，并将自身变为 Floor 层/platform。",
+      "tags": ["反应", "火焰", "冰块", "Tilemap"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "type": "class",
+      "name": "FireAndIce",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "TryReact 解析 Tilemap 与接触格，SetTile(null) 清除冰格，更新自身 Sprite/Tag/Layer 并可销毁。",
+      "tags": ["反应", "Tilemap", "Tag匹配"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryReactFromChildTrigger",
+      "type": "function",
+      "name": "TryReactFromChildTrigger",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "供子物体 Trigger 中继调用的公共入口，转发至 TryReact 执行火冰反应逻辑。",
+      "tags": ["反应", "公共API", "Trigger中继"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Reactions/IceAndSpike.cs",
+      "type": "file",
+      "name": "IceAndSpike.cs",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "冰刺反应：冰块接触 Spikes 标签时清除 Tilemap 刺格并在该位置生成带 Sprite/Collider 的新对象。",
+      "tags": ["反应", "冰块", "刺刺", "Tilemap"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "type": "class",
+      "name": "IceAndSpike",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "TryReact 在接触点 WorldToCell 定位刺格，清除后在 cellCenter 实例化 reactedCell 并继承自身 tag/layer。",
+      "tags": ["反应", "Tilemap", "Instantiate"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Reactions/FireAndIceChildTriggerRelay.cs",
+      "type": "file",
+      "name": "FireAndIceChildTriggerRelay.cs",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "FireAndIce 子物体 Trigger 中继器，将子 Collider 的触发事件转发给父级 FireAndIce。",
+      "tags": ["反应", "Trigger中继", "组合模式"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "type": "class",
+      "name": "FireAndIceChildTriggerRelay",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "Awake 自动 GetComponentInParent<FireAndIce>，OnTriggerEnter2D 调用 TryReactFromChildTrigger。",
+      "tags": ["反应", "Trigger", "中继"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/FireAndSpike.cs",
+      "type": "file",
+      "name": "FireAndSpike.cs",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "火刺反应：火焰接触 Spikes 标签时被从接触点方向弹开，不修改 Tilemap。",
+      "tags": ["反应", "火焰", "刺刺", "物理弹开"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "type": "class",
+      "name": "FireAndSpike",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "RepelFromPoint 计算远离接触点方向，通过 Rigidbody2D.velocity 或 Transform 位移实现弹开，含冷却节流。",
+      "tags": ["反应", "Rigidbody2D", "弹开"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Reactions/MovableInteractions.cs",
+      "type": "file",
+      "name": "MovableInteractions.cs",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "通用可推动物体交互：玩家进入区域按 F 键沿轴推离，碰到 Floor 标签后停止。",
+      "tags": ["反应", "输入", "移动", "Tag交互"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "type": "class",
+      "name": "MovableInteractions",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "与 IceMove 类似但无 Fire/Spikes 特殊反应，仅 OverlapCircle 检测 Floor 停止。",
+      "tags": ["反应", "协程", "Physics2D"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "外部调用强制停止 MoveAwayCoroutine，设置 hit 与 isMoving 标志。",
+      "tags": ["反应", "公共API", "停止"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {"source": "file:Audio/AudioManager.cs", "target": "class:Audio/AudioManager.cs:AudioManager", "type": "contains", "weight": 1.0},
+    {"source": "file:Camera/FollowCamera.cs", "target": "class:Camera/FollowCamera.cs:FollowCamera", "type": "contains", "weight": 1.0},
+    {"source": "file:Camera/Parallax.cs", "target": "class:Camera/Parallax.cs:Parallax", "type": "contains", "weight": 1.0},
+    {"source": "file:Camera/ParallaxManager.cs", "target": "class:Camera/ParallaxManager.cs:ParallaxManager", "type": "contains", "weight": 1.0},
+    {"source": "class:Camera/ParallaxManager.cs:ParallaxManager", "target": "function:Camera/ParallaxManager.cs:AddParallaxLayer", "type": "contains", "weight": 1.0},
+    {"source": "file:Fire/FireMove.cs", "target": "class:Fire/FireMove.cs:FireMove", "type": "contains", "weight": 1.0},
+    {"source": "file:Ice/IceMove.cs", "target": "class:Ice/IceMove.cs:IceMove", "type": "contains", "weight": 1.0},
+    {"source": "class:Ice/IceMove.cs:IceMove", "target": "function:Ice/IceMove.cs:StopMovement", "type": "contains", "weight": 1.0},
+    {"source": "file:Platform/MiniGameElevator.cs", "target": "class:Platform/MiniGameElevator.cs:MiniGameElevator", "type": "contains", "weight": 1.0},
+    {"source": "file:Platform/NextLevelElevator.cs", "target": "class:Platform/NextLevelElevator.cs:NextLevelElevator", "type": "contains", "weight": 1.0},
+    {"source": "file:Platform/NewLevel.cs", "target": "class:Platform/NewLevel.cs:NewLevel", "type": "contains", "weight": 1.0},
+    {"source": "class:Platform/NewLevel.cs:NewLevel", "target": "function:Platform/NewLevel.cs:StopMovement", "type": "contains", "weight": 1.0},
+    {"source": "class:Platform/NewLevel.cs:NewLevel", "target": "function:Platform/NewLevel.cs:IsMoving", "type": "contains", "weight": 1.0},
+    {"source": "file:Platform/JumpJumpHappy.cs", "target": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy", "type": "contains", "weight": 1.0},
+    {"source": "file:Platform/MovingPlatform.cs", "target": "class:Platform/MovingPlatform.cs:MovingPlatform", "type": "contains", "weight": 1.0},
+    {"source": "file:PlayerHP/DeathTimesCount.cs", "target": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter", "type": "contains", "weight": 1.0},
+    {"source": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter", "target": "function:PlayerHP/DeathTimesCount.cs:AddDeath", "type": "contains", "weight": 1.0},
+    {"source": "file:PlayerHP/PlayerHP.cs", "target": "class:PlayerHP/PlayerHP.cs:PlayerHP", "type": "contains", "weight": 1.0},
+    {"source": "class:PlayerHP/PlayerHP.cs:PlayerHP", "target": "function:PlayerHP/PlayerHP.cs:TakeDamage", "type": "contains", "weight": 1.0},
+    {"source": "file:PlayerHP/PersistUI.cs", "target": "class:PlayerHP/PersistUI.cs:PersistUI", "type": "contains", "weight": 1.0},
+    {"source": "file:PlayerInteractions/OnFire.cs", "target": "class:PlayerInteractions/OnFire.cs:OnFire", "type": "contains", "weight": 1.0},
+    {"source": "file:PlayerInteractions/OnSpike.cs", "target": "class:PlayerInteractions/OnSpike.cs:OnSpike", "type": "contains", "weight": 1.0},
+    {"source": "file:PlayerMovement/PlayerMovementRe.cs", "target": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe", "type": "contains", "weight": 1.0},
+    {"source": "file:Prize/CollectibleManager.cs", "target": "class:Prize/CollectibleManager.cs:CollectibleManager", "type": "contains", "weight": 1.0},
+    {"source": "class:Prize/CollectibleManager.cs:CollectibleManager", "target": "function:Prize/CollectibleManager.cs:OnCollectiblePicked", "type": "contains", "weight": 1.0},
+    {"source": "class:Prize/CollectibleManager.cs:CollectibleManager", "target": "function:Prize/CollectibleManager.cs:BeginSpawning", "type": "contains", "weight": 1.0},
+    {"source": "file:Prize/Mossberry.cs", "target": "class:Prize/Mossberry.cs:Mossberry", "type": "contains", "weight": 1.0},
+    {"source": "file:Reactions/PushAwayOnPlayerTrigger2D.cs", "target": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D", "type": "contains", "weight": 1.0},
+    {"source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D", "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StopAndLock", "type": "contains", "weight": 1.0},
+    {"source": "file:Reactions/FireAndIce.cs", "target": "class:Reactions/FireAndIce.cs:FireAndIce", "type": "contains", "weight": 1.0},
+    {"source": "class:Reactions/FireAndIce.cs:FireAndIce", "target": "function:Reactions/FireAndIce.cs:TryReactFromChildTrigger", "type": "contains", "weight": 1.0},
+    {"source": "file:Reactions/IceAndSpike.cs", "target": "class:Reactions/IceAndSpike.cs:IceAndSpike", "type": "contains", "weight": 1.0},
+    {"source": "file:Reactions/FireAndIceChildTriggerRelay.cs", "target": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay", "type": "contains", "weight": 1.0},
+    {"source": "file:Reactions/FireAndSpike.cs", "target": "class:Reactions/FireAndSpike.cs:FireAndSpike", "type": "contains", "weight": 1.0},
+    {"source": "file:Reactions/MovableInteractions.cs", "target": "class:Reactions/MovableInteractions.cs:MovableInteractions", "type": "contains", "weight": 1.0},
+    {"source": "class:Reactions/MovableInteractions.cs:MovableInteractions", "target": "function:Reactions/MovableInteractions.cs:StopMovement", "type": "contains", "weight": 1.0},
+
+    {"source": "class:Camera/ParallaxManager.cs:ParallaxManager", "target": "class:Camera/Parallax.cs:Parallax", "type": "calls", "weight": 0.9},
+    {"source": "class:PlayerHP/PlayerHP.cs:PlayerHP", "target": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter", "type": "calls", "weight": 0.95},
+    {"source": "class:PlayerInteractions/OnFire.cs:OnFire", "target": "class:PlayerHP/PlayerHP.cs:PlayerHP", "type": "calls", "weight": 0.9},
+    {"source": "class:PlayerInteractions/OnSpike.cs:OnSpike", "target": "class:PlayerHP/PlayerHP.cs:PlayerHP", "type": "calls", "weight": 0.9},
+    {"source": "class:Prize/CollectibleManager.cs:CollectibleManager", "target": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe", "type": "calls", "weight": 0.6},
+    {"source": "class:Prize/Mossberry.cs:Mossberry", "target": "class:Prize/CollectibleManager.cs:CollectibleManager", "type": "calls", "weight": 0.95},
+    {"source": "class:Prize/Mossberry.cs:Mossberry", "target": "function:Prize/CollectibleManager.cs:OnCollectiblePicked", "type": "calls", "weight": 0.95},
+    {"source": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay", "target": "class:Reactions/FireAndIce.cs:FireAndIce", "type": "calls", "weight": 0.95},
+    {"source": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay", "target": "function:Reactions/FireAndIce.cs:TryReactFromChildTrigger", "type": "calls", "weight": 0.95},
+    {"source": "class:PlayerHP/PlayerHP.cs:PlayerHP", "target": "function:PlayerHP/DeathTimesCount.cs:AddDeath", "type": "calls", "weight": 0.95},
+
+    {"source": "class:Camera/FollowCamera.cs:FollowCamera", "target": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe", "type": "related", "weight": 0.5},
+    {"source": "class:Camera/Parallax.cs:Parallax", "target": "class:Camera/ParallaxManager.cs:ParallaxManager", "type": "related", "weight": 0.8},
+    {"source": "class:Fire/FireMove.cs:FireMove", "target": "class:Reactions/FireAndIce.cs:FireAndIce", "type": "related", "weight": 0.6},
+    {"source": "class:Fire/FireMove.cs:FireMove", "target": "class:Reactions/FireAndSpike.cs:FireAndSpike", "type": "related", "weight": 0.6},
+    {"source": "class:Ice/IceMove.cs:IceMove", "target": "class:Reactions/IceAndSpike.cs:IceAndSpike", "type": "related", "weight": 0.6},
+    {"source": "class:Ice/IceMove.cs:IceMove", "target": "class:Reactions/MovableInteractions.cs:MovableInteractions", "type": "related", "weight": 0.7},
+    {"source": "class:Ice/IceMove.cs:IceMove", "target": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D", "type": "related", "weight": 0.5},
+    {"source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy", "target": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe", "type": "related", "weight": 0.6},
+    {"source": "class:Platform/MovingPlatform.cs:MovingPlatform", "target": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe", "type": "related", "weight": 0.7},
+    {"source": "class:Platform/MiniGameElevator.cs:MiniGameElevator", "target": "class:Prize/CollectibleManager.cs:CollectibleManager", "type": "related", "weight": 0.7},
+    {"source": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter", "target": "class:PlayerHP/PersistUI.cs:PersistUI", "type": "related", "weight": 0.6},
+    {"source": "class:PlayerInteractions/OnFire.cs:OnFire", "target": "class:Fire/FireMove.cs:FireMove", "type": "related", "weight": 0.7},
+    {"source": "class:PlayerInteractions/OnSpike.cs:OnSpike", "target": "class:Reactions/IceAndSpike.cs:IceAndSpike", "type": "related", "weight": 0.5},
+    {"source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe", "target": "class:PlayerInteractions/OnFire.cs:OnFire", "type": "related", "weight": 0.6},
+    {"source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe", "target": "class:PlayerInteractions/OnSpike.cs:OnSpike", "type": "related", "weight": 0.6},
+    {"source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe", "target": "class:PlayerHP/PlayerHP.cs:PlayerHP", "type": "related", "weight": 0.8},
+    {"source": "class:Reactions/FireAndIce.cs:FireAndIce", "target": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay", "type": "related", "weight": 0.85},
+    {"source": "class:Reactions/MovableInteractions.cs:MovableInteractions", "target": "class:Ice/IceMove.cs:IceMove", "type": "related", "weight": 0.75}
+  ]
+}

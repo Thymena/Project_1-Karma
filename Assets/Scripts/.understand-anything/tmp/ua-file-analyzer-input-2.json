@@ -1,0 +1,187 @@
+{
+    "projectRoot":  "d:\\Unity\\Project_1\\Assets\\Scripts",
+    "batchImportData":  {
+                            "Scene/BerryController.cs":  [
+
+                                                         ],
+                            "Scene/CollectCountUI.cs":  [
+
+                                                        ],
+                            "Scene/DisplayCursor.cs":  [
+
+                                                       ],
+                            "Scene/GameController.cs":  [
+
+                                                        ],
+                            "Scene/Menu.cs":  [
+
+                                              ],
+                            "Scene/NormalSceneTransition.cs":  [
+
+                                                               ],
+                            "Scene/PointerScript.cs":  [
+
+                                                       ],
+                            "Scene/PointerScriptArrow.cs":  [
+
+                                                            ],
+                            "Scene/QuitGame.cs":  [
+
+                                                  ],
+                            "Scene/ResumeGame.cs":  [
+
+                                                    ],
+                            "Scene/SceneControllerScript.cs":  [
+
+                                                               ],
+                            "Scene/SettingSceneController.cs":  [
+
+                                                                ],
+                            "Scene/Timer.cs":  [
+
+                                               ],
+                            "Spikes/SpikesMove.cs":  [
+
+                                                     ],
+                            "Text/DialogueSystemDefaults.cs":  [
+
+                                                               ],
+                            "Text/DialogueUIController.cs":  [
+
+                                                             ],
+                            "Text/OneTimeText.cs":  [
+
+                                                    ],
+                            "Tilemap/TileReactionOnTouch2D.cs":  [
+
+                                                                 ],
+                            "UI/ADDisplayUI.cs":  [
+
+                                                  ],
+                            "UI/SpaceBarDisplayUI.cs":  [
+
+                                                        ]
+                        },
+    "batchFiles":  [
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/BerryController.cs",
+                           "language":  "csharp",
+                           "sizeLines":  20
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/CollectCountUI.cs",
+                           "language":  "csharp",
+                           "sizeLines":  27
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/DisplayCursor.cs",
+                           "language":  "csharp",
+                           "sizeLines":  19
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/GameController.cs",
+                           "language":  "csharp",
+                           "sizeLines":  36
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/Menu.cs",
+                           "language":  "csharp",
+                           "sizeLines":  39
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/NormalSceneTransition.cs",
+                           "language":  "csharp",
+                           "sizeLines":  33
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/PointerScript.cs",
+                           "language":  "csharp",
+                           "sizeLines":  56
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/PointerScriptArrow.cs",
+                           "language":  "csharp",
+                           "sizeLines":  35
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/QuitGame.cs",
+                           "language":  "csharp",
+                           "sizeLines":  12
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/ResumeGame.cs",
+                           "language":  "csharp",
+                           "sizeLines":  20
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/SceneControllerScript.cs",
+                           "language":  "csharp",
+                           "sizeLines":  73
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/SettingSceneController.cs",
+                           "language":  "csharp",
+                           "sizeLines":  19
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Scene/Timer.cs",
+                           "language":  "csharp",
+                           "sizeLines":  48
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Spikes/SpikesMove.cs",
+                           "language":  "csharp",
+                           "sizeLines":  114
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Text/DialogueSystemDefaults.cs",
+                           "language":  "csharp",
+                           "sizeLines":  16
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Text/DialogueUIController.cs",
+                           "language":  "csharp",
+                           "sizeLines":  286
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Text/OneTimeText.cs",
+                           "language":  "csharp",
+                           "sizeLines":  168
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "Tilemap/TileReactionOnTouch2D.cs",
+                           "language":  "csharp",
+                           "sizeLines":  110
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "UI/ADDisplayUI.cs",
+                           "language":  "csharp",
+                           "sizeLines":  38
+                       },
+                       {
+                           "fileCategory":  "code",
+                           "path":  "UI/SpaceBarDisplayUI.cs",
+                           "language":  "csharp",
+                           "sizeLines":  40
+                       }
+                   ]
+}

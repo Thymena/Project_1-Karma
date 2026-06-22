@@ -11,7 +11,7 @@ public class OnFire : MonoBehaviour
     [Header("Flash Settings")]
     public float maxFlashInterval = 0.35f; // slow at start
     public float minFlashInterval = 0.05f; // fast near death
-    public Color flashColor = Color.red;
+    public Color flashColor = Color.black;
 
     private float timer;
     private float flashTimer;
@@ -30,6 +30,12 @@ public class OnFire : MonoBehaviour
 
     void Update()
     {
+        if (playerHP != null && playerHP.IsDead)
+        {
+            StopFlashing();
+            return;
+        }
+
         if (playerHP.health <= 0)
         {
             StopFlashing();
@@ -71,6 +77,7 @@ public class OnFire : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Fire")) return;
+        if (playerHP != null && playerHP.IsDead) return;
 
         onFire = true;
         timer += Time.deltaTime;

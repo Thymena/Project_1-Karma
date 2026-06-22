@@ -1,0 +1,2126 @@
+{
+  "batchIndex": 2,
+  "nodes": [
+    {
+      "id": "file:Scene/BerryController.cs",
+      "type": "file",
+      "name": "BerryController.cs",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "启动时批量禁用 berries 数组中的浆果 GameObject。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/BerryController.cs:BerryController",
+      "type": "class",
+      "name": "BerryController",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "MonoBehaviour：管理浆果数组初始禁用状态。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/BerryController.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "BerryController.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/BerryController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "BerryController.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/CollectCountUI.cs",
+      "type": "file",
+      "name": "CollectCountUI.cs",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "订阅 CollectibleManager.OnCountChanged，用 TextMeshPro 显示收集进度 x/5。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "type": "class",
+      "name": "CollectCountUI",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "MonoBehaviour：绑定 CollectibleManager 事件更新 TMP 文本。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "订阅 OnCountChanged 并初始化 countText 为当前收集数。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:UpdateCountUI",
+      "type": "function",
+      "name": "UpdateCountUI",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "将 count 格式化为 \"n/5\" 写入 TextMeshProUGUI。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "CollectCountUI.OnDestroy 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/DisplayCursor.cs",
+      "type": "file",
+      "name": "DisplayCursor.cs",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "Start 时解锁并显示鼠标光标，用于菜单/设置场景。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "type": "class",
+      "name": "DisplayCursor",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "MonoBehaviour：菜单场景光标可见性。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/DisplayCursor.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "DisplayCursor.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/DisplayCursor.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "DisplayCursor.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/GameController.cs",
+      "type": "file",
+      "name": "GameController.cs",
+      "filePath": "Scene/GameController.cs",
+      "summary": "通过 startTest/pastTest 开关控制关卡物体显隐并调用 CollectibleManager.BeginSpawning。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/GameController.cs:GameController",
+      "type": "class",
+      "name": "GameController",
+      "filePath": "Scene/GameController.cs",
+      "summary": "MonoBehaviour：关卡测试流程与收集品生成开关。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/GameController.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/GameController.cs",
+      "summary": "GameController.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/GameController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/GameController.cs",
+      "summary": "startTest 时激活 gameObjects 并 BeginSpawning；pastTest 时全部禁用。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/Menu.cs",
+      "type": "file",
+      "name": "Menu.cs",
+      "filePath": "Scene/Menu.cs",
+      "summary": "ESC 打开暂停菜单，Time.timeScale=0 并显示光标。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/Menu.cs:Menu",
+      "type": "class",
+      "name": "Menu",
+      "filePath": "Scene/Menu.cs",
+      "summary": "MonoBehaviour：ESC 暂停与 pauseMenu 显隐。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Menu.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Menu.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:PauseGame",
+      "type": "function",
+      "name": "PauseGame",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Menu.PauseGame 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/NormalSceneTransition.cs",
+      "type": "file",
+      "name": "NormalSceneTransition.cs",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "玩家触发器进入后调用 SceneControllerScript.instance.BeginTransition 切换下一关。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "class",
+      "name": "NormalSceneTransition",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "MonoBehaviour：2D 触发器驱动场景淡入淡出切换。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/NormalSceneTransition.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "NormalSceneTransition.OnTriggerEnter2D 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/NormalSceneTransition.cs:TriggerRoutine",
+      "type": "function",
+      "name": "TriggerRoutine",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "等待一帧后调用 SceneControllerScript.instance.BeginTransition。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/PointerScript.cs",
+      "type": "file",
+      "name": "PointerScript.cs",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "Canvas UI 指针（PointerUI）朝向激活的 Berry 标签物体并旋转指示方向。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/PointerScript.cs:PointerUI",
+      "type": "class",
+      "name": "PointerUI",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "MonoBehaviour：Screen Space Overlay 指针朝向 Berry。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "PointerUI.Awake 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "PointerUI.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:GetActiveBerry",
+      "type": "function",
+      "name": "GetActiveBerry",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "FindGameObjectsWithTag(targetTag) 返回第一个 activeInHierarchy 的 Transform。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/PointerScriptArrow.cs",
+      "type": "file",
+      "name": "PointerScriptArrow.cs",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "世界空间箭头指针，按 angleOffset 旋转指向激活的 Berry。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "type": "class",
+      "name": "PointerScriptArrow",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "MonoBehaviour：世界空间箭头指向 Berry。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScriptArrow.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "PointerScriptArrow.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScriptArrow.cs:GetActiveBerry",
+      "type": "function",
+      "name": "GetActiveBerry",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "与 PointerUI 相同逻辑查找激活 Berry。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/QuitGame.cs",
+      "type": "file",
+      "name": "QuitGame.cs",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "Quit 方法：编辑器停止播放，构建版 Application.Quit。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/QuitGame.cs:QuitGame",
+      "type": "class",
+      "name": "QuitGame",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "MonoBehaviour：退出游戏按钮逻辑。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/QuitGame.cs:Quit",
+      "type": "function",
+      "name": "Quit",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "QuitGame.Quit 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/ResumeGame.cs",
+      "type": "file",
+      "name": "ResumeGame.cs",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "Resume 关闭暂停菜单、恢复 timeScale 并锁定隐藏光标。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/ResumeGame.cs:ResumeGame",
+      "type": "class",
+      "name": "ResumeGame",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "MonoBehaviour：从暂停恢复游戏状态。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/ResumeGame.cs:Resume",
+      "type": "function",
+      "name": "Resume",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "ResumeGame.Resume 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/SceneControllerScript.cs",
+      "type": "file",
+      "name": "SceneControllerScript.cs",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "DontDestroyOnLoad 单例，协程驱动 Animator 淡出并 LoadSceneAsync 下一关。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "type": "class",
+      "name": "SceneControllerScript",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "单例 MonoBehaviour：跨场景场景过渡与 Animator 联动。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "单例初始化，DontDestroyOnLoad 或销毁重复实例。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:BeginTransition",
+      "type": "function",
+      "name": "BeginTransition",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "启动 TransitionCoroutine 执行淡出与异步加载下一 buildIndex 场景。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:TransitionCoroutine",
+      "type": "function",
+      "name": "TransitionCoroutine",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "Animator End 触发、WaitForSeconds、LoadSceneAsync、新场景 Start 淡入。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/SettingSceneController.cs",
+      "type": "file",
+      "name": "SettingSceneController.cs",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "设置菜单用 LoadScene/ReloadScene 加载或重载场景。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "type": "class",
+      "name": "SettingSceneController",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "MonoBehaviour：设置界面场景跳转。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SettingSceneController.cs:LoadScene",
+      "type": "function",
+      "name": "LoadScene",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "SettingSceneController.LoadScene 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SettingSceneController.cs:ReloadScene",
+      "type": "function",
+      "name": "ReloadScene",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "SettingSceneController.ReloadScene 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/Timer.cs",
+      "type": "file",
+      "name": "Timer.cs",
+      "filePath": "Scene/Timer.cs",
+      "summary": "订阅 CollectibleManager 倒计时，UI 显示 MM:SS，归零时对 PlayerHP 扣血。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/Timer.cs:Timer",
+      "type": "class",
+      "name": "Timer",
+      "filePath": "Scene/Timer.cs",
+      "summary": "MonoBehaviour：收集挑战倒计时 UI 与超时扣血。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/Timer.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/Timer.cs",
+      "summary": "Timer.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Timer.cs:UpdateTimerUI",
+      "type": "function",
+      "name": "UpdateTimerUI",
+      "filePath": "Scene/Timer.cs",
+      "summary": "time<=0 时 GetComponent<PlayerHP> 扣 health；否则更新 MM:SS 文本。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Timer.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Scene/Timer.cs",
+      "summary": "Timer.OnDestroy 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Spikes/SpikesMove.cs",
+      "type": "file",
+      "name": "SpikesMove.cs",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "玩家在触发区内按 F 推动 movedObject，碰撞 Floor/Ice/Fire 时停止并销毁或切换形态。",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "type": "class",
+      "name": "SpikesMove",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "MonoBehaviour：可推动尖刺块，与 Ice/Fire 标签碰撞反应。",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "SpikesMove.OnTriggerEnter2D 方法",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "SpikesMove.OnTriggerExit2D 方法",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "SpikesMove.Update 方法",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "外部调用：置 hit=true 停止移动协程。",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:MoveAwayCoroutine",
+      "type": "function",
+      "name": "MoveAwayCoroutine",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "按玩家相对方向沿纯 X/Y 移动直至 hit 或碰撞 Floor/Ice/Fire。",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/DialogueSystemDefaults.cs",
+      "type": "file",
+      "name": "DialogueSystemDefaults.cs",
+      "filePath": "Text/DialogueSystemDefaults.cs",
+      "summary": "对话与 OneTimeText 的静态默认常量（打字间隔、边距、玩家 Tag 等）。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Text/DialogueSystemDefaults.cs:DialogueSystemDefaults",
+      "type": "class",
+      "name": "DialogueSystemDefaults",
+      "filePath": "Text/DialogueSystemDefaults.cs",
+      "summary": "静态类：对话系统默认配置常量。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/DialogueUIController.cs",
+      "type": "file",
+      "name": "DialogueUIController.cs",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "单例 DialogueUIController.Instance，打字机效果播放多段对话并通知 OneTimeText 完成。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "class",
+      "name": "DialogueUIController",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "单例 MonoBehaviour：对话面板打字机 UI 控制器。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "设置 Instance、分离 Overlay Canvas、配置 TMP 自适应与默认参数。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Reset",
+      "type": "function",
+      "name": "Reset",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.Reset 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.OnDestroy 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.Update 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:TryPlayDialogue",
+      "type": "function",
+      "name": "TryPlayDialogue",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "若未播放且 lines 有效则启动 PlayDialogueSession 协程。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:PlayDialogueSession",
+      "type": "function",
+      "name": "PlayDialogueSession",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.PlayDialogueSession 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:TypeSegment",
+      "type": "function",
+      "name": "TypeSegment",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.TypeSegment 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:WaitForCloseInput",
+      "type": "function",
+      "name": "WaitForCloseInput",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.WaitForCloseInput 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:PlayTypewriterSound",
+      "type": "function",
+      "name": "PlayTypewriterSound",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.PlayTypewriterSound 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:SetUIVisible",
+      "type": "function",
+      "name": "SetUIVisible",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.SetUIVisible 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:DetachOverlayCanvasFromWorldParent",
+      "type": "function",
+      "name": "DetachOverlayCanvasFromWorldParent",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.DetachOverlayCanvasFromWorldParent 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:EnsureCanvasVisible",
+      "type": "function",
+      "name": "EnsureCanvasVisible",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.EnsureCanvasVisible 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:ConfigureTextFit",
+      "type": "function",
+      "name": "ConfigureTextFit",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.ConfigureTextFit 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/OneTimeText.cs",
+      "type": "file",
+      "name": "OneTimeText.cs",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "2D 触发器延迟后调用 DialogueUIController.TryPlayDialogue，支持 PlayerPrefs 一次性存档。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Text/OneTimeText.cs:OneTimeText",
+      "type": "class",
+      "name": "OneTimeText",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "MonoBehaviour：区域触发一次性/可重复对话。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.Awake 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnDisable",
+      "type": "function",
+      "name": "OnDisable",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.OnDisable 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "玩家进入后延迟触发，检查 Instance 与 IsPlaying 再 TryPlayDialogue。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:TriggerSequence",
+      "type": "function",
+      "name": "TriggerSequence",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.TriggerSequence 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:NotifyDialogueFinished",
+      "type": "function",
+      "name": "NotifyDialogueFinished",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "非 allowRepeat 时写入 PlayerPrefs 标记已完成。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:IsBlockedByPersistentSave",
+      "type": "function",
+      "name": "IsBlockedByPersistentSave",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.IsBlockedByPersistentSave 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:GetSavedValue",
+      "type": "function",
+      "name": "GetSavedValue",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.GetSavedValue 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:GetSaveKey",
+      "type": "function",
+      "name": "GetSaveKey",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.GetSaveKey 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:Reset",
+      "type": "function",
+      "name": "Reset",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.Reset 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnValidate",
+      "type": "function",
+      "name": "OnValidate",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.OnValidate 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Tilemap/TileReactionOnTouch2D.cs",
+      "type": "file",
+      "name": "TileReactionOnTouch2D.cs",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "碰撞/触发 Tilemap 时擦除单格瓦片、Instantiate 替换物并销毁或变形自身。",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "type": "class",
+      "name": "TileReactionOnTouch2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "MonoBehaviour：Tilemap 单格消除与生成替换物。",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "TileReactionOnTouch2D.OnCollisionEnter2D 方法",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "TileReactionOnTouch2D.OnTriggerEnter2D 方法",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:TryReact",
+      "type": "function",
+      "name": "TryReact",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "WorldToCell 擦除单格、Instantiate spawnPrefab，销毁或改 sprite/tag/layer。",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:UI/ADDisplayUI.cs",
+      "type": "file",
+      "name": "ADDisplayUI.cs",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "延迟显示 ad 提示，按 A/D 关闭并置 isDisplayed=true。",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "class",
+      "name": "ADDisplayUI",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "MonoBehaviour：A/D 操作提示 UI。",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/ADDisplayUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "ADDisplayUI.Start 方法",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/ADDisplayUI.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "ADDisplayUI.Update 方法",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:UI/SpaceBarDisplayUI.cs",
+      "type": "file",
+      "name": "SpaceBarDisplayUI.cs",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "ADDisplayUI 显示后延迟展示空格提示，按 Space 隐藏。",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "type": "class",
+      "name": "SpaceBarDisplayUI",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "MonoBehaviour：空格键提示 UI，依赖 ADDisplayUI。",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/SpaceBarDisplayUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "SpaceBarDisplayUI.Start 方法",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/SpaceBarDisplayUI.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "adDisplayUI.isDisplayed 后计时显示 spaceBar，Space 键关闭。",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Scene/BerryController.cs",
+      "target": "class:Scene/BerryController.cs:BerryController",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/BerryController.cs:BerryController",
+      "target": "function:Scene/BerryController.cs:Start",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/BerryController.cs:BerryController",
+      "target": "function:Scene/BerryController.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/CollectCountUI.cs",
+      "target": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:Start",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:UpdateCountUI",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/DisplayCursor.cs",
+      "target": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "target": "function:Scene/DisplayCursor.cs:Start",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "target": "function:Scene/DisplayCursor.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/GameController.cs",
+      "target": "class:Scene/GameController.cs:GameController",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/GameController.cs:GameController",
+      "target": "function:Scene/GameController.cs:Start",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/GameController.cs:GameController",
+      "target": "function:Scene/GameController.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/Menu.cs",
+      "target": "class:Scene/Menu.cs:Menu",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:Start",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:PauseGame",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/NormalSceneTransition.cs",
+      "target": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "target": "function:Scene/NormalSceneTransition.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "target": "function:Scene/NormalSceneTransition.cs:TriggerRoutine",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/PointerScript.cs",
+      "target": "class:Scene/PointerScript.cs:PointerUI",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:Awake",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:GetActiveBerry",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/PointerScriptArrow.cs",
+      "target": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "target": "function:Scene/PointerScriptArrow.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "target": "function:Scene/PointerScriptArrow.cs:GetActiveBerry",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/QuitGame.cs",
+      "target": "class:Scene/QuitGame.cs:QuitGame",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/QuitGame.cs:QuitGame",
+      "target": "function:Scene/QuitGame.cs:Quit",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/ResumeGame.cs",
+      "target": "class:Scene/ResumeGame.cs:ResumeGame",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/ResumeGame.cs:ResumeGame",
+      "target": "function:Scene/ResumeGame.cs:Resume",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/SceneControllerScript.cs",
+      "target": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:Awake",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:BeginTransition",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:TransitionCoroutine",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/SettingSceneController.cs",
+      "target": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "target": "function:Scene/SettingSceneController.cs:LoadScene",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "target": "function:Scene/SettingSceneController.cs:ReloadScene",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Scene/Timer.cs",
+      "target": "class:Scene/Timer.cs:Timer",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:Start",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:UpdateTimerUI",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Spikes/SpikesMove.cs",
+      "target": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:StopMovement",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:MoveAwayCoroutine",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Text/DialogueSystemDefaults.cs",
+      "target": "class:Text/DialogueSystemDefaults.cs:DialogueSystemDefaults",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Text/DialogueUIController.cs",
+      "target": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Awake",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Reset",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:TryPlayDialogue",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:PlayDialogueSession",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:TypeSegment",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:WaitForCloseInput",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:PlayTypewriterSound",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:SetUIVisible",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:DetachOverlayCanvasFromWorldParent",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:EnsureCanvasVisible",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:ConfigureTextFit",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Text/OneTimeText.cs",
+      "target": "class:Text/OneTimeText.cs:OneTimeText",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:Awake",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnDisable",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:TriggerSequence",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:NotifyDialogueFinished",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:IsBlockedByPersistentSave",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:GetSavedValue",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:GetSaveKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:Reset",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnValidate",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:Tilemap/TileReactionOnTouch2D.cs",
+      "target": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:TryReact",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:UI/ADDisplayUI.cs",
+      "target": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "target": "function:UI/ADDisplayUI.cs:Start",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "target": "function:UI/ADDisplayUI.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:UI/SpaceBarDisplayUI.cs",
+      "target": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "function:UI/SpaceBarDisplayUI.cs:Start",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "function:UI/SpaceBarDisplayUI.cs:Update",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "target": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "type": "calls",
+      "weight": 0.7
+    },
+    {
+      "source": "function:Scene/NormalSceneTransition.cs:TriggerRoutine",
+      "target": "function:Scene/SceneControllerScript.cs:BeginTransition",
+      "type": "calls",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "class:Text/DialogueSystemDefaults.cs:DialogueSystemDefaults",
+      "type": "related",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "class:Text/DialogueSystemDefaults.cs:DialogueSystemDefaults",
+      "type": "related",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "calls",
+      "weight": 0.7
+    },
+    {
+      "source": "function:Text/OneTimeText.cs:OnTriggerEnter2D",
+      "target": "function:Text/DialogueUIController.cs:TryPlayDialogue",
+      "type": "calls",
+      "weight": 0.7
+    },
+    {
+      "source": "function:Text/DialogueUIController.cs:PlayDialogueSession",
+      "target": "function:Text/OneTimeText.cs:NotifyDialogueFinished",
+      "type": "calls",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "type": "related",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "class:Scene/ResumeGame.cs:ResumeGame",
+      "type": "related",
+      "weight": 0.7
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "related",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "related",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Scene/GameController.cs:GameController",
+      "target": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "calls",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "related",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "related",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "calls",
+      "weight": 0.7
+    }
+  ]
+}

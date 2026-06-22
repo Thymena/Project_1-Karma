@@ -1,0 +1,2316 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Scene/BerryController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 9,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 16,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BerryController",
+          "startLine": 5,
+          "endLine": 20,
+          "methods": [
+            "Start",
+            "Update"
+          ],
+          "properties": [
+            "berries"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "berries",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "BerryController",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "obj.SetActive",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/CollectCountUI.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 9,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "UpdateCountUI",
+          "startLine": 18,
+          "endLine": 21,
+          "params": [
+            "count"
+          ]
+        },
+        {
+          "name": "OnDestroy",
+          "startLine": 23,
+          "endLine": 27,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CollectCountUI",
+          "startLine": 4,
+          "endLine": 28,
+          "methods": [
+            "Start",
+            "UpdateCountUI",
+            "OnDestroy"
+          ],
+          "properties": [
+            "collectibleManager",
+            "countText"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "collectibleManager",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "countText",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "CollectCountUI",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "UpdateCountUI",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/DisplayCursor.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 8,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 15,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DisplayCursor",
+          "startLine": 5,
+          "endLine": 19,
+          "methods": [
+            "Start",
+            "Update"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DisplayCursor",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/GameController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 13,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 20,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "GameController",
+          "startLine": 5,
+          "endLine": 36,
+          "methods": [
+            "Start",
+            "Update"
+          ],
+          "properties": [
+            "pastTest",
+            "startTest",
+            "gameObjects",
+            "collectibleManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pastTest",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "startTest",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "gameObjects",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "collectibleManager",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GameController",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "obj.SetActive",
+          "lineNumber": 16
+        },
+        {
+          "caller": "Update",
+          "callee": "obj.SetActive",
+          "lineNumber": 25
+        },
+        {
+          "caller": "Update",
+          "callee": "collectibleManager.BeginSpawning",
+          "lineNumber": 26
+        },
+        {
+          "caller": "Update",
+          "callee": "obj.SetActive",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/Menu.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 9,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 19,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "PauseGame",
+          "startLine": 31,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Menu",
+          "startLine": 5,
+          "endLine": 39,
+          "methods": [
+            "Start",
+            "Update",
+            "PauseGame"
+          ],
+          "properties": [
+            "pauseMenu"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pauseMenu",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Menu",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "obj.SetActive",
+          "lineNumber": 15
+        },
+        {
+          "caller": "Update",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 21
+        },
+        {
+          "caller": "Update",
+          "callee": "obj.SetActive",
+          "lineNumber": 25
+        },
+        {
+          "caller": "Update",
+          "callee": "PauseGame",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/NormalSceneTransition.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 12,
+          "endLine": 19,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "TriggerRoutine",
+          "startLine": 21,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NormalSceneTransition",
+          "startLine": 5,
+          "endLine": 32,
+          "methods": [
+            "OnTriggerEnter2D",
+            "TriggerRoutine"
+          ],
+          "properties": [
+            "fadeDuration",
+            "sceneLoadDelay",
+            "triggered"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "fadeDuration",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "sceneLoadDelay",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NormalSceneTransition",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 14
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "StartCoroutine",
+          "lineNumber": 18
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "TriggerRoutine",
+          "lineNumber": 18
+        },
+        {
+          "caller": "TriggerRoutine",
+          "callee": "SceneControllerScript.instance.BeginTransition",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/PointerScript.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 9,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 15,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "GetActiveBerry",
+          "startLine": 46,
+          "endLine": 56,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PointerUI",
+          "startLine": 3,
+          "endLine": 57,
+          "methods": [
+            "Awake",
+            "Update",
+            "GetActiveBerry"
+          ],
+          "properties": [
+            "targetTag",
+            "pointerRect",
+            "canvasRect"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "targetTag",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "PointerUI",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "GetComponent<RectTransform>",
+          "lineNumber": 11
+        },
+        {
+          "caller": "Awake",
+          "callee": "GetComponentInParent<Canvas>().GetComponent<RectTransform>",
+          "lineNumber": 12
+        },
+        {
+          "caller": "Awake",
+          "callee": "GetComponentInParent<Canvas>",
+          "lineNumber": 12
+        },
+        {
+          "caller": "Update",
+          "callee": "GetActiveBerry",
+          "lineNumber": 17
+        },
+        {
+          "caller": "Update",
+          "callee": "Camera.main.WorldToScreenPoint",
+          "lineNumber": 21
+        },
+        {
+          "caller": "Update",
+          "callee": "RectTransformUtility.ScreenPointToLocalPointInRectangle",
+          "lineNumber": 25
+        },
+        {
+          "caller": "Update",
+          "callee": "Mathf.Atan2",
+          "lineNumber": 38
+        },
+        {
+          "caller": "Update",
+          "callee": "Quaternion.Euler",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GetActiveBerry",
+          "callee": "GameObject.FindGameObjectsWithTag",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/PointerScriptArrow.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "Update",
+          "startLine": 8,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "GetActiveBerry",
+          "startLine": 25,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PointerScriptArrow",
+          "startLine": 3,
+          "endLine": 36,
+          "methods": [
+            "Update",
+            "GetActiveBerry"
+          ],
+          "properties": [
+            "targetTag",
+            "angleOffset"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "targetTag",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "angleOffset",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "PointerScriptArrow",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Update",
+          "callee": "GetActiveBerry",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Update",
+          "callee": "Mathf.Atan2",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Update",
+          "callee": "Quaternion.Euler",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GetActiveBerry",
+          "callee": "GameObject.FindGameObjectsWithTag",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/QuitGame.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "Quit",
+          "startLine": 5,
+          "endLine": 12,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "QuitGame",
+          "startLine": 3,
+          "endLine": 13,
+          "methods": [
+            "Quit"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Quit",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "QuitGame",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Quit",
+          "callee": "Application.Quit",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/ResumeGame.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "Resume",
+          "startLine": 9,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ResumeGame",
+          "startLine": 5,
+          "endLine": 20,
+          "methods": [
+            "Resume"
+          ],
+          "properties": [
+            "pauseMenu"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pauseMenu",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Resume",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "ResumeGame",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Resume",
+          "callee": "obj.SetActive",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/SceneControllerScript.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 14,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "BeginTransition",
+          "startLine": 27,
+          "endLine": 32,
+          "params": [
+            "fadeDuration",
+            "sceneLoadDelay"
+          ]
+        },
+        {
+          "name": "TransitionCoroutine",
+          "startLine": 34,
+          "endLine": 72,
+          "params": [
+            "fadeDuration",
+            "sceneLoadDelay"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SceneControllerScript",
+          "startLine": 5,
+          "endLine": 73,
+          "methods": [
+            "Awake",
+            "BeginTransition",
+            "TransitionCoroutine"
+          ],
+          "properties": [
+            "instance",
+            "SceneTransition",
+            "fadeInProgress",
+            "isLoading"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "instance",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "BeginTransition",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "SceneControllerScript",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "DontDestroyOnLoad",
+          "lineNumber": 19
+        },
+        {
+          "caller": "Awake",
+          "callee": "Destroy",
+          "lineNumber": 23
+        },
+        {
+          "caller": "BeginTransition",
+          "callee": "StartCoroutine",
+          "lineNumber": 31
+        },
+        {
+          "caller": "BeginTransition",
+          "callee": "TransitionCoroutine",
+          "lineNumber": 31
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "SceneTransition.ResetTrigger",
+          "lineNumber": 39
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "SceneTransition.SetTrigger",
+          "lineNumber": 40
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "new WaitForSeconds",
+          "lineNumber": 45
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "new WaitForSeconds",
+          "lineNumber": 49
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "SceneManager.LoadSceneAsync",
+          "lineNumber": 55
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "SceneManager.GetActiveScene",
+          "lineNumber": 55
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "GameObject.FindGameObjectWithTag",
+          "lineNumber": 62
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "transitionObj.GetComponent<Animator>",
+          "lineNumber": 65
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "SceneTransition.ResetTrigger",
+          "lineNumber": 68
+        },
+        {
+          "caller": "TransitionCoroutine",
+          "callee": "SceneTransition.SetTrigger",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/SettingSceneController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "LoadScene",
+          "startLine": 8,
+          "endLine": 12,
+          "params": [
+            "sceneName"
+          ]
+        },
+        {
+          "name": "ReloadScene",
+          "startLine": 14,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SettingSceneController",
+          "startLine": 6,
+          "endLine": 19,
+          "methods": [
+            "LoadScene",
+            "ReloadScene"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoadScene",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ReloadScene",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "SettingSceneController",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LoadScene",
+          "callee": "SceneManager.LoadScene",
+          "lineNumber": 11
+        },
+        {
+          "caller": "ReloadScene",
+          "callee": "SceneManager.LoadScene",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ReloadScene",
+          "callee": "SceneManager.GetActiveScene",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Scene/Timer.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 14,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "UpdateTimerUI",
+          "startLine": 23,
+          "endLine": 39,
+          "params": [
+            "time"
+          ]
+        },
+        {
+          "name": "OnDestroy",
+          "startLine": 41,
+          "endLine": 46,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Timer",
+          "startLine": 4,
+          "endLine": 47,
+          "methods": [
+            "Start",
+            "UpdateTimerUI",
+            "OnDestroy"
+          ],
+          "properties": [
+            "text",
+            "player",
+            "playerHP",
+            "collectibleManager",
+            "damage"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "player",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "playerHP",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "collectibleManager",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "damage",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "Timer",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "UpdateTimerUI",
+          "lineNumber": 20
+        },
+        {
+          "caller": "UpdateTimerUI",
+          "callee": "player.GetComponent<PlayerHP>",
+          "lineNumber": 29
+        },
+        {
+          "caller": "UpdateTimerUI",
+          "callee": "Mathf.FloorToInt",
+          "lineNumber": 35
+        },
+        {
+          "caller": "UpdateTimerUI",
+          "callee": "Mathf.FloorToInt",
+          "lineNumber": 36
+        },
+        {
+          "caller": "UpdateTimerUI",
+          "callee": "string.Format",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Spikes/SpikesMove.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 115,
+      "nonEmptyLines": 94,
+      "functions": [
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 20,
+          "endLine": 27,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 29,
+          "endLine": 36,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "Update",
+          "startLine": 38,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "StopMovement",
+          "startLine": 46,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "MoveAwayCoroutine",
+          "startLine": 52,
+          "endLine": 114,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SpikesMove",
+          "startLine": 4,
+          "endLine": 115,
+          "methods": [
+            "OnTriggerEnter2D",
+            "OnTriggerExit2D",
+            "Update",
+            "StopMovement",
+            "MoveAwayCoroutine"
+          ],
+          "properties": [
+            "movedObject",
+            "moveSpeed",
+            "playerInside",
+            "playerTransform",
+            "isMoving",
+            "hit",
+            "changedObject1",
+            "changedObject2",
+            "isHitFire",
+            "isHitIce"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "movedObject",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "moveSpeed",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "isMoving",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "hit",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "changedObject1",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "changedObject2",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "isHitFire",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "isHitIce",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "StopMovement",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "SpikesMove",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 22
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 31
+        },
+        {
+          "caller": "Update",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 40
+        },
+        {
+          "caller": "Update",
+          "callee": "StartCoroutine",
+          "lineNumber": 42
+        },
+        {
+          "caller": "Update",
+          "callee": "MoveAwayCoroutine",
+          "lineNumber": 42
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Abs",
+          "lineNumber": 62
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Abs",
+          "lineNumber": 62
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "new Vector2",
+          "lineNumber": 63
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Sign",
+          "lineNumber": 63
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "new Vector2",
+          "lineNumber": 65
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Sign",
+          "lineNumber": 65
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Physics2D.OverlapCircleAll",
+          "lineNumber": 74
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "h.CompareTag",
+          "lineNumber": 77
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "h.CompareTag",
+          "lineNumber": 84
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 89
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 90
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 91
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "h.CompareTag",
+          "lineNumber": 96
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 101
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 102
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 103
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Text/DialogueSystemDefaults.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "DialogueSystemDefaults",
+          "startLine": 4,
+          "endLine": 16,
+          "methods": [],
+          "properties": [
+            "CharInterval",
+            "SegmentPause",
+            "TextMargin",
+            "FontSizeMin",
+            "FontSizeMax",
+            "DelayBeforeShow",
+            "PlayerTag"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CharInterval",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SegmentPause",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "TextMargin",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "FontSizeMin",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "FontSizeMax",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "DelayBeforeShow",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerTag",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "DialogueSystemDefaults",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Text/DialogueUIController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 286,
+      "nonEmptyLines": 237,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 34,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "Reset",
+          "startLine": 61,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "OnDestroy",
+          "startLine": 70,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 78,
+          "endLine": 97,
+          "params": []
+        },
+        {
+          "name": "TryPlayDialogue",
+          "startLine": 99,
+          "endLine": 116,
+          "params": [
+            "lines",
+            "owner"
+          ]
+        },
+        {
+          "name": "PlayDialogueSession",
+          "startLine": 118,
+          "endLine": 151,
+          "params": [
+            "lines",
+            "owner"
+          ]
+        },
+        {
+          "name": "TypeSegment",
+          "startLine": 153,
+          "endLine": 182,
+          "params": [
+            "segment"
+          ]
+        },
+        {
+          "name": "WaitForCloseInput",
+          "startLine": 184,
+          "endLine": 195,
+          "params": []
+        },
+        {
+          "name": "PlayTypewriterSound",
+          "startLine": 197,
+          "endLine": 212,
+          "params": []
+        },
+        {
+          "name": "SetUIVisible",
+          "startLine": 214,
+          "endLine": 234,
+          "params": [
+            "visible"
+          ]
+        },
+        {
+          "name": "DetachOverlayCanvasFromWorldParent",
+          "startLine": 236,
+          "endLine": 243,
+          "params": []
+        },
+        {
+          "name": "EnsureCanvasVisible",
+          "startLine": 245,
+          "endLine": 251,
+          "params": []
+        },
+        {
+          "name": "ConfigureTextFit",
+          "startLine": 253,
+          "endLine": 285,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DialogueUIController",
+          "startLine": 6,
+          "endLine": 286,
+          "methods": [
+            "Awake",
+            "Reset",
+            "OnDestroy",
+            "Update",
+            "TryPlayDialogue",
+            "PlayDialogueSession",
+            "TypeSegment",
+            "WaitForCloseInput",
+            "PlayTypewriterSound",
+            "SetUIVisible",
+            "DetachOverlayCanvasFromWorldParent",
+            "EnsureCanvasVisible",
+            "ConfigureTextFit"
+          ],
+          "properties": [
+            "Instance",
+            "dialoguePanel",
+            "dialogueTextObject",
+            "dialogueText",
+            "charInterval",
+            "segmentPause",
+            "typewriterClip",
+            "typewriterAudioSource",
+            "textMargin",
+            "fontSizeMin",
+            "fontSizeMax",
+            "IsPlaying",
+            "_sessionCoroutine",
+            "_skipCurrentSegment",
+            "_playerSkippedDuringSession"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Instance",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "IsPlaying",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "TryPlayDialogue",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "DialogueUIController",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "Destroy",
+          "lineNumber": 38
+        },
+        {
+          "caller": "Awake",
+          "callee": "DetachOverlayCanvasFromWorldParent",
+          "lineNumber": 44
+        },
+        {
+          "caller": "Awake",
+          "callee": "EnsureCanvasVisible",
+          "lineNumber": 45
+        },
+        {
+          "caller": "Awake",
+          "callee": "dialogueTextObject.GetComponent<TMP_Text>",
+          "lineNumber": 49
+        },
+        {
+          "caller": "Awake",
+          "callee": "GetComponent<AudioSource>",
+          "lineNumber": 54
+        },
+        {
+          "caller": "Awake",
+          "callee": "ConfigureTextFit",
+          "lineNumber": 57
+        },
+        {
+          "caller": "Awake",
+          "callee": "SetUIVisible",
+          "lineNumber": 58
+        },
+        {
+          "caller": "TryPlayDialogue",
+          "callee": "string.IsNullOrEmpty",
+          "lineNumber": 108
+        },
+        {
+          "caller": "TryPlayDialogue",
+          "callee": "StartCoroutine",
+          "lineNumber": 110
+        },
+        {
+          "caller": "TryPlayDialogue",
+          "callee": "PlayDialogueSession",
+          "lineNumber": 110
+        },
+        {
+          "caller": "PlayDialogueSession",
+          "callee": "SetUIVisible",
+          "lineNumber": 122
+        },
+        {
+          "caller": "PlayDialogueSession",
+          "callee": "string.IsNullOrEmpty",
+          "lineNumber": 127
+        },
+        {
+          "caller": "PlayDialogueSession",
+          "callee": "TypeSegment",
+          "lineNumber": 133
+        },
+        {
+          "caller": "PlayDialogueSession",
+          "callee": "new WaitForSeconds",
+          "lineNumber": 137
+        },
+        {
+          "caller": "PlayDialogueSession",
+          "callee": "WaitForCloseInput",
+          "lineNumber": 146
+        },
+        {
+          "caller": "PlayDialogueSession",
+          "callee": "SetUIVisible",
+          "lineNumber": 148
+        },
+        {
+          "caller": "PlayDialogueSession",
+          "callee": "owner?.NotifyDialogueFinished",
+          "lineNumber": 150
+        },
+        {
+          "caller": "TypeSegment",
+          "callee": "Debug.LogError",
+          "lineNumber": 157
+        },
+        {
+          "caller": "TypeSegment",
+          "callee": "nameof",
+          "lineNumber": 157
+        },
+        {
+          "caller": "TypeSegment",
+          "callee": "dialogueText.ForceMeshUpdate",
+          "lineNumber": 162
+        },
+        {
+          "caller": "TypeSegment",
+          "callee": "dialogueText.ForceMeshUpdate",
+          "lineNumber": 169
+        },
+        {
+          "caller": "TypeSegment",
+          "callee": "segment.Substring",
+          "lineNumber": 173
+        },
+        {
+          "caller": "TypeSegment",
+          "callee": "PlayTypewriterSound",
+          "lineNumber": 174
+        },
+        {
+          "caller": "TypeSegment",
+          "callee": "dialogueText.ForceMeshUpdate",
+          "lineNumber": 175
+        },
+        {
+          "caller": "TypeSegment",
+          "callee": "new WaitForSeconds",
+          "lineNumber": 179
+        },
+        {
+          "caller": "PlayTypewriterSound",
+          "callee": "typewriterAudioSource.PlayOneShot",
+          "lineNumber": 206
+        },
+        {
+          "caller": "PlayTypewriterSound",
+          "callee": "AudioSource.PlayClipAtPoint",
+          "lineNumber": 210
+        },
+        {
+          "caller": "SetUIVisible",
+          "callee": "dialoguePanel.SetActive",
+          "lineNumber": 218
+        },
+        {
+          "caller": "SetUIVisible",
+          "callee": "textObject.SetActive",
+          "lineNumber": 227
+        },
+        {
+          "caller": "DetachOverlayCanvasFromWorldParent",
+          "callee": "GetComponent<Canvas>",
+          "lineNumber": 238
+        },
+        {
+          "caller": "DetachOverlayCanvasFromWorldParent",
+          "callee": "transform.SetParent",
+          "lineNumber": 241
+        },
+        {
+          "caller": "ConfigureTextFit",
+          "callee": "dialoguePanel.GetComponent<RectTransform>",
+          "lineNumber": 260
+        },
+        {
+          "caller": "ConfigureTextFit",
+          "callee": "textRect.SetParent",
+          "lineNumber": 269
+        },
+        {
+          "caller": "ConfigureTextFit",
+          "callee": "new Vector2",
+          "lineNumber": 272
+        },
+        {
+          "caller": "ConfigureTextFit",
+          "callee": "new Vector2",
+          "lineNumber": 275
+        },
+        {
+          "caller": "ConfigureTextFit",
+          "callee": "new Vector2",
+          "lineNumber": 276
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Text/OneTimeText.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 168,
+      "nonEmptyLines": 138,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 28,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "OnDisable",
+          "startLine": 42,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 51,
+          "endLine": 80,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "TriggerSequence",
+          "startLine": 82,
+          "endLine": 102,
+          "params": []
+        },
+        {
+          "name": "NotifyDialogueFinished",
+          "startLine": 104,
+          "endLine": 114,
+          "params": []
+        },
+        {
+          "name": "IsBlockedByPersistentSave",
+          "startLine": 125,
+          "endLine": 133,
+          "params": []
+        },
+        {
+          "name": "GetSavedValue",
+          "startLine": 135,
+          "endLine": 146,
+          "params": []
+        },
+        {
+          "name": "GetSaveKey",
+          "startLine": 148,
+          "endLine": 151,
+          "params": []
+        },
+        {
+          "name": "Reset",
+          "startLine": 153,
+          "endLine": 159,
+          "params": []
+        },
+        {
+          "name": "OnValidate",
+          "startLine": 161,
+          "endLine": 167,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "OneTimeText",
+          "startLine": 6,
+          "endLine": 168,
+          "methods": [
+            "Awake",
+            "OnDisable",
+            "OnTriggerEnter2D",
+            "TriggerSequence",
+            "NotifyDialogueFinished",
+            "IsBlockedByPersistentSave",
+            "GetSavedValue",
+            "GetSaveKey",
+            "Reset",
+            "OnValidate"
+          ],
+          "properties": [
+            "dialogueLines",
+            "delayBeforeShow",
+            "playerTag",
+            "allowRepeat",
+            "clearSaveOnAwake",
+            "triggerId",
+            "SaveKeyPrefix",
+            "SaveValueCompleted",
+            "_completedThisSession",
+            "_triggerCoroutine"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotifyDialogueFinished",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimeText",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 30
+        },
+        {
+          "caller": "Awake",
+          "callee": "Guid.NewGuid().ToString",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Awake",
+          "callee": "Guid.NewGuid",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Awake",
+          "callee": "PlayerPrefs.DeleteKey",
+          "lineNumber": 37
+        },
+        {
+          "caller": "Awake",
+          "callee": "GetSaveKey",
+          "lineNumber": 37
+        },
+        {
+          "caller": "Awake",
+          "callee": "PlayerPrefs.Save",
+          "lineNumber": 38
+        },
+        {
+          "caller": "OnDisable",
+          "callee": "StopCoroutine",
+          "lineNumber": 46
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "IsBlockedByPersistentSave",
+          "lineNumber": 53
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 58
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "Debug.LogWarning",
+          "lineNumber": 65
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "nameof",
+          "lineNumber": 65
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "StartCoroutine",
+          "lineNumber": 79
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "TriggerSequence",
+          "lineNumber": 79
+        },
+        {
+          "caller": "TriggerSequence",
+          "callee": "new WaitForSeconds",
+          "lineNumber": 84
+        },
+        {
+          "caller": "TriggerSequence",
+          "callee": "DialogueUIController.Instance.TryPlayDialogue",
+          "lineNumber": 98
+        },
+        {
+          "caller": "NotifyDialogueFinished",
+          "callee": "PlayerPrefs.SetInt",
+          "lineNumber": 112
+        },
+        {
+          "caller": "NotifyDialogueFinished",
+          "callee": "GetSaveKey",
+          "lineNumber": 112
+        },
+        {
+          "caller": "NotifyDialogueFinished",
+          "callee": "PlayerPrefs.Save",
+          "lineNumber": 113
+        },
+        {
+          "caller": "ClearOneTimeSave",
+          "callee": "PlayerPrefs.DeleteKey",
+          "lineNumber": 120
+        },
+        {
+          "caller": "ClearOneTimeSave",
+          "callee": "GetSaveKey",
+          "lineNumber": 120
+        },
+        {
+          "caller": "IsBlockedByPersistentSave",
+          "callee": "GetSavedValue",
+          "lineNumber": 132
+        },
+        {
+          "caller": "GetSavedValue",
+          "callee": "PlayerPrefs.GetInt",
+          "lineNumber": 137
+        },
+        {
+          "caller": "GetSavedValue",
+          "callee": "GetSaveKey",
+          "lineNumber": 137
+        },
+        {
+          "caller": "GetSavedValue",
+          "callee": "PlayerPrefs.DeleteKey",
+          "lineNumber": 140
+        },
+        {
+          "caller": "GetSavedValue",
+          "callee": "GetSaveKey",
+          "lineNumber": 140
+        },
+        {
+          "caller": "GetSavedValue",
+          "callee": "PlayerPrefs.Save",
+          "lineNumber": 141
+        },
+        {
+          "caller": "OnValidate",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 163
+        },
+        {
+          "caller": "OnValidate",
+          "callee": "Guid.NewGuid().ToString",
+          "lineNumber": 165
+        },
+        {
+          "caller": "OnValidate",
+          "callee": "Guid.NewGuid",
+          "lineNumber": 165
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Tilemap/TileReactionOnTouch2D.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "OnCollisionEnter2D",
+          "startLine": 46,
+          "endLine": 55,
+          "params": [
+            "collision"
+          ]
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 57,
+          "endLine": 65,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "TryReact",
+          "startLine": 67,
+          "endLine": 107,
+          "params": [
+            "otherCollider",
+            "contactPoint"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TileReactionOnTouch2D",
+          "startLine": 8,
+          "endLine": 108,
+          "methods": [
+            "OnCollisionEnter2D",
+            "OnTriggerEnter2D",
+            "TryReact"
+          ],
+          "properties": [
+            "targetTilemap",
+            "spawnPrefab",
+            "spawnOffset",
+            "requireTilePresent",
+            "reactToTriggers",
+            "destroySelf",
+            "spriteRenderer",
+            "newSprite",
+            "newTag",
+            "newLayer",
+            "_consumed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TileReactionOnTouch2D",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.GetContact",
+          "lineNumber": 52
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "TryReact",
+          "lineNumber": 54
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.ClosestPoint",
+          "lineNumber": 63
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "TryReact",
+          "lineNumber": 64
+        },
+        {
+          "caller": "TryReact",
+          "callee": "otherCollider.GetComponent<Tilemap>",
+          "lineNumber": 69
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.WorldToCell",
+          "lineNumber": 73
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.HasTile",
+          "lineNumber": 75
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.SetTile",
+          "lineNumber": 80
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.GetCellCenterWorld",
+          "lineNumber": 85
+        },
+        {
+          "caller": "TryReact",
+          "callee": "Instantiate",
+          "lineNumber": 86
+        },
+        {
+          "caller": "TryReact",
+          "callee": "Destroy",
+          "lineNumber": 92
+        },
+        {
+          "caller": "TryReact",
+          "callee": "GetComponent<SpriteRenderer>",
+          "lineNumber": 97
+        },
+        {
+          "caller": "TryReact",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "UI/ADDisplayUI.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 16,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 22,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ADDisplayUI",
+          "startLine": 5,
+          "endLine": 38,
+          "methods": [
+            "Start",
+            "Update"
+          ],
+          "properties": [
+            "delay",
+            "ad",
+            "timer",
+            "done",
+            "isDisplayed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "delay",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ad",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "isDisplayed",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ADDisplayUI",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "ad.SetActive",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Update",
+          "callee": "ad.SetActive",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Update",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 31
+        },
+        {
+          "caller": "Update",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 31
+        },
+        {
+          "caller": "Update",
+          "callee": "ad.SetActive",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "UI/SpaceBarDisplayUI.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 16,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 22,
+          "endLine": 39,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SpaceBarDisplayUI",
+          "startLine": 6,
+          "endLine": 40,
+          "methods": [
+            "Start",
+            "Update"
+          ],
+          "properties": [
+            "delay",
+            "spaceBar",
+            "adDisplayUI",
+            "timer",
+            "done"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "delay",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "spaceBar",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "adDisplayUI",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SpaceBarDisplayUI",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "spaceBar.SetActive",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Update",
+          "callee": "spaceBar.SetActive",
+          "lineNumber": 30
+        },
+        {
+          "caller": "Update",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 33
+        },
+        {
+          "caller": "Update",
+          "callee": "spaceBar.SetActive",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

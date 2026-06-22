@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using System.Collections;
 
 public class SceneControllerScript : MonoBehaviour
@@ -64,10 +65,24 @@ public class SceneControllerScript : MonoBehaviour
         {
             SceneTransition = transitionObj.GetComponent<Animator>();
             if (SceneTransition != null)
-            {
-                SceneTransition.ResetTrigger("End");
-                SceneTransition.SetTrigger("Start");
-            }
+                yield return PlayFadeIn(SceneTransition);
         }
+    }
+
+    private IEnumerator PlayFadeIn(Animator animator)
+    {
+        yield return null;
+
+        Image image = animator.GetComponentInChildren<Image>();
+        if (image != null)
+        {
+            Color c = image.color;
+            c.a = 1f;
+            image.color = c;
+        }
+
+        animator.ResetTrigger("End");
+        animator.ResetTrigger("Start");
+        animator.Play("SceneTransition", 0, 0f);
     }
 }

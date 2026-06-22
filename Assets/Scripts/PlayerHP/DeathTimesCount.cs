@@ -9,7 +9,7 @@ public class DeathTimesCounter : MonoBehaviour
     public static DeathTimesCounter Instance;
 
     [SerializeField] private TextMeshProUGUI deathText;
-    private int deathCount = 0;
+    private static int deathCount = 0;
 
     private void Awake()
     {

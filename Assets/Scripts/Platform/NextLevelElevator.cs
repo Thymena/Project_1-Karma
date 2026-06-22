@@ -38,7 +38,7 @@ public class NextLevelElevator : MonoBehaviour
 
         timerDelay += Time.deltaTime;
 
-        if (timerDelay > 0.5f) // player must stay on elevator briefly
+        if (timerDelay > 4f) // player must stay on elevator briefly
         {
             timer += Time.deltaTime;
 

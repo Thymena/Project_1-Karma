@@ -1,0 +1,3999 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Audio/AudioManager.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 11,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 21,
+          "endLine": 24,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AudioManager",
+          "startLine": 5,
+          "endLine": 25,
+          "methods": [
+            "Start",
+            "Update"
+          ],
+          "properties": [
+            "audioClips",
+            "audioSource"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "audioClips",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "AudioManager",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "GetComponent<AudioSource>",
+          "lineNumber": 13
+        },
+        {
+          "caller": "Start",
+          "callee": "audioSource.Play",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Camera/FollowCamera.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 11,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 17,
+          "endLine": 20,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FollowCamera",
+          "startLine": 5,
+          "endLine": 21,
+          "methods": [
+            "Start",
+            "Update"
+          ],
+          "properties": [
+            "m_target",
+            "m_offset"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "m_target",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "FollowCamera",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "new Vector3",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Camera/Parallax.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 242,
+      "nonEmptyLines": 219,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 42,
+          "endLine": 163,
+          "params": []
+        },
+        {
+          "name": "GetActualCameraPosition",
+          "startLine": 168,
+          "endLine": 203,
+          "params": []
+        },
+        {
+          "name": "LateUpdate",
+          "startLine": 205,
+          "endLine": 241,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Parallax",
+          "startLine": 9,
+          "endLine": 242,
+          "methods": [
+            "Start",
+            "GetActualCameraPosition",
+            "LateUpdate"
+          ],
+          "properties": [
+            "cameraTransform",
+            "parallaxMultiplier",
+            "infiniteScroll",
+            "enableVerticalParallax",
+            "movementThreshold",
+            "spriteWidth",
+            "lastCameraPosition",
+            "spriteRenderer",
+            "textureUnitSizeX",
+            "actualCamera",
+            "virtualCamera",
+            "virtualCameraType",
+            "finalPositionProperty"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "cameraTransform",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "parallaxMultiplier",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "infiniteScroll",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "enableVerticalParallax",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "movementThreshold",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "spriteWidth",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "Parallax",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "Debug.LogWarning",
+          "lineNumber": 55
+        },
+        {
+          "caller": "Start",
+          "callee": "cameraTransform.GetComponent<Camera>",
+          "lineNumber": 63
+        },
+        {
+          "caller": "Start",
+          "callee": "System.Type.GetType",
+          "lineNumber": 81
+        },
+        {
+          "caller": "Start",
+          "callee": "parent.GetComponent",
+          "lineNumber": 88
+        },
+        {
+          "caller": "Start",
+          "callee": "typeof(Object).GetMethod",
+          "lineNumber": 96
+        },
+        {
+          "caller": "Start",
+          "callee": "findMethod.Invoke",
+          "lineNumber": 99
+        },
+        {
+          "caller": "Start",
+          "callee": "virtualCameraType.GetProperty",
+          "lineNumber": 103
+        },
+        {
+          "caller": "Start",
+          "callee": "lensProperty.GetValue",
+          "lineNumber": 108
+        },
+        {
+          "caller": "Start",
+          "callee": "lens.GetType().GetProperty",
+          "lineNumber": 109
+        },
+        {
+          "caller": "Start",
+          "callee": "lens.GetType",
+          "lineNumber": 109
+        },
+        {
+          "caller": "Start",
+          "callee": "orthoSizeProperty.GetValue",
+          "lineNumber": 112
+        },
+        {
+          "caller": "Start",
+          "callee": "Mathf.Approximately",
+          "lineNumber": 113
+        },
+        {
+          "caller": "Start",
+          "callee": "virtualCameraType.GetProperty",
+          "lineNumber": 134
+        },
+        {
+          "caller": "Start",
+          "callee": "stateType.GetProperty",
+          "lineNumber": 138
+        },
+        {
+          "caller": "Start",
+          "callee": "GetActualCameraPosition",
+          "lineNumber": 151
+        },
+        {
+          "caller": "Start",
+          "callee": "GetComponent<SpriteRenderer>",
+          "lineNumber": 154
+        },
+        {
+          "caller": "GetActualCameraPosition",
+          "callee": "virtualCameraType.GetProperty",
+          "lineNumber": 175
+        },
+        {
+          "caller": "GetActualCameraPosition",
+          "callee": "stateProperty.GetValue",
+          "lineNumber": 178
+        },
+        {
+          "caller": "GetActualCameraPosition",
+          "callee": "finalPositionProperty.GetValue",
+          "lineNumber": 181
+        },
+        {
+          "caller": "LateUpdate",
+          "callee": "GetActualCameraPosition",
+          "lineNumber": 210
+        },
+        {
+          "caller": "LateUpdate",
+          "callee": "new Vector3",
+          "lineNumber": 222
+        },
+        {
+          "caller": "LateUpdate",
+          "callee": "Mathf.Abs",
+          "lineNumber": 235
+        },
+        {
+          "caller": "LateUpdate",
+          "callee": "new Vector3",
+          "lineNumber": 238
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Camera/ParallaxManager.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 79,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 35,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "AddParallaxLayer",
+          "startLine": 69,
+          "endLine": 91,
+          "params": [
+            "layerObject",
+            "multiplier",
+            "infiniteScroll",
+            "verticalParallax"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ParallaxManager",
+          "startLine": 8,
+          "endLine": 92,
+          "methods": [
+            "Start",
+            "AddParallaxLayer"
+          ],
+          "properties": [
+            "cameraTransform",
+            "parallaxLayers"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "cameraTransform",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "parallaxLayers",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "AddParallaxLayer",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "ParallaxManager",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "layer.layerObject.GetComponent<Parallax>",
+          "lineNumber": 52
+        },
+        {
+          "caller": "Start",
+          "callee": "layer.layerObject.AddComponent<Parallax>",
+          "lineNumber": 55
+        },
+        {
+          "caller": "AddParallaxLayer",
+          "callee": "new ParallaxLayer",
+          "lineNumber": 71
+        },
+        {
+          "caller": "AddParallaxLayer",
+          "callee": "parallaxLayers.Add",
+          "lineNumber": 79
+        },
+        {
+          "caller": "AddParallaxLayer",
+          "callee": "layerObject.GetComponent<Parallax>",
+          "lineNumber": 81
+        },
+        {
+          "caller": "AddParallaxLayer",
+          "callee": "layerObject.AddComponent<Parallax>",
+          "lineNumber": 84
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Fire/FireMove.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 113,
+      "nonEmptyLines": 94,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 22,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 27,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "FixedUpdate",
+          "startLine": 36,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "CalculateMoveDirection",
+          "startLine": 44,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "StopMove",
+          "startLine": 56,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "OnCollisionEnter2D",
+          "startLine": 64,
+          "endLine": 94,
+          "params": [
+            "collision"
+          ]
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 96,
+          "endLine": 103,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 105,
+          "endLine": 112,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FireMove",
+          "startLine": 3,
+          "endLine": 113,
+          "methods": [
+            "Awake",
+            "Update",
+            "FixedUpdate",
+            "CalculateMoveDirection",
+            "StopMove",
+            "OnCollisionEnter2D",
+            "OnTriggerEnter2D",
+            "OnTriggerExit2D"
+          ],
+          "properties": [
+            "moveSpeed",
+            "changedObject1",
+            "changedObject2",
+            "col",
+            "rb",
+            "playerInside",
+            "playerTransform",
+            "isMoving",
+            "hasStopped",
+            "moveDir"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "moveSpeed",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "changedObject1",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "changedObject2",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "FireMove",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "GetComponent<Rigidbody2D>",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Update",
+          "callee": "CalculateMoveDirection",
+          "lineNumber": 31
+        },
+        {
+          "caller": "CalculateMoveDirection",
+          "callee": "Mathf.Abs",
+          "lineNumber": 50
+        },
+        {
+          "caller": "CalculateMoveDirection",
+          "callee": "Mathf.Abs",
+          "lineNumber": 50
+        },
+        {
+          "caller": "CalculateMoveDirection",
+          "callee": "new Vector2",
+          "lineNumber": 51
+        },
+        {
+          "caller": "CalculateMoveDirection",
+          "callee": "Mathf.Sign",
+          "lineNumber": 51
+        },
+        {
+          "caller": "CalculateMoveDirection",
+          "callee": "new Vector2",
+          "lineNumber": 53
+        },
+        {
+          "caller": "CalculateMoveDirection",
+          "callee": "Mathf.Sign",
+          "lineNumber": 53
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.collider.CompareTag",
+          "lineNumber": 67
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "Debug.Log",
+          "lineNumber": 70
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "StopMove",
+          "lineNumber": 74
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.collider.CompareTag",
+          "lineNumber": 76
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.collider.CompareTag",
+          "lineNumber": 81
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "Destroy",
+          "lineNumber": 83
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "Destroy",
+          "lineNumber": 84
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "Destroy",
+          "lineNumber": 85
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.collider.CompareTag",
+          "lineNumber": 87
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "Destroy",
+          "lineNumber": 89
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "Destroy",
+          "lineNumber": 90
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "Destroy",
+          "lineNumber": 91
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 98
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Ice/IceMove.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 112,
+      "nonEmptyLines": 91,
+      "functions": [
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 18,
+          "endLine": 25,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 27,
+          "endLine": 34,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "Update",
+          "startLine": 36,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "StopMovement",
+          "startLine": 44,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "MoveAwayCoroutine",
+          "startLine": 50,
+          "endLine": 111,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "IceMove",
+          "startLine": 4,
+          "endLine": 112,
+          "methods": [
+            "OnTriggerEnter2D",
+            "OnTriggerExit2D",
+            "Update",
+            "StopMovement",
+            "MoveAwayCoroutine"
+          ],
+          "properties": [
+            "movedObject",
+            "moveSpeed",
+            "playerInside",
+            "playerTransform",
+            "isMoving",
+            "hit",
+            "changedObject",
+            "isHitSpikes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "movedObject",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "moveSpeed",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "isMoving",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "hit",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "changedObject",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "isHitSpikes",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "StopMovement",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "IceMove",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 20
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 29
+        },
+        {
+          "caller": "Update",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 38
+        },
+        {
+          "caller": "Update",
+          "callee": "StartCoroutine",
+          "lineNumber": 40
+        },
+        {
+          "caller": "Update",
+          "callee": "MoveAwayCoroutine",
+          "lineNumber": 40
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Abs",
+          "lineNumber": 60
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Abs",
+          "lineNumber": 60
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "new Vector2",
+          "lineNumber": 61
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Sign",
+          "lineNumber": 61
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "new Vector2",
+          "lineNumber": 63
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Sign",
+          "lineNumber": 63
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Physics2D.OverlapCircleAll",
+          "lineNumber": 74
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "h.CompareTag",
+          "lineNumber": 77
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "h.CompareTag",
+          "lineNumber": 84
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "LayerMask.NameToLayer",
+          "lineNumber": 88
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 89
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "h.CompareTag",
+          "lineNumber": 95
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 99
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Destroy",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Platform/JumpJumpHappy.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 11,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 17,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 25,
+          "endLine": 31,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 33,
+          "endLine": 39,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "JumpJumpHappy",
+          "startLine": 5,
+          "endLine": 40,
+          "methods": [
+            "Start",
+            "Update",
+            "OnTriggerEnter2D",
+            "OnTriggerExit2D"
+          ],
+          "properties": [
+            "burstForce",
+            "playerInside",
+            "rb"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "burstForce",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "rb",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "JumpJumpHappy",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Update",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 19
+        },
+        {
+          "caller": "Update",
+          "callee": "new Vector2",
+          "lineNumber": 21
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 27
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Platform/MiniGameElevator.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 66,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 20,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "OnTriggerStay2D",
+          "startLine": 36,
+          "endLine": 69,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 71,
+          "endLine": 81,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MiniGameElevator",
+          "startLine": 3,
+          "endLine": 82,
+          "methods": [
+            "Start",
+            "OnTriggerStay2D",
+            "OnTriggerExit2D"
+          ],
+          "properties": [
+            "riseSpeed",
+            "returnSpeed",
+            "changeTime",
+            "fadeLeadTime",
+            "movedObject",
+            "start",
+            "movedRigidbody",
+            "startPos",
+            "timer",
+            "timerDelay",
+            "fadeStarted",
+            "triggered"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "riseSpeed",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "returnSpeed",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "changeTime",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "fadeLeadTime",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "movedObject",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "start",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "MiniGameElevator",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "movedObject.GetComponent<Rigidbody2D>",
+          "lineNumber": 25
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 38
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "movedRigidbody.MovePosition",
+          "lineNumber": 54
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "SceneControllerScript.instance.BeginTransition",
+          "lineNumber": 60
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 73
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "Vector2.MoveTowards",
+          "lineNumber": 79
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "movedRigidbody.MovePosition",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Platform/MovingPlatform.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 17,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 23,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "OnCollisionEnter2D",
+          "startLine": 30,
+          "endLine": 36,
+          "params": [
+            "collision"
+          ]
+        },
+        {
+          "name": "OnCollisionExit2D",
+          "startLine": 38,
+          "endLine": 44,
+          "params": [
+            "collision"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MovingPlatform",
+          "startLine": 6,
+          "endLine": 45,
+          "methods": [
+            "Start",
+            "Update",
+            "OnCollisionEnter2D",
+            "OnCollisionExit2D"
+          ],
+          "properties": [
+            "pointA",
+            "pointB",
+            "moveSpeed",
+            "startPos",
+            "endPos"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pointA",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "pointB",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "moveSpeed",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "MovingPlatform",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Update",
+          "callee": "Mathf.PingPong",
+          "lineNumber": 25
+        },
+        {
+          "caller": "Update",
+          "callee": "Vector3.Lerp",
+          "lineNumber": 26
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.gameObject.CompareTag",
+          "lineNumber": 32
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.transform.SetParent",
+          "lineNumber": 34
+        },
+        {
+          "caller": "OnCollisionExit2D",
+          "callee": "collision.gameObject.CompareTag",
+          "lineNumber": 40
+        },
+        {
+          "caller": "OnCollisionExit2D",
+          "callee": "collision.transform.SetParent",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Platform/NewLevel.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 18,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "Start",
+          "startLine": 28,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "FixedUpdate",
+          "startLine": 33,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "StopMovement",
+          "startLine": 51,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "IsMoving",
+          "startLine": 63,
+          "endLine": 63,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NewLevel",
+          "startLine": 5,
+          "endLine": 64,
+          "methods": [
+            "Awake",
+            "Start",
+            "FixedUpdate",
+            "StopMovement",
+            "IsMoving"
+          ],
+          "properties": [
+            "stopPoint",
+            "speed",
+            "stopThreshold",
+            "_targetPosition",
+            "_rigidbody2D",
+            "_isMoving"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "stopPoint",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "speed",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "stopThreshold",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "StopMovement",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "IsMoving",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "NewLevel",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "GetComponent<Rigidbody2D>",
+          "lineNumber": 20
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "Vector2.MoveTowards",
+          "lineNumber": 39
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "_rigidbody2D.MovePosition",
+          "lineNumber": 41
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "Vector2.Distance",
+          "lineNumber": 44
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "_rigidbody2D.MovePosition",
+          "lineNumber": 46
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "StopMovement",
+          "lineNumber": 47
+        },
+        {
+          "caller": "StopMovement",
+          "callee": "_rigidbody2D.MovePosition",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Platform/NextLevelElevator.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 19,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "OnTriggerStay2D",
+          "startLine": 35,
+          "endLine": 61,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 63,
+          "endLine": 77,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NextLevelElevator",
+          "startLine": 2,
+          "endLine": 78,
+          "methods": [
+            "Start",
+            "OnTriggerStay2D",
+            "OnTriggerExit2D"
+          ],
+          "properties": [
+            "riseSpeed",
+            "returnSpeed",
+            "changeTime",
+            "fadeLeadTime",
+            "movedObject",
+            "movedRigidbody",
+            "startPos",
+            "timer",
+            "timerDelay",
+            "fadeStarted",
+            "triggered"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "riseSpeed",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "returnSpeed",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "changeTime",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "fadeLeadTime",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "movedObject",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "NextLevelElevator",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "movedObject.GetComponent<Rigidbody2D>",
+          "lineNumber": 24
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 37
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "movedRigidbody.MovePosition",
+          "lineNumber": 46
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "SceneControllerScript.instance.BeginTransition",
+          "lineNumber": 54
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 65
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "Vector2.MoveTowards",
+          "lineNumber": 71
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "movedRigidbody.MovePosition",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "PlayerHP/DeathTimesCount.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 14,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "AddDeath",
+          "startLine": 28,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "UpdateUI",
+          "startLine": 34,
+          "endLine": 43,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DeathTimesCounter",
+          "startLine": 7,
+          "endLine": 44,
+          "methods": [
+            "Awake",
+            "AddDeath",
+            "UpdateUI"
+          ],
+          "properties": [
+            "Instance",
+            "deathText",
+            "deathCount"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Instance",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "AddDeath",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "DeathTimesCounter",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "Destroy",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Awake",
+          "callee": "DontDestroyOnLoad",
+          "lineNumber": 23
+        },
+        {
+          "caller": "Awake",
+          "callee": "UpdateUI",
+          "lineNumber": 25
+        },
+        {
+          "caller": "AddDeath",
+          "callee": "UpdateUI",
+          "lineNumber": 31
+        },
+        {
+          "caller": "UpdateUI",
+          "callee": "Debug.LogError",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "PlayerHP/PersistUI.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 5,
+          "endLine": 8,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PersistUI",
+          "startLine": 3,
+          "endLine": 9,
+          "methods": [
+            "Awake"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PersistUI",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "DontDestroyOnLoad",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "PlayerHP/PlayerHP.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 13,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 18,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "TakeDamage",
+          "startLine": 27,
+          "endLine": 30,
+          "params": [
+            "damage"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlayerHP",
+          "startLine": 7,
+          "endLine": 31,
+          "methods": [
+            "Start",
+            "Update",
+            "TakeDamage"
+          ],
+          "properties": [
+            "health",
+            "maxHealth"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "health",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "TakeDamage",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerHP",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Update",
+          "callee": "DeathTimesCounter.Instance.AddDeath",
+          "lineNumber": 22
+        },
+        {
+          "caller": "Update",
+          "callee": "SceneManager.LoadScene",
+          "lineNumber": 23
+        },
+        {
+          "caller": "Update",
+          "callee": "SceneManager.GetActiveScene",
+          "lineNumber": 23
+        },
+        {
+          "caller": "TakeDamage",
+          "callee": "Mathf.Clamp",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "PlayerInteractions/OnFire.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 75,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 24,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 31,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "HandleFlashing",
+          "startLine": 45,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "StopFlashing",
+          "startLine": 60,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "OnTriggerStay2D",
+          "startLine": 71,
+          "endLine": 83,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 85,
+          "endLine": 91,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OnFire",
+          "startLine": 3,
+          "endLine": 92,
+          "methods": [
+            "Start",
+            "Update",
+            "HandleFlashing",
+            "StopFlashing",
+            "OnTriggerStay2D",
+            "OnTriggerExit2D"
+          ],
+          "properties": [
+            "KILL_TIME",
+            "playerHP",
+            "damage",
+            "maxFlashInterval",
+            "minFlashInterval",
+            "flashColor",
+            "timer",
+            "flashTimer",
+            "onFire",
+            "flashOn",
+            "spriteRenderer",
+            "originalColor"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KILL_TIME",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "playerHP",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "damage",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "maxFlashInterval",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "minFlashInterval",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "flashColor",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "OnFire",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "GetComponent<SpriteRenderer>",
+          "lineNumber": 26
+        },
+        {
+          "caller": "Start",
+          "callee": "GetComponent<PlayerHP>",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Update",
+          "callee": "StopFlashing",
+          "lineNumber": 35
+        },
+        {
+          "caller": "Update",
+          "callee": "HandleFlashing",
+          "lineNumber": 41
+        },
+        {
+          "caller": "HandleFlashing",
+          "callee": "Mathf.Clamp01",
+          "lineNumber": 47
+        },
+        {
+          "caller": "HandleFlashing",
+          "callee": "Mathf.Lerp",
+          "lineNumber": 48
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 73
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 87
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "StopFlashing",
+          "lineNumber": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "PlayerInteractions/OnSpike.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 10,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 16,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 21,
+          "endLine": 29,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OnSpike",
+          "startLine": 5,
+          "endLine": 30,
+          "methods": [
+            "Start",
+            "Update",
+            "OnTriggerEnter2D"
+          ],
+          "properties": [
+            "playerHP",
+            "damage"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "playerHP",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "damage",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "OnSpike",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 23
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "GetComponent<PlayerHP>",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "PlayerMovement/PlayerMovementRe.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 316,
+      "nonEmptyLines": 261,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 57,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 63,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "FixedUpdate",
+          "startLine": 75,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "HandleJumpInput",
+          "startLine": 108,
+          "endLine": 121,
+          "params": []
+        },
+        {
+          "name": "HandleWallClingInput",
+          "startLine": 123,
+          "endLine": 139,
+          "params": []
+        },
+        {
+          "name": "CheckWall",
+          "startLine": 142,
+          "endLine": 171,
+          "params": []
+        },
+        {
+          "name": "HandleWallCling",
+          "startLine": 173,
+          "endLine": 191,
+          "params": []
+        },
+        {
+          "name": "IsAtWallEdge",
+          "startLine": 194,
+          "endLine": 205,
+          "params": []
+        },
+        {
+          "name": "WallJump",
+          "startLine": 208,
+          "endLine": 221,
+          "params": []
+        },
+        {
+          "name": "EndWallJump",
+          "startLine": 223,
+          "endLine": 226,
+          "params": []
+        },
+        {
+          "name": "EdgeDetach",
+          "startLine": 228,
+          "endLine": 243,
+          "params": [
+            "applyCooldown"
+          ]
+        },
+        {
+          "name": "HandleIceMovement",
+          "startLine": 246,
+          "endLine": 273,
+          "params": []
+        },
+        {
+          "name": "OnTriggerStay2D",
+          "startLine": 276,
+          "endLine": 288,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 290,
+          "endLine": 296,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "HandleFlip",
+          "startLine": 298,
+          "endLine": 305,
+          "params": []
+        },
+        {
+          "name": "UpdateAnimator",
+          "startLine": 308,
+          "endLine": 315,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlayerMovementRe",
+          "startLine": 3,
+          "endLine": 316,
+          "methods": [
+            "Awake",
+            "Update",
+            "FixedUpdate",
+            "HandleJumpInput",
+            "HandleWallClingInput",
+            "CheckWall",
+            "HandleWallCling",
+            "IsAtWallEdge",
+            "WallJump",
+            "EndWallJump",
+            "EdgeDetach",
+            "HandleIceMovement",
+            "OnTriggerStay2D",
+            "OnTriggerExit2D",
+            "HandleFlip",
+            "UpdateAnimator"
+          ],
+          "properties": [
+            "speed",
+            "jumpForce",
+            "normalGravity",
+            "isIced",
+            "iceAcceleration",
+            "iceCoastingFriction",
+            "iceMaxSpeed",
+            "iceStopThreshold",
+            "wallCheck",
+            "wallCheckDistance",
+            "wallLayer",
+            "wallSlideSpeed",
+            "wallJumpForce",
+            "isWallJumping",
+            "wallJumpLockTime",
+            "edgeHopVelocity",
+            "edgePushHorizontal",
+            "edgeDetachCooldown",
+            "wallStickTime",
+            "groundCoyoteTime",
+            "wallCoyoteTime",
+            "animator",
+            "rb",
+            "sprite",
+            "horizontal",
+            "facingRight",
+            "isGrounded",
+            "isWallClinging",
+            "isTouchingWall",
+            "wallDirection",
+            "wallStickTimer",
+            "lastEdgeDetachTime",
+            "lastGroundedTime",
+            "lastWallContactTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "speed",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "jumpForce",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "normalGravity",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "isIced",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "iceAcceleration",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "iceCoastingFriction",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "iceMaxSpeed",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "iceStopThreshold",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "wallCheck",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "wallCheckDistance",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "wallLayer",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "wallSlideSpeed",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "wallJumpForce",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "edgeHopVelocity",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "edgePushHorizontal",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "edgeDetachCooldown",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "wallStickTime",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "groundCoyoteTime",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "wallCoyoteTime",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "animator",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerMovementRe",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "GetComponent<Rigidbody2D>",
+          "lineNumber": 59
+        },
+        {
+          "caller": "Awake",
+          "callee": "GetComponent<SpriteRenderer>",
+          "lineNumber": 60
+        },
+        {
+          "caller": "Update",
+          "callee": "Input.GetAxisRaw",
+          "lineNumber": 66
+        },
+        {
+          "caller": "Update",
+          "callee": "CheckWall",
+          "lineNumber": 68
+        },
+        {
+          "caller": "Update",
+          "callee": "HandleJumpInput",
+          "lineNumber": 69
+        },
+        {
+          "caller": "Update",
+          "callee": "HandleWallClingInput",
+          "lineNumber": 70
+        },
+        {
+          "caller": "Update",
+          "callee": "HandleFlip",
+          "lineNumber": 71
+        },
+        {
+          "caller": "Update",
+          "callee": "UpdateAnimator",
+          "lineNumber": 72
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "IsAtWallEdge",
+          "lineNumber": 80
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "EdgeDetach",
+          "lineNumber": 82
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "HandleWallCling",
+          "lineNumber": 94
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "HandleIceMovement",
+          "lineNumber": 98
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "new Vector2",
+          "lineNumber": 102
+        },
+        {
+          "caller": "HandleJumpInput",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 110
+        },
+        {
+          "caller": "HandleJumpInput",
+          "callee": "new Vector2",
+          "lineNumber": 114
+        },
+        {
+          "caller": "HandleJumpInput",
+          "callee": "WallJump",
+          "lineNumber": 119
+        },
+        {
+          "caller": "CheckWall",
+          "callee": "Physics2D.Raycast",
+          "lineNumber": 152
+        },
+        {
+          "caller": "CheckWall",
+          "callee": "Physics2D.Raycast",
+          "lineNumber": 153
+        },
+        {
+          "caller": "HandleWallCling",
+          "callee": "new Vector2",
+          "lineNumber": 190
+        },
+        {
+          "caller": "IsAtWallEdge",
+          "callee": "Physics2D.Raycast",
+          "lineNumber": 201
+        },
+        {
+          "caller": "IsAtWallEdge",
+          "callee": "Physics2D.Raycast",
+          "lineNumber": 202
+        },
+        {
+          "caller": "WallJump",
+          "callee": "new Vector2",
+          "lineNumber": 215
+        },
+        {
+          "caller": "WallJump",
+          "callee": "Invoke",
+          "lineNumber": 220
+        },
+        {
+          "caller": "WallJump",
+          "callee": "nameof",
+          "lineNumber": 220
+        },
+        {
+          "caller": "EdgeDetach",
+          "callee": "new Vector2",
+          "lineNumber": 234
+        },
+        {
+          "caller": "HandleIceMovement",
+          "callee": "Mathf.Abs",
+          "lineNumber": 253
+        },
+        {
+          "caller": "HandleIceMovement",
+          "callee": "Mathf.MoveTowards",
+          "lineNumber": 256
+        },
+        {
+          "caller": "HandleIceMovement",
+          "callee": "Mathf.Exp",
+          "lineNumber": 261
+        },
+        {
+          "caller": "HandleIceMovement",
+          "callee": "Mathf.Abs",
+          "lineNumber": 265
+        },
+        {
+          "caller": "HandleIceMovement",
+          "callee": "new Vector2",
+          "lineNumber": 269
+        },
+        {
+          "caller": "HandleIceMovement",
+          "callee": "Mathf.Clamp",
+          "lineNumber": 270
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 278
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 278
+        },
+        {
+          "caller": "OnTriggerStay2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 283
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 292
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 292
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 294
+        },
+        {
+          "caller": "UpdateAnimator",
+          "callee": "animator.SetBool",
+          "lineNumber": 310
+        },
+        {
+          "caller": "UpdateAnimator",
+          "callee": "animator.SetBool",
+          "lineNumber": 311
+        },
+        {
+          "caller": "UpdateAnimator",
+          "callee": "animator.SetBool",
+          "lineNumber": 312
+        },
+        {
+          "caller": "UpdateAnimator",
+          "callee": "Mathf.Abs",
+          "lineNumber": 312
+        },
+        {
+          "caller": "UpdateAnimator",
+          "callee": "animator.SetBool",
+          "lineNumber": 313
+        },
+        {
+          "caller": "UpdateAnimator",
+          "callee": "Input.GetKey",
+          "lineNumber": 313
+        },
+        {
+          "caller": "UpdateAnimator",
+          "callee": "animator.SetBool",
+          "lineNumber": 314
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 21,
+        "functionCount": 16,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Prize/CollectibleManager.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 157,
+      "nonEmptyLines": 119,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 34,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "Start",
+          "startLine": 39,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 52,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "OnCollectiblePicked",
+          "startLine": 79,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "SpawnRandomCollectible",
+          "startLine": 98,
+          "endLine": 124,
+          "params": []
+        },
+        {
+          "name": "BeginSpawning",
+          "startLine": 127,
+          "endLine": 140,
+          "params": []
+        },
+        {
+          "name": "FocusRoutine",
+          "startLine": 142,
+          "endLine": 155,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CollectibleManager",
+          "startLine": 7,
+          "endLine": 157,
+          "methods": [
+            "Awake",
+            "Start",
+            "Update",
+            "OnCollectiblePicked",
+            "SpawnRandomCollectible",
+            "BeginSpawning",
+            "FocusRoutine"
+          ],
+          "properties": [
+            "virtualCamera",
+            "player",
+            "playerMovement",
+            "focusTarget",
+            "focusDuration",
+            "originalFollow",
+            "finishCameraMove",
+            "collectibles",
+            "baseTimer",
+            "CurrentTimer",
+            "CollectedCount",
+            "gameController",
+            "hasStartedSpawning",
+            "currentActiveCollectible"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "virtualCamera",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "player",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "playerMovement",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "focusTarget",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "focusDuration",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "collectibles",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "baseTimer",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "CurrentTimer",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "CollectedCount",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "gameController",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "OnCollectiblePicked",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "BeginSpawning",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "CollectibleManager",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "obj.SetActive",
+          "lineNumber": 43
+        },
+        {
+          "caller": "Update",
+          "callee": "OnTimerChanged?.Invoke",
+          "lineNumber": 61
+        },
+        {
+          "caller": "Update",
+          "callee": "currentActiveCollectible.SetActive",
+          "lineNumber": 66
+        },
+        {
+          "caller": "Update",
+          "callee": "SpawnRandomCollectible",
+          "lineNumber": 67
+        },
+        {
+          "caller": "Update",
+          "callee": "obj.SetActive",
+          "lineNumber": 75
+        },
+        {
+          "caller": "OnCollectiblePicked",
+          "callee": "OnCountChanged?.Invoke",
+          "lineNumber": 85
+        },
+        {
+          "caller": "OnCollectiblePicked",
+          "callee": "currentActiveCollectible.SetActive",
+          "lineNumber": 90
+        },
+        {
+          "caller": "OnCollectiblePicked",
+          "callee": "SpawnRandomCollectible",
+          "lineNumber": 93
+        },
+        {
+          "caller": "SpawnRandomCollectible",
+          "callee": "OnTimerChanged?.Invoke",
+          "lineNumber": 101
+        },
+        {
+          "caller": "SpawnRandomCollectible",
+          "callee": "UnityEngine.Random.Range",
+          "lineNumber": 110
+        },
+        {
+          "caller": "SpawnRandomCollectible",
+          "callee": "Array.IndexOf",
+          "lineNumber": 114
+        },
+        {
+          "caller": "SpawnRandomCollectible",
+          "callee": "UnityEngine.Random.Range",
+          "lineNumber": 117
+        },
+        {
+          "caller": "SpawnRandomCollectible",
+          "callee": "currentActiveCollectible.SetActive",
+          "lineNumber": 123
+        },
+        {
+          "caller": "BeginSpawning",
+          "callee": "SpawnRandomCollectible",
+          "lineNumber": 132
+        },
+        {
+          "caller": "BeginSpawning",
+          "callee": "StartCoroutine",
+          "lineNumber": 136
+        },
+        {
+          "caller": "BeginSpawning",
+          "callee": "FocusRoutine",
+          "lineNumber": 136
+        },
+        {
+          "caller": "FocusRoutine",
+          "callee": "new WaitForSeconds",
+          "lineNumber": 147
+        },
+        {
+          "caller": "FocusRoutine",
+          "callee": "new WaitForSeconds",
+          "lineNumber": 152
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Prize/Mossberry.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "Start",
+          "startLine": 17,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 22,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "PlayAndCollect",
+          "startLine": 31,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 49,
+          "endLine": 53,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 55,
+          "endLine": 59,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Mossberry",
+          "startLine": 4,
+          "endLine": 60,
+          "methods": [
+            "Start",
+            "Update",
+            "PlayAndCollect",
+            "OnTriggerEnter2D",
+            "OnTriggerExit2D"
+          ],
+          "properties": [
+            "manager",
+            "audioSource",
+            "playerInside",
+            "isCollecting",
+            "berry",
+            "audioClips",
+            "collectDelay"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "manager",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "berry",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "audioClips",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "collectDelay",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "Mossberry",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Start",
+          "callee": "GetComponent<AudioSource>",
+          "lineNumber": 19
+        },
+        {
+          "caller": "Update",
+          "callee": "StartCoroutine",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Update",
+          "callee": "PlayAndCollect",
+          "lineNumber": 27
+        },
+        {
+          "caller": "PlayAndCollect",
+          "callee": "audioSource.PlayOneShot",
+          "lineNumber": 37
+        },
+        {
+          "caller": "PlayAndCollect",
+          "callee": "new WaitForSeconds",
+          "lineNumber": 41
+        },
+        {
+          "caller": "PlayAndCollect",
+          "callee": "manager.OnCollectiblePicked",
+          "lineNumber": 44
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 51
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Reactions/FireAndIce.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 165,
+      "nonEmptyLines": 132,
+      "functions": [
+        {
+          "name": "OnCollisionEnter2D",
+          "startLine": 31,
+          "endLine": 35,
+          "params": [
+            "collision"
+          ]
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 37,
+          "endLine": 41,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "TryReactFromChildTrigger",
+          "startLine": 44,
+          "endLine": 48,
+          "params": [
+            "other",
+            "contactPoint"
+          ]
+        },
+        {
+          "name": "TryReact",
+          "startLine": 50,
+          "endLine": 79,
+          "params": [
+            "otherCollider",
+            "contactPoint"
+          ]
+        },
+        {
+          "name": "IsOtherTagMatch",
+          "startLine": 81,
+          "endLine": 92,
+          "params": [
+            "otherCollider"
+          ]
+        },
+        {
+          "name": "ResolveTilemap",
+          "startLine": 94,
+          "endLine": 115,
+          "params": [
+            "otherCollider",
+            "contactPoint"
+          ]
+        },
+        {
+          "name": "TryFindReactCell",
+          "startLine": 117,
+          "endLine": 147,
+          "params": [
+            "tilemap",
+            "contactPoint",
+            "cell"
+          ]
+        },
+        {
+          "name": "TryFindNeighborTile",
+          "startLine": 149,
+          "endLine": 164,
+          "params": [
+            "tilemap",
+            "center",
+            "found"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FireAndIce",
+          "startLine": 4,
+          "endLine": 165,
+          "methods": [
+            "OnCollisionEnter2D",
+            "OnTriggerEnter2D",
+            "TryReactFromChildTrigger",
+            "TryReact",
+            "IsOtherTagMatch",
+            "ResolveTilemap",
+            "TryFindReactCell",
+            "TryFindNeighborTile"
+          ],
+          "properties": [
+            "requiredOtherTag",
+            "targetTilemap",
+            "reactToTriggers",
+            "allowParentOrRootTagMatch",
+            "fallbackToSelfPositionCell",
+            "reactedSprite",
+            "reactedTag",
+            "reactedLayer",
+            "ensureCollider",
+            "destroySelfAfterReaction",
+            "consumed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TryReactFromChildTrigger",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "FireAndIce",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "TryReact",
+          "lineNumber": 34
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.GetContact",
+          "lineNumber": 34
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "TryReact",
+          "lineNumber": 40
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.ClosestPoint",
+          "lineNumber": 40
+        },
+        {
+          "caller": "TryReactFromChildTrigger",
+          "callee": "TryReact",
+          "lineNumber": 47
+        },
+        {
+          "caller": "TryReact",
+          "callee": "IsOtherTagMatch",
+          "lineNumber": 52
+        },
+        {
+          "caller": "TryReact",
+          "callee": "ResolveTilemap",
+          "lineNumber": 55
+        },
+        {
+          "caller": "TryReact",
+          "callee": "TryFindReactCell",
+          "lineNumber": 58
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.SetTile",
+          "lineNumber": 63
+        },
+        {
+          "caller": "TryReact",
+          "callee": "GetComponent<SpriteRenderer>",
+          "lineNumber": 65
+        },
+        {
+          "caller": "TryReact",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 68
+        },
+        {
+          "caller": "TryReact",
+          "callee": "GetComponent<Collider2D>",
+          "lineNumber": 74
+        },
+        {
+          "caller": "TryReact",
+          "callee": "gameObject.AddComponent<BoxCollider2D>",
+          "lineNumber": 75
+        },
+        {
+          "caller": "TryReact",
+          "callee": "Destroy",
+          "lineNumber": 78
+        },
+        {
+          "caller": "IsOtherTagMatch",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 83
+        },
+        {
+          "caller": "IsOtherTagMatch",
+          "callee": "otherCollider.CompareTag",
+          "lineNumber": 84
+        },
+        {
+          "caller": "IsOtherTagMatch",
+          "callee": "t.parent.CompareTag",
+          "lineNumber": 88
+        },
+        {
+          "caller": "IsOtherTagMatch",
+          "callee": "t.root.CompareTag",
+          "lineNumber": 89
+        },
+        {
+          "caller": "ResolveTilemap",
+          "callee": "otherCollider.GetComponent<Tilemap>",
+          "lineNumber": 98
+        },
+        {
+          "caller": "ResolveTilemap",
+          "callee": "otherCollider.GetComponentInParent<Tilemap>",
+          "lineNumber": 101
+        },
+        {
+          "caller": "ResolveTilemap",
+          "callee": "FindObjectsByType<Tilemap>",
+          "lineNumber": 105
+        },
+        {
+          "caller": "ResolveTilemap",
+          "callee": "candidate.WorldToCell",
+          "lineNumber": 109
+        },
+        {
+          "caller": "ResolveTilemap",
+          "callee": "candidate.HasTile",
+          "lineNumber": 110
+        },
+        {
+          "caller": "TryFindReactCell",
+          "callee": "tilemap.WorldToCell",
+          "lineNumber": 120
+        },
+        {
+          "caller": "TryFindReactCell",
+          "callee": "tilemap.HasTile",
+          "lineNumber": 121
+        },
+        {
+          "caller": "TryFindReactCell",
+          "callee": "TryFindNeighborTile",
+          "lineNumber": 128
+        },
+        {
+          "caller": "TryFindReactCell",
+          "callee": "tilemap.WorldToCell",
+          "lineNumber": 134
+        },
+        {
+          "caller": "TryFindReactCell",
+          "callee": "tilemap.HasTile",
+          "lineNumber": 135
+        },
+        {
+          "caller": "TryFindReactCell",
+          "callee": "TryFindNeighborTile",
+          "lineNumber": 141
+        },
+        {
+          "caller": "TryFindNeighborTile",
+          "callee": "new Vector3Int",
+          "lineNumber": 155
+        },
+        {
+          "caller": "TryFindNeighborTile",
+          "callee": "tilemap.HasTile",
+          "lineNumber": 156
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 10,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 16,
+          "endLine": 23,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FireAndIceChildTriggerRelay",
+          "startLine": 3,
+          "endLine": 24,
+          "methods": [
+            "Awake",
+            "OnTriggerEnter2D"
+          ],
+          "properties": [
+            "fireAndIce",
+            "requiredSelfTag"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FireAndIceChildTriggerRelay",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "GetComponentInParent<FireAndIce>",
+          "lineNumber": 13
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 19
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "CompareTag",
+          "lineNumber": 19
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.ClosestPoint",
+          "lineNumber": 21
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "fireAndIce.TryReactFromChildTrigger",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Reactions/FireAndSpike.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 19,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "OnCollisionEnter2D",
+          "startLine": 24,
+          "endLine": 31,
+          "params": [
+            "collision"
+          ]
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 33,
+          "endLine": 40,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "CanReact",
+          "startLine": 42,
+          "endLine": 47,
+          "params": [
+            "otherCollider"
+          ]
+        },
+        {
+          "name": "RepelFromPoint",
+          "startLine": 49,
+          "endLine": 65,
+          "params": [
+            "contactPoint"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FireAndSpike",
+          "startLine": 3,
+          "endLine": 66,
+          "methods": [
+            "Awake",
+            "OnCollisionEnter2D",
+            "OnTriggerEnter2D",
+            "CanReact",
+            "RepelFromPoint"
+          ],
+          "properties": [
+            "requiredOtherTag",
+            "reactToTriggers",
+            "repelSpeed",
+            "minSecondsBetweenRepels",
+            "fallbackPushDistance",
+            "rb",
+            "lastRepelTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FireAndSpike",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "GetComponent<Rigidbody2D>",
+          "lineNumber": 21
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "CanReact",
+          "lineNumber": 27
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.GetContact",
+          "lineNumber": 29
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "RepelFromPoint",
+          "lineNumber": 30
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "CanReact",
+          "lineNumber": 36
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.ClosestPoint",
+          "lineNumber": 38
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "RepelFromPoint",
+          "lineNumber": 39
+        },
+        {
+          "caller": "CanReact",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 45
+        },
+        {
+          "caller": "CanReact",
+          "callee": "otherCollider.CompareTag",
+          "lineNumber": 45
+        },
+        {
+          "caller": "RepelFromPoint",
+          "callee": "(Vector3)",
+          "lineNumber": 63
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Reactions/IceAndSpike.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "OnCollisionEnter2D",
+          "startLine": 27,
+          "endLine": 31,
+          "params": [
+            "collision"
+          ]
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 33,
+          "endLine": 37,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "TryReact",
+          "startLine": 39,
+          "endLine": 74,
+          "params": [
+            "otherCollider",
+            "contactPoint"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IceAndSpike",
+          "startLine": 4,
+          "endLine": 75,
+          "methods": [
+            "OnCollisionEnter2D",
+            "OnTriggerEnter2D",
+            "TryReact"
+          ],
+          "properties": [
+            "requiredOtherTag",
+            "targetTilemap",
+            "reactToTriggers",
+            "reactedCellPrefab",
+            "reactedSprite",
+            "addCollider",
+            "destroySelfAfterReaction",
+            "consumed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IceAndSpike",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "TryReact",
+          "lineNumber": 30
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "collision.GetContact",
+          "lineNumber": 30
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "TryReact",
+          "lineNumber": 36
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.ClosestPoint",
+          "lineNumber": 36
+        },
+        {
+          "caller": "TryReact",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 41
+        },
+        {
+          "caller": "TryReact",
+          "callee": "otherCollider.CompareTag",
+          "lineNumber": 41
+        },
+        {
+          "caller": "TryReact",
+          "callee": "otherCollider.GetComponent<Tilemap>",
+          "lineNumber": 44
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.WorldToCell",
+          "lineNumber": 47
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.HasTile",
+          "lineNumber": 48
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.GetCellCenterWorld",
+          "lineNumber": 52
+        },
+        {
+          "caller": "TryReact",
+          "callee": "tilemap.SetTile",
+          "lineNumber": 53
+        },
+        {
+          "caller": "TryReact",
+          "callee": "Instantiate",
+          "lineNumber": 56
+        },
+        {
+          "caller": "TryReact",
+          "callee": "new GameObject",
+          "lineNumber": 57
+        },
+        {
+          "caller": "TryReact",
+          "callee": "reactedCell.GetComponent<SpriteRenderer>",
+          "lineNumber": 61
+        },
+        {
+          "caller": "TryReact",
+          "callee": "reactedCell.AddComponent<SpriteRenderer>",
+          "lineNumber": 62
+        },
+        {
+          "caller": "TryReact",
+          "callee": "reactedCell.GetComponent<Collider2D>",
+          "lineNumber": 69
+        },
+        {
+          "caller": "TryReact",
+          "callee": "reactedCell.AddComponent<BoxCollider2D>",
+          "lineNumber": 70
+        },
+        {
+          "caller": "TryReact",
+          "callee": "Destroy",
+          "lineNumber": 73
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Reactions/MovableInteractions.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 71,
+      "functions": [
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 17,
+          "endLine": 24,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnTriggerExit2D",
+          "startLine": 26,
+          "endLine": 33,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "Update",
+          "startLine": 35,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "StopMovement",
+          "startLine": 43,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "MoveAwayCoroutine",
+          "startLine": 49,
+          "endLine": 88,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MovableInteractions",
+          "startLine": 4,
+          "endLine": 89,
+          "methods": [
+            "OnTriggerEnter2D",
+            "OnTriggerExit2D",
+            "Update",
+            "StopMovement",
+            "MoveAwayCoroutine"
+          ],
+          "properties": [
+            "movedObject",
+            "moveSpeed",
+            "playerInside",
+            "playerTransform",
+            "isMoving",
+            "hit"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "movedObject",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "moveSpeed",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "isMoving",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "hit",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "StopMovement",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "MovableInteractions",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 19
+        },
+        {
+          "caller": "OnTriggerExit2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Update",
+          "callee": "Input.GetKeyDown",
+          "lineNumber": 37
+        },
+        {
+          "caller": "Update",
+          "callee": "StartCoroutine",
+          "lineNumber": 39
+        },
+        {
+          "caller": "Update",
+          "callee": "MoveAwayCoroutine",
+          "lineNumber": 39
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Abs",
+          "lineNumber": 59
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Abs",
+          "lineNumber": 59
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "new Vector2",
+          "lineNumber": 60
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Sign",
+          "lineNumber": 60
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "new Vector2",
+          "lineNumber": 62
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Mathf.Sign",
+          "lineNumber": 62
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "Physics2D.OverlapCircleAll",
+          "lineNumber": 73
+        },
+        {
+          "caller": "MoveAwayCoroutine",
+          "callee": "h.CompareTag",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 183,
+      "nonEmptyLines": 152,
+      "functions": [
+        {
+          "name": "Awake",
+          "startLine": 29,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "Update",
+          "startLine": 37,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "FixedUpdate",
+          "startLine": 45,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "OnTriggerEnter2D",
+          "startLine": 73,
+          "endLine": 83,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "OnCollisionEnter2D",
+          "startLine": 85,
+          "endLine": 90,
+          "params": [
+            "collision"
+          ]
+        },
+        {
+          "name": "OnCollisionStay2D",
+          "startLine": 92,
+          "endLine": 97,
+          "params": [
+            "collision"
+          ]
+        },
+        {
+          "name": "StartMoveFromPlayer",
+          "startLine": 99,
+          "endLine": 114,
+          "params": [
+            "playerTransform"
+          ]
+        },
+        {
+          "name": "StopAndLock",
+          "startLine": 116,
+          "endLine": 133,
+          "params": []
+        },
+        {
+          "name": "IsStopTag",
+          "startLine": 135,
+          "endLine": 145,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "ShouldStopBy",
+          "startLine": 147,
+          "endLine": 155,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "CheckOverlapForStopTag",
+          "startLine": 157,
+          "endLine": 182,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PushAwayOnPlayerTrigger2D",
+          "startLine": 4,
+          "endLine": 183,
+          "methods": [
+            "Awake",
+            "Update",
+            "FixedUpdate",
+            "OnTriggerEnter2D",
+            "OnCollisionEnter2D",
+            "OnCollisionStay2D",
+            "StartMoveFromPlayer",
+            "StopAndLock",
+            "IsStopTag",
+            "ShouldStopBy",
+            "CheckOverlapForStopTag"
+          ],
+          "properties": [
+            "playerTag",
+            "lockToCardinalAxis",
+            "moveSpeed",
+            "stopOnTag",
+            "allowParentOrRootStopTagMatch",
+            "useContinuousOverlapStopCheck",
+            "ignoreTilemapCollidersForStop",
+            "rb",
+            "selfColliders",
+            "overlapResults",
+            "moveDirection",
+            "hasStarted",
+            "stoppedForever"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StopAndLock",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "PushAwayOnPlayerTrigger2D",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Awake",
+          "callee": "GetComponent<Rigidbody2D>",
+          "lineNumber": 31
+        },
+        {
+          "caller": "Awake",
+          "callee": "GetComponentInParent<Rigidbody2D>",
+          "lineNumber": 33
+        },
+        {
+          "caller": "Awake",
+          "callee": "GetComponentsInChildren<Collider2D>",
+          "lineNumber": 34
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "CheckOverlapForStopTag",
+          "lineNumber": 62
+        },
+        {
+          "caller": "FixedUpdate",
+          "callee": "StopAndLock",
+          "lineNumber": 64
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "other.CompareTag",
+          "lineNumber": 79
+        },
+        {
+          "caller": "OnTriggerEnter2D",
+          "callee": "StartMoveFromPlayer",
+          "lineNumber": 80
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "ShouldStopBy",
+          "lineNumber": 88
+        },
+        {
+          "caller": "OnCollisionEnter2D",
+          "callee": "StopAndLock",
+          "lineNumber": 89
+        },
+        {
+          "caller": "OnCollisionStay2D",
+          "callee": "ShouldStopBy",
+          "lineNumber": 95
+        },
+        {
+          "caller": "OnCollisionStay2D",
+          "callee": "StopAndLock",
+          "lineNumber": 96
+        },
+        {
+          "caller": "StartMoveFromPlayer",
+          "callee": "Mathf.Abs",
+          "lineNumber": 106
+        },
+        {
+          "caller": "StartMoveFromPlayer",
+          "callee": "Mathf.Abs",
+          "lineNumber": 106
+        },
+        {
+          "caller": "StartMoveFromPlayer",
+          "callee": "new Vector2",
+          "lineNumber": 107
+        },
+        {
+          "caller": "StartMoveFromPlayer",
+          "callee": "Mathf.Sign",
+          "lineNumber": 107
+        },
+        {
+          "caller": "StartMoveFromPlayer",
+          "callee": "new Vector2",
+          "lineNumber": 109
+        },
+        {
+          "caller": "StartMoveFromPlayer",
+          "callee": "Mathf.Sign",
+          "lineNumber": 109
+        },
+        {
+          "caller": "IsStopTag",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 137
+        },
+        {
+          "caller": "IsStopTag",
+          "callee": "other.CompareTag",
+          "lineNumber": 138
+        },
+        {
+          "caller": "IsStopTag",
+          "callee": "t.parent.CompareTag",
+          "lineNumber": 142
+        },
+        {
+          "caller": "IsStopTag",
+          "callee": "t.root.CompareTag",
+          "lineNumber": 143
+        },
+        {
+          "caller": "ShouldStopBy",
+          "callee": "other.CompareTag",
+          "lineNumber": 151
+        },
+        {
+          "caller": "ShouldStopBy",
+          "callee": "other.GetComponent<TilemapCollider2D>",
+          "lineNumber": 153
+        },
+        {
+          "caller": "ShouldStopBy",
+          "callee": "IsStopTag",
+          "lineNumber": 154
+        },
+        {
+          "caller": "CheckOverlapForStopTag",
+          "callee": "new ContactFilter2D",
+          "lineNumber": 161
+        },
+        {
+          "caller": "CheckOverlapForStopTag",
+          "callee": "filter.NoFilter",
+          "lineNumber": 165
+        },
+        {
+          "caller": "CheckOverlapForStopTag",
+          "callee": "self.OverlapCollider",
+          "lineNumber": 172
+        },
+        {
+          "caller": "CheckOverlapForStopTag",
+          "callee": "ShouldStopBy",
+          "lineNumber": 176
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    }
+  ]
+}

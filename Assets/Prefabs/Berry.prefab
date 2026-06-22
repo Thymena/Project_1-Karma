@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 5649965579046378676}
   - component: {fileID: 781888478922937119}
   - component: {fileID: 8396457383231352786}
+  - component: {fileID: -21677293213398691}
   m_Layer: 0
   m_Name: Berry
   m_TagString: Berry
@@ -330,3 +331,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-21677293213398691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463429509954058087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db5939f075f7f540aca6bd431480dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - '(Scratched out name), guilty of aggravated assult. '
+  delayBeforeShow: 0.3
+  playerTag: Player
+  allowRepeat: 1
+  clearSaveOnAwake: 1
+  triggerId: feb9803980004f0193f8dcce1062cec2

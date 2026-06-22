@@ -1,0 +1,5853 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "Project_1",
+    "languages": [
+      "csharp"
+    ],
+    "frameworks": [
+      "Unity"
+    ],
+    "description": "Unity 2D platformer with player movement, fire/ice/spike reactions, dialogue, collectibles, scene flow, and UI.",
+    "analyzedAt": "2026-06-02T09:40:09.116Z",
+    "gitCommitHash": "unknown"
+  },
+  "nodes": [
+    {
+      "id": "file:Audio/AudioManager.cs",
+      "type": "file",
+      "name": "AudioManager.cs",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "Manages background music; gets AudioSource in Start and loops clips.",
+      "tags": [
+        "audio",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Audio/AudioManager.cs:AudioManager",
+      "type": "class",
+      "name": "AudioManager",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "MonoBehaviour audio manager",
+      "tags": [
+        "audio",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Audio/AudioManager.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "audio",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Audio/AudioManager.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "audio",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Camera/FollowCamera.cs",
+      "type": "file",
+      "name": "FollowCamera.cs",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "2D follow camera that smoothly tracks the player Transform in LateUpdate.",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Camera/FollowCamera.cs:FollowCamera",
+      "type": "class",
+      "name": "FollowCamera",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "MonoBehaviour camera follow",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/FollowCamera.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/FollowCamera.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Camera/Parallax.cs",
+      "type": "file",
+      "name": "Parallax.cs",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "Parallax scrolling background layers with infinite scroll and multi-axis offset.",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Camera/Parallax.cs:Parallax",
+      "type": "class",
+      "name": "Parallax",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "MonoBehaviour parallax layer",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Camera/Parallax.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/Parallax.cs:GetActualCameraPosition",
+      "type": "function",
+      "name": "GetActualCameraPosition",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "GetActualCameraPosition.GetActualCameraPosition method",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/Parallax.cs:LateUpdate",
+      "type": "function",
+      "name": "LateUpdate",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "LateUpdate.LateUpdate method",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Camera/ParallaxManager.cs",
+      "type": "file",
+      "name": "ParallaxManager.cs",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "Manages multiple Parallax layers driven by camera movement.",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "type": "class",
+      "name": "ParallaxManager",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "MonoBehaviour parallax manager",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Camera/ParallaxManager.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/ParallaxManager.cs:AddParallaxLayer",
+      "type": "function",
+      "name": "AddParallaxLayer",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "AddParallaxLayer.AddParallaxLayer method",
+      "tags": [
+        "camera",
+        "rendering",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Fire/FireMove.cs",
+      "type": "file",
+      "name": "FireMove.cs",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "Fire trap movement; switches form or triggers reactions on collision.",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Fire/FireMove.cs:FireMove",
+      "type": "class",
+      "name": "FireMove",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "MonoBehaviour fire trap",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:FixedUpdate",
+      "type": "function",
+      "name": "FixedUpdate",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FixedUpdate.FixedUpdate method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:CalculateMoveDirection",
+      "type": "function",
+      "name": "CalculateMoveDirection",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "CalculateMoveDirection.CalculateMoveDirection method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:StopMove",
+      "type": "function",
+      "name": "StopMove",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "StopMove.StopMove method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "OnCollisionEnter2D.OnCollisionEnter2D method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Ice/IceMove.cs",
+      "type": "file",
+      "name": "IceMove.cs",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "Ice block trap; pushable and changes state when hitting spikes or fire.",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Ice/IceMove.cs:IceMove",
+      "type": "class",
+      "name": "IceMove",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "MonoBehaviour ice trap",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "StopMovement.StopMovement method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:MoveAwayCoroutine",
+      "type": "function",
+      "name": "MoveAwayCoroutine",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "MoveAwayCoroutine.MoveAwayCoroutine method",
+      "tags": [
+        "trap",
+        "element",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/JumpJumpHappy.cs",
+      "type": "file",
+      "name": "JumpJumpHappy.cs",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "Bounce platform applying burstForce upward to the player.",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "type": "class",
+      "name": "JumpJumpHappy",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "MonoBehaviour bounce platform",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/JumpJumpHappy.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/JumpJumpHappy.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/JumpJumpHappy.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/JumpJumpHappy.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/MiniGameElevator.cs",
+      "type": "file",
+      "name": "MiniGameElevator.cs",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "Mini-game elevator with rise/return and fade transition.",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "type": "class",
+      "name": "MiniGameElevator",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "MonoBehaviour mini-game elevator",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Platform/MiniGameElevator.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MiniGameElevator.cs:OnTriggerStay2D",
+      "type": "function",
+      "name": "OnTriggerStay2D",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "OnTriggerStay2D.OnTriggerStay2D method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MiniGameElevator.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/MovingPlatform.cs",
+      "type": "file",
+      "name": "MovingPlatform.cs",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "Platform moving back and forth between pointA and pointB.",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "type": "class",
+      "name": "MovingPlatform",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "MonoBehaviour moving platform",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MovingPlatform.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MovingPlatform.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MovingPlatform.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "OnCollisionEnter2D.OnCollisionEnter2D method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MovingPlatform.cs:OnCollisionExit2D",
+      "type": "function",
+      "name": "OnCollisionExit2D",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "OnCollisionExit2D.OnCollisionExit2D method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/NewLevel.cs",
+      "type": "file",
+      "name": "NewLevel.cs",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "Level-transition mover that stops at stopPoint.",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/NewLevel.cs:NewLevel",
+      "type": "class",
+      "name": "NewLevel",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "MonoBehaviour level transition object",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:FixedUpdate",
+      "type": "function",
+      "name": "FixedUpdate",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "FixedUpdate.FixedUpdate method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "StopMovement.StopMovement method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:IsMoving",
+      "type": "function",
+      "name": "IsMoving",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "IsMoving.IsMoving method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/NextLevelElevator.cs",
+      "type": "file",
+      "name": "NextLevelElevator.cs",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "Completion elevator that rises then loads the next scene.",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "type": "class",
+      "name": "NextLevelElevator",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "MonoBehaviour completion elevator",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Platform/NextLevelElevator.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NextLevelElevator.cs:OnTriggerStay2D",
+      "type": "function",
+      "name": "OnTriggerStay2D",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "OnTriggerStay2D.OnTriggerStay2D method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NextLevelElevator.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "platform",
+        "level",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/DeathTimesCount.cs",
+      "type": "file",
+      "name": "DeathTimesCount.cs",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "Singleton tracking player death count.",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "type": "class",
+      "name": "DeathTimesCounter",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "Singleton MonoBehaviour death counter",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/DeathTimesCount.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/DeathTimesCount.cs:AddDeath",
+      "type": "function",
+      "name": "AddDeath",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "AddDeath.AddDeath method",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/DeathTimesCount.cs:UpdateUI",
+      "type": "function",
+      "name": "UpdateUI",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "UpdateUI.UpdateUI method",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/PersistUI.cs",
+      "type": "file",
+      "name": "PersistUI.cs",
+      "filePath": "PlayerHP/PersistUI.cs",
+      "summary": "Cross-scene persistent UI (DontDestroyOnLoad).",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerHP/PersistUI.cs:PersistUI",
+      "type": "class",
+      "name": "PersistUI",
+      "filePath": "PlayerHP/PersistUI.cs",
+      "summary": "MonoBehaviour persistent UI",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PersistUI.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "PlayerHP/PersistUI.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/PlayerHP.cs",
+      "type": "file",
+      "name": "PlayerHP.cs",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "Player health; TakeDamage handles incoming damage.",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "class",
+      "name": "PlayerHP",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "MonoBehaviour player health",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PlayerHP.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PlayerHP.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PlayerHP.cs:TakeDamage",
+      "type": "function",
+      "name": "TakeDamage",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "TakeDamage.TakeDamage method",
+      "tags": [
+        "player",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerInteractions/OnFire.cs",
+      "type": "file",
+      "name": "OnFire.cs",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "Continuous damage and flash feedback while player touches fire.",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "type": "class",
+      "name": "OnFire",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "MonoBehaviour fire damage",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:HandleFlashing",
+      "type": "function",
+      "name": "HandleFlashing",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "HandleFlashing.HandleFlashing method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:StopFlashing",
+      "type": "function",
+      "name": "StopFlashing",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "StopFlashing.StopFlashing method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:OnTriggerStay2D",
+      "type": "function",
+      "name": "OnTriggerStay2D",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnTriggerStay2D.OnTriggerStay2D method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerInteractions/OnSpike.cs",
+      "type": "file",
+      "name": "OnSpike.cs",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "One-shot damage when player touches spikes.",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "type": "class",
+      "name": "OnSpike",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "MonoBehaviour spike damage",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnSpike.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnSpike.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnSpike.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "player",
+        "damage",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerMovement/PlayerMovementRe.cs",
+      "type": "file",
+      "name": "PlayerMovementRe.cs",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "Core 2D platform controller: move, jump, wall cling, ice slide, coyote time.",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "type": "class",
+      "name": "PlayerMovementRe",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "MonoBehaviour core player movement",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:FixedUpdate",
+      "type": "function",
+      "name": "FixedUpdate",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "FixedUpdate.FixedUpdate method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleJumpInput",
+      "type": "function",
+      "name": "HandleJumpInput",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "HandleJumpInput.HandleJumpInput method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleWallClingInput",
+      "type": "function",
+      "name": "HandleWallClingInput",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "HandleWallClingInput.HandleWallClingInput method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:CheckWall",
+      "type": "function",
+      "name": "CheckWall",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "CheckWall.CheckWall method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleWallCling",
+      "type": "function",
+      "name": "HandleWallCling",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "HandleWallCling.HandleWallCling method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:IsAtWallEdge",
+      "type": "function",
+      "name": "IsAtWallEdge",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "IsAtWallEdge.IsAtWallEdge method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:WallJump",
+      "type": "function",
+      "name": "WallJump",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "WallJump.WallJump method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:EndWallJump",
+      "type": "function",
+      "name": "EndWallJump",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "EndWallJump.EndWallJump method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:EdgeDetach",
+      "type": "function",
+      "name": "EdgeDetach",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "EdgeDetach.EdgeDetach method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleIceMovement",
+      "type": "function",
+      "name": "HandleIceMovement",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "HandleIceMovement.HandleIceMovement method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:OnTriggerStay2D",
+      "type": "function",
+      "name": "OnTriggerStay2D",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "OnTriggerStay2D.OnTriggerStay2D method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleFlip",
+      "type": "function",
+      "name": "HandleFlip",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "HandleFlip.HandleFlip method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:UpdateAnimator",
+      "type": "function",
+      "name": "UpdateAnimator",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "UpdateAnimator.UpdateAnimator method",
+      "tags": [
+        "player",
+        "core",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Prize/CollectibleManager.cs",
+      "type": "file",
+      "name": "CollectibleManager.cs",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "Collectible spawning and timer; coordinates camera focus and GameController.",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "class",
+      "name": "CollectibleManager",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "MonoBehaviour collectible manager",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:OnCollectiblePicked",
+      "type": "function",
+      "name": "OnCollectiblePicked",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "OnCollectiblePicked.OnCollectiblePicked method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:SpawnRandomCollectible",
+      "type": "function",
+      "name": "SpawnRandomCollectible",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "SpawnRandomCollectible.SpawnRandomCollectible method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:BeginSpawning",
+      "type": "function",
+      "name": "BeginSpawning",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "BeginSpawning.BeginSpawning method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:FocusRoutine",
+      "type": "function",
+      "name": "FocusRoutine",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "FocusRoutine.FocusRoutine method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Prize/Mossberry.cs",
+      "type": "file",
+      "name": "Mossberry.cs",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "Collectible berry; triggers CollectibleManager count and SFX.",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Prize/Mossberry.cs:Mossberry",
+      "type": "class",
+      "name": "Mossberry",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "MonoBehaviour berry collectible",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:PlayAndCollect",
+      "type": "function",
+      "name": "PlayAndCollect",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "PlayAndCollect.PlayAndCollect method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "collectible",
+        "gameplay",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/FireAndIce.cs",
+      "type": "file",
+      "name": "FireAndIce.cs",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "Fire–ice element reaction switching object forms.",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "type": "class",
+      "name": "FireAndIce",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "MonoBehaviour fire–ice reaction",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "OnCollisionEnter2D.OnCollisionEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryReactFromChildTrigger",
+      "type": "function",
+      "name": "TryReactFromChildTrigger",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "TryReactFromChildTrigger.TryReactFromChildTrigger method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryReact",
+      "type": "function",
+      "name": "TryReact",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "TryReact.TryReact method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:IsOtherTagMatch",
+      "type": "function",
+      "name": "IsOtherTagMatch",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "IsOtherTagMatch.IsOtherTagMatch method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:ResolveTilemap",
+      "type": "function",
+      "name": "ResolveTilemap",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "ResolveTilemap.ResolveTilemap method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryFindReactCell",
+      "type": "function",
+      "name": "TryFindReactCell",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "TryFindReactCell.TryFindReactCell method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryFindNeighborTile",
+      "type": "function",
+      "name": "TryFindNeighborTile",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "TryFindNeighborTile.TryFindNeighborTile method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/FireAndIceChildTriggerRelay.cs",
+      "type": "file",
+      "name": "FireAndIceChildTriggerRelay.cs",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "Child trigger relay forwarding hits to FireAndIce parent.",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "type": "class",
+      "name": "FireAndIceChildTriggerRelay",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "MonoBehaviour trigger relay",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIceChildTriggerRelay.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIceChildTriggerRelay.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/FireAndSpike.cs",
+      "type": "file",
+      "name": "FireAndSpike.cs",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "Fire–spike collision reaction logic.",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "type": "class",
+      "name": "FireAndSpike",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "MonoBehaviour fire–spike reaction",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "OnCollisionEnter2D.OnCollisionEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:CanReact",
+      "type": "function",
+      "name": "CanReact",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "CanReact.CanReact method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:RepelFromPoint",
+      "type": "function",
+      "name": "RepelFromPoint",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "RepelFromPoint.RepelFromPoint method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/IceAndSpike.cs",
+      "type": "file",
+      "name": "IceAndSpike.cs",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "Ice–spike collision reaction logic.",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "type": "class",
+      "name": "IceAndSpike",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "MonoBehaviour ice–spike reaction",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Reactions/IceAndSpike.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "OnCollisionEnter2D.OnCollisionEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/IceAndSpike.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/IceAndSpike.cs:TryReact",
+      "type": "function",
+      "name": "TryReact",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "TryReact.TryReact method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/MovableInteractions.cs",
+      "type": "file",
+      "name": "MovableInteractions.cs",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "Generic pushable object move/stop interface.",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "type": "class",
+      "name": "MovableInteractions",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "MonoBehaviour pushable object",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "StopMovement.StopMovement method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:MoveAwayCoroutine",
+      "type": "function",
+      "name": "MoveAwayCoroutine",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "MoveAwayCoroutine.MoveAwayCoroutine method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "type": "file",
+      "name": "PushAwayOnPlayerTrigger2D.cs",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "Pushes object away and locks movement on player trigger.",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "type": "class",
+      "name": "PushAwayOnPlayerTrigger2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "MonoBehaviour push-away trigger",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:FixedUpdate",
+      "type": "function",
+      "name": "FixedUpdate",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "FixedUpdate.FixedUpdate method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "OnCollisionEnter2D.OnCollisionEnter2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnCollisionStay2D",
+      "type": "function",
+      "name": "OnCollisionStay2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "OnCollisionStay2D.OnCollisionStay2D method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StartMoveFromPlayer",
+      "type": "function",
+      "name": "StartMoveFromPlayer",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "StartMoveFromPlayer.StartMoveFromPlayer method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StopAndLock",
+      "type": "function",
+      "name": "StopAndLock",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "StopAndLock.StopAndLock method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:IsStopTag",
+      "type": "function",
+      "name": "IsStopTag",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "IsStopTag.IsStopTag method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:ShouldStopBy",
+      "type": "function",
+      "name": "ShouldStopBy",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "ShouldStopBy.ShouldStopBy method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:CheckOverlapForStopTag",
+      "type": "function",
+      "name": "CheckOverlapForStopTag",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "CheckOverlapForStopTag.CheckOverlapForStopTag method",
+      "tags": [
+        "reaction",
+        "physics",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/BerryController.cs",
+      "type": "file",
+      "name": "BerryController.cs",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "Batch manager for berry objects in the scene.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/BerryController.cs:BerryController",
+      "type": "class",
+      "name": "BerryController",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "MonoBehaviour berry controller",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/BerryController.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/BerryController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/CollectCountUI.cs",
+      "type": "file",
+      "name": "CollectCountUI.cs",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "UI text binding for collected item count.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "type": "class",
+      "name": "CollectCountUI",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "MonoBehaviour collect count UI",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:UpdateCountUI",
+      "type": "function",
+      "name": "UpdateCountUI",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "UpdateCountUI.UpdateCountUI method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "OnDestroy.OnDestroy method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/DisplayCursor.cs",
+      "type": "file",
+      "name": "DisplayCursor.cs",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "Shows or hides the mouse cursor.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "type": "class",
+      "name": "DisplayCursor",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "MonoBehaviour cursor control",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/DisplayCursor.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/DisplayCursor.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/GameController.cs",
+      "type": "file",
+      "name": "GameController.cs",
+      "filePath": "Scene/GameController.cs",
+      "summary": "Level test toggles; activates gameObjects and starts CollectibleManager spawning.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/GameController.cs:GameController",
+      "type": "class",
+      "name": "GameController",
+      "filePath": "Scene/GameController.cs",
+      "summary": "MonoBehaviour level controller",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/GameController.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/GameController.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/GameController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/GameController.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/Menu.cs",
+      "type": "file",
+      "name": "Menu.cs",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Pause menu toggled with ESC.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/Menu.cs:Menu",
+      "type": "class",
+      "name": "Menu",
+      "filePath": "Scene/Menu.cs",
+      "summary": "MonoBehaviour pause menu",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:PauseGame",
+      "type": "function",
+      "name": "PauseGame",
+      "filePath": "Scene/Menu.cs",
+      "summary": "PauseGame.PauseGame method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/NormalSceneTransition.cs",
+      "type": "file",
+      "name": "NormalSceneTransition.cs",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "Scene transition with fade in/out.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "class",
+      "name": "NormalSceneTransition",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "MonoBehaviour scene transition",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/NormalSceneTransition.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/NormalSceneTransition.cs:TriggerRoutine",
+      "type": "function",
+      "name": "TriggerRoutine",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "TriggerRoutine.TriggerRoutine method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/PointerScript.cs",
+      "type": "file",
+      "name": "PointerScript.cs",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "UI pointer following objects with targetTag.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/PointerScript.cs:PointerUI",
+      "type": "class",
+      "name": "PointerUI",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "MonoBehaviour UI pointer",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:GetActiveBerry",
+      "type": "function",
+      "name": "GetActiveBerry",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "GetActiveBerry.GetActiveBerry method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/PointerScriptArrow.cs",
+      "type": "file",
+      "name": "PointerScriptArrow.cs",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "Arrow pointer with angle offset toward target.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "type": "class",
+      "name": "PointerScriptArrow",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "MonoBehaviour arrow pointer",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScriptArrow.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScriptArrow.cs:GetActiveBerry",
+      "type": "function",
+      "name": "GetActiveBerry",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "GetActiveBerry.GetActiveBerry method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/QuitGame.cs",
+      "type": "file",
+      "name": "QuitGame.cs",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "Quits the game via Application.Quit.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/QuitGame.cs:QuitGame",
+      "type": "class",
+      "name": "QuitGame",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "MonoBehaviour quit game",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/QuitGame.cs:Quit",
+      "type": "function",
+      "name": "Quit",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "Quit.Quit method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/ResumeGame.cs",
+      "type": "file",
+      "name": "ResumeGame.cs",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "Resumes game and closes pause menu.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/ResumeGame.cs:ResumeGame",
+      "type": "class",
+      "name": "ResumeGame",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "MonoBehaviour resume game",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/ResumeGame.cs:Resume",
+      "type": "function",
+      "name": "Resume",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "Resume.Resume method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/SceneControllerScript.cs",
+      "type": "file",
+      "name": "SceneControllerScript.cs",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "Scene transition singleton; BeginTransition coroutine.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "type": "class",
+      "name": "SceneControllerScript",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "Singleton MonoBehaviour scene controller",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:BeginTransition",
+      "type": "function",
+      "name": "BeginTransition",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "BeginTransition.BeginTransition method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:TransitionCoroutine",
+      "type": "function",
+      "name": "TransitionCoroutine",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "TransitionCoroutine.TransitionCoroutine method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/SettingSceneController.cs",
+      "type": "file",
+      "name": "SettingSceneController.cs",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "Load and reload settings scene.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "type": "class",
+      "name": "SettingSceneController",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "MonoBehaviour settings scene",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SettingSceneController.cs:LoadScene",
+      "type": "function",
+      "name": "LoadScene",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "LoadScene.LoadScene method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SettingSceneController.cs:ReloadScene",
+      "type": "function",
+      "name": "ReloadScene",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "ReloadScene.ReloadScene method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/Timer.cs",
+      "type": "file",
+      "name": "Timer.cs",
+      "filePath": "Scene/Timer.cs",
+      "summary": "Countdown timer; damages player on timeout.",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/Timer.cs:Timer",
+      "type": "class",
+      "name": "Timer",
+      "filePath": "Scene/Timer.cs",
+      "summary": "MonoBehaviour countdown timer",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/Timer.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/Timer.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Timer.cs:UpdateTimerUI",
+      "type": "function",
+      "name": "UpdateTimerUI",
+      "filePath": "Scene/Timer.cs",
+      "summary": "UpdateTimerUI.UpdateTimerUI method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Timer.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Scene/Timer.cs",
+      "summary": "OnDestroy.OnDestroy method",
+      "tags": [
+        "scene",
+        "flow",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Spikes/SpikesMove.cs",
+      "type": "file",
+      "name": "SpikesMove.cs",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "Moving spike trap; morphs when colliding with fire/ice.",
+      "tags": [
+        "trap",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "type": "class",
+      "name": "SpikesMove",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "MonoBehaviour moving spikes",
+      "tags": [
+        "trap",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "trap",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "OnTriggerExit2D.OnTriggerExit2D method",
+      "tags": [
+        "trap",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "trap",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "StopMovement.StopMovement method",
+      "tags": [
+        "trap",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:MoveAwayCoroutine",
+      "type": "function",
+      "name": "MoveAwayCoroutine",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "MoveAwayCoroutine.MoveAwayCoroutine method",
+      "tags": [
+        "trap",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/DialogueSystemDefaults.cs",
+      "type": "file",
+      "name": "DialogueSystemDefaults.cs",
+      "filePath": "Text/DialogueSystemDefaults.cs",
+      "summary": "Global dialogue defaults (type speed, margins, etc.).",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Text/DialogueSystemDefaults.cs:DialogueSystemDefaults",
+      "type": "class",
+      "name": "DialogueSystemDefaults",
+      "filePath": "Text/DialogueSystemDefaults.cs",
+      "summary": "Static class dialogue defaults",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/DialogueUIController.cs",
+      "type": "file",
+      "name": "DialogueUIController.cs",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "Dialogue UI singleton with typewriter and segment pauses.",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "class",
+      "name": "DialogueUIController",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "Singleton MonoBehaviour dialogue UI",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Reset",
+      "type": "function",
+      "name": "Reset",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "Reset.Reset method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "OnDestroy.OnDestroy method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:TryPlayDialogue",
+      "type": "function",
+      "name": "TryPlayDialogue",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "TryPlayDialogue.TryPlayDialogue method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:PlayDialogueSession",
+      "type": "function",
+      "name": "PlayDialogueSession",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "PlayDialogueSession.PlayDialogueSession method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:TypeSegment",
+      "type": "function",
+      "name": "TypeSegment",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "TypeSegment.TypeSegment method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:WaitForCloseInput",
+      "type": "function",
+      "name": "WaitForCloseInput",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "WaitForCloseInput.WaitForCloseInput method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:PlayTypewriterSound",
+      "type": "function",
+      "name": "PlayTypewriterSound",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "PlayTypewriterSound.PlayTypewriterSound method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:SetUIVisible",
+      "type": "function",
+      "name": "SetUIVisible",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "SetUIVisible.SetUIVisible method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:DetachOverlayCanvasFromWorldParent",
+      "type": "function",
+      "name": "DetachOverlayCanvasFromWorldParent",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DetachOverlayCanvasFromWorldParent.DetachOverlayCanvasFromWorldParent method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:EnsureCanvasVisible",
+      "type": "function",
+      "name": "EnsureCanvasVisible",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "EnsureCanvasVisible.EnsureCanvasVisible method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:ConfigureTextFit",
+      "type": "function",
+      "name": "ConfigureTextFit",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "ConfigureTextFit.ConfigureTextFit method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/OneTimeText.cs",
+      "type": "file",
+      "name": "OneTimeText.cs",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "One-shot dialogue trigger wired to DialogueUIController.",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Text/OneTimeText.cs:OneTimeText",
+      "type": "class",
+      "name": "OneTimeText",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "MonoBehaviour one-shot dialogue trigger",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "Awake.Awake method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnDisable",
+      "type": "function",
+      "name": "OnDisable",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OnDisable.OnDisable method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:TriggerSequence",
+      "type": "function",
+      "name": "TriggerSequence",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "TriggerSequence.TriggerSequence method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:NotifyDialogueFinished",
+      "type": "function",
+      "name": "NotifyDialogueFinished",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "NotifyDialogueFinished.NotifyDialogueFinished method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:IsBlockedByPersistentSave",
+      "type": "function",
+      "name": "IsBlockedByPersistentSave",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "IsBlockedByPersistentSave.IsBlockedByPersistentSave method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:GetSavedValue",
+      "type": "function",
+      "name": "GetSavedValue",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "GetSavedValue.GetSavedValue method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:GetSaveKey",
+      "type": "function",
+      "name": "GetSaveKey",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "GetSaveKey.GetSaveKey method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:Reset",
+      "type": "function",
+      "name": "Reset",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "Reset.Reset method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnValidate",
+      "type": "function",
+      "name": "OnValidate",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OnValidate.OnValidate method",
+      "tags": [
+        "dialogue",
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Tilemap/TileReactionOnTouch2D.cs",
+      "type": "file",
+      "name": "TileReactionOnTouch2D.cs",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "Tilemap touch entry point for element reactions.",
+      "tags": [
+        "tilemap",
+        "reaction",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "type": "class",
+      "name": "TileReactionOnTouch2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "MonoBehaviour tilemap reaction",
+      "tags": [
+        "tilemap",
+        "reaction",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "OnCollisionEnter2D.OnCollisionEnter2D method",
+      "tags": [
+        "tilemap",
+        "reaction",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "OnTriggerEnter2D.OnTriggerEnter2D method",
+      "tags": [
+        "tilemap",
+        "reaction",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:TryReact",
+      "type": "function",
+      "name": "TryReact",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "TryReact.TryReact method",
+      "tags": [
+        "tilemap",
+        "reaction",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:UI/ADDisplayUI.cs",
+      "type": "file",
+      "name": "ADDisplayUI.cs",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "Delayed ad/hint UI display.",
+      "tags": [
+        "ui",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "class",
+      "name": "ADDisplayUI",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "MonoBehaviour ad UI",
+      "tags": [
+        "ui",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/ADDisplayUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/ADDisplayUI.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:UI/SpaceBarDisplayUI.cs",
+      "type": "file",
+      "name": "SpaceBarDisplayUI.cs",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "Space-bar hint UI paired with ADDisplayUI.",
+      "tags": [
+        "ui",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "type": "class",
+      "name": "SpaceBarDisplayUI",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "MonoBehaviour space-bar hint UI",
+      "tags": [
+        "ui",
+        "csharp",
+        "unity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/SpaceBarDisplayUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "Start.Start method",
+      "tags": [
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/SpaceBarDisplayUI.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "Update.Update method",
+      "tags": [
+        "ui",
+        "csharp",
+        "unity",
+        "method"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Audio/AudioManager.cs",
+      "target": "class:Audio/AudioManager.cs:AudioManager",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Audio/AudioManager.cs:AudioManager",
+      "target": "function:Audio/AudioManager.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Audio/AudioManager.cs:AudioManager",
+      "target": "function:Audio/AudioManager.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Camera/FollowCamera.cs",
+      "target": "class:Camera/FollowCamera.cs:FollowCamera",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/FollowCamera.cs:FollowCamera",
+      "target": "function:Camera/FollowCamera.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/FollowCamera.cs:FollowCamera",
+      "target": "function:Camera/FollowCamera.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Camera/Parallax.cs",
+      "target": "class:Camera/Parallax.cs:Parallax",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/Parallax.cs:Parallax",
+      "target": "function:Camera/Parallax.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/Parallax.cs:Parallax",
+      "target": "function:Camera/Parallax.cs:GetActualCameraPosition",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/Parallax.cs:Parallax",
+      "target": "function:Camera/Parallax.cs:LateUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Camera/ParallaxManager.cs",
+      "target": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "target": "function:Camera/ParallaxManager.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "target": "function:Camera/ParallaxManager.cs:AddParallaxLayer",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Fire/FireMove.cs",
+      "target": "class:Fire/FireMove.cs:FireMove",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:FixedUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:CalculateMoveDirection",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:StopMove",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Ice/IceMove.cs",
+      "target": "class:Ice/IceMove.cs:IceMove",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:StopMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:MoveAwayCoroutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/JumpJumpHappy.cs",
+      "target": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "target": "function:Platform/JumpJumpHappy.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "target": "function:Platform/JumpJumpHappy.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "target": "function:Platform/JumpJumpHappy.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "target": "function:Platform/JumpJumpHappy.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/MiniGameElevator.cs",
+      "target": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "target": "function:Platform/MiniGameElevator.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "target": "function:Platform/MiniGameElevator.cs:OnTriggerStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "target": "function:Platform/MiniGameElevator.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/MovingPlatform.cs",
+      "target": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "target": "function:Platform/MovingPlatform.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "target": "function:Platform/MovingPlatform.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "target": "function:Platform/MovingPlatform.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "target": "function:Platform/MovingPlatform.cs:OnCollisionExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/NewLevel.cs",
+      "target": "class:Platform/NewLevel.cs:NewLevel",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:FixedUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:StopMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:IsMoving",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/NextLevelElevator.cs",
+      "target": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "target": "function:Platform/NextLevelElevator.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "target": "function:Platform/NextLevelElevator.cs:OnTriggerStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "target": "function:Platform/NextLevelElevator.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerHP/DeathTimesCount.cs",
+      "target": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "target": "function:PlayerHP/DeathTimesCount.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "target": "function:PlayerHP/DeathTimesCount.cs:AddDeath",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "target": "function:PlayerHP/DeathTimesCount.cs:UpdateUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerHP/PersistUI.cs",
+      "target": "class:PlayerHP/PersistUI.cs:PersistUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/PersistUI.cs:PersistUI",
+      "target": "function:PlayerHP/PersistUI.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerHP/PlayerHP.cs",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "target": "function:PlayerHP/PlayerHP.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "target": "function:PlayerHP/PlayerHP.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "target": "function:PlayerHP/PlayerHP.cs:TakeDamage",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerInteractions/OnFire.cs",
+      "target": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:HandleFlashing",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:StopFlashing",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:OnTriggerStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerInteractions/OnSpike.cs",
+      "target": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "target": "function:PlayerInteractions/OnSpike.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "target": "function:PlayerInteractions/OnSpike.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "target": "function:PlayerInteractions/OnSpike.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerMovement/PlayerMovementRe.cs",
+      "target": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:FixedUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleJumpInput",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleWallClingInput",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:CheckWall",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleWallCling",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:IsAtWallEdge",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:WallJump",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:EndWallJump",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:EdgeDetach",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleIceMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:OnTriggerStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleFlip",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:UpdateAnimator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Prize/CollectibleManager.cs",
+      "target": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:OnCollectiblePicked",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:SpawnRandomCollectible",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:BeginSpawning",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:FocusRoutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Prize/Mossberry.cs",
+      "target": "class:Prize/Mossberry.cs:Mossberry",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:PlayAndCollect",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/FireAndIce.cs",
+      "target": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:TryReactFromChildTrigger",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:TryReact",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:IsOtherTagMatch",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:ResolveTilemap",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:TryFindReactCell",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:TryFindNeighborTile",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/FireAndIceChildTriggerRelay.cs",
+      "target": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "target": "function:Reactions/FireAndIceChildTriggerRelay.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "target": "function:Reactions/FireAndIceChildTriggerRelay.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/FireAndSpike.cs",
+      "target": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:CanReact",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:RepelFromPoint",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/IceAndSpike.cs",
+      "target": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "target": "function:Reactions/IceAndSpike.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "target": "function:Reactions/IceAndSpike.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "target": "function:Reactions/IceAndSpike.cs:TryReact",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/MovableInteractions.cs",
+      "target": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:StopMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:MoveAwayCoroutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "target": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:FixedUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnCollisionStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StartMoveFromPlayer",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StopAndLock",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:IsStopTag",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:ShouldStopBy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:CheckOverlapForStopTag",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "target": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "target": "class:Camera/Parallax.cs:Parallax",
+      "type": "related",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "related",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/BerryController.cs",
+      "target": "class:Scene/BerryController.cs:BerryController",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/BerryController.cs:BerryController",
+      "target": "function:Scene/BerryController.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/BerryController.cs:BerryController",
+      "target": "function:Scene/BerryController.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/CollectCountUI.cs",
+      "target": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:UpdateCountUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/DisplayCursor.cs",
+      "target": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "target": "function:Scene/DisplayCursor.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "target": "function:Scene/DisplayCursor.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/GameController.cs",
+      "target": "class:Scene/GameController.cs:GameController",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/GameController.cs:GameController",
+      "target": "function:Scene/GameController.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/GameController.cs:GameController",
+      "target": "function:Scene/GameController.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/Menu.cs",
+      "target": "class:Scene/Menu.cs:Menu",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:PauseGame",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/NormalSceneTransition.cs",
+      "target": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "target": "function:Scene/NormalSceneTransition.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "target": "function:Scene/NormalSceneTransition.cs:TriggerRoutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/PointerScript.cs",
+      "target": "class:Scene/PointerScript.cs:PointerUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:GetActiveBerry",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/PointerScriptArrow.cs",
+      "target": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "target": "function:Scene/PointerScriptArrow.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "target": "function:Scene/PointerScriptArrow.cs:GetActiveBerry",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/QuitGame.cs",
+      "target": "class:Scene/QuitGame.cs:QuitGame",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/QuitGame.cs:QuitGame",
+      "target": "function:Scene/QuitGame.cs:Quit",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/ResumeGame.cs",
+      "target": "class:Scene/ResumeGame.cs:ResumeGame",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/ResumeGame.cs:ResumeGame",
+      "target": "function:Scene/ResumeGame.cs:Resume",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/SceneControllerScript.cs",
+      "target": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:BeginTransition",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:TransitionCoroutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/SettingSceneController.cs",
+      "target": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "target": "function:Scene/SettingSceneController.cs:LoadScene",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "target": "function:Scene/SettingSceneController.cs:ReloadScene",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/Timer.cs",
+      "target": "class:Scene/Timer.cs:Timer",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:UpdateTimerUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Spikes/SpikesMove.cs",
+      "target": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:StopMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:MoveAwayCoroutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Text/DialogueSystemDefaults.cs",
+      "target": "class:Text/DialogueSystemDefaults.cs:DialogueSystemDefaults",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Text/DialogueUIController.cs",
+      "target": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Reset",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:TryPlayDialogue",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:PlayDialogueSession",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:TypeSegment",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:WaitForCloseInput",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:PlayTypewriterSound",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:SetUIVisible",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:DetachOverlayCanvasFromWorldParent",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:EnsureCanvasVisible",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:ConfigureTextFit",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Text/OneTimeText.cs",
+      "target": "class:Text/OneTimeText.cs:OneTimeText",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnDisable",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:TriggerSequence",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:NotifyDialogueFinished",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:IsBlockedByPersistentSave",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:GetSavedValue",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:GetSaveKey",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:Reset",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnValidate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Tilemap/TileReactionOnTouch2D.cs",
+      "target": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:TryReact",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:UI/ADDisplayUI.cs",
+      "target": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "target": "function:UI/ADDisplayUI.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "target": "function:UI/ADDisplayUI.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:UI/SpaceBarDisplayUI.cs",
+      "target": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "function:UI/SpaceBarDisplayUI.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "function:UI/SpaceBarDisplayUI.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "related",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "related",
+      "weight": 0.7,
+      "direction": "forward"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:player",
+      "name": "Player Systems",
+      "description": "Movement, health, and damage interactions",
+      "nodeIds": [
+        "file:PlayerMovement/PlayerMovementRe.cs",
+        "file:PlayerHP/DeathTimesCount.cs",
+        "file:PlayerHP/PersistUI.cs",
+        "file:PlayerHP/PlayerHP.cs",
+        "file:PlayerInteractions/OnFire.cs",
+        "file:PlayerInteractions/OnSpike.cs"
+      ]
+    },
+    {
+      "id": "layer:gameplay",
+      "name": "Gameplay",
+      "description": "Collectibles, level control, and platforms",
+      "nodeIds": [
+        "file:Prize/CollectibleManager.cs",
+        "file:Prize/Mossberry.cs",
+        "file:Scene/BerryController.cs",
+        "file:Scene/CollectCountUI.cs",
+        "file:Scene/DisplayCursor.cs",
+        "file:Scene/GameController.cs",
+        "file:Scene/Menu.cs",
+        "file:Scene/NormalSceneTransition.cs",
+        "file:Scene/PointerScript.cs",
+        "file:Scene/PointerScriptArrow.cs",
+        "file:Scene/QuitGame.cs",
+        "file:Scene/ResumeGame.cs",
+        "file:Scene/SceneControllerScript.cs",
+        "file:Scene/SettingSceneController.cs",
+        "file:Scene/Timer.cs",
+        "file:Platform/JumpJumpHappy.cs",
+        "file:Platform/MiniGameElevator.cs",
+        "file:Platform/MovingPlatform.cs",
+        "file:Platform/NewLevel.cs",
+        "file:Platform/NextLevelElevator.cs"
+      ]
+    },
+    {
+      "id": "layer:traps",
+      "name": "Traps & Reactions",
+      "description": "Fire/ice/spike traps and element combos",
+      "nodeIds": [
+        "file:Fire/FireMove.cs",
+        "file:Ice/IceMove.cs",
+        "file:Spikes/SpikesMove.cs",
+        "file:Reactions/FireAndIce.cs",
+        "file:Reactions/FireAndIceChildTriggerRelay.cs",
+        "file:Reactions/FireAndSpike.cs",
+        "file:Reactions/IceAndSpike.cs",
+        "file:Reactions/MovableInteractions.cs",
+        "file:Reactions/PushAwayOnPlayerTrigger2D.cs",
+        "file:Tilemap/TileReactionOnTouch2D.cs"
+      ]
+    },
+    {
+      "id": "layer:presentation",
+      "name": "Presentation",
+      "description": "Camera, UI, dialogue, and audio",
+      "nodeIds": [
+        "file:Camera/FollowCamera.cs",
+        "file:Camera/Parallax.cs",
+        "file:Camera/ParallaxManager.cs",
+        "file:UI/ADDisplayUI.cs",
+        "file:UI/SpaceBarDisplayUI.cs",
+        "file:Text/DialogueSystemDefaults.cs",
+        "file:Text/DialogueUIController.cs",
+        "file:Text/OneTimeText.cs",
+        "file:Audio/AudioManager.cs"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project Overview",
+      "description": "Start with GameController to see how levels boot collectibles and test flow.",
+      "nodeIds": [
+        "file:Scene/GameController.cs"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Player Movement",
+      "description": "PlayerMovementRe implements jump, wall cling, ice slide, and coyote time.",
+      "nodeIds": [
+        "file:PlayerMovement/PlayerMovementRe.cs"
+      ],
+      "languageLesson": "Unity MonoBehaviour lifecycle: Awake/Update/FixedUpdate split input vs physics."
+    },
+    {
+      "order": 3,
+      "title": "Health & Damage",
+      "description": "PlayerHP plus OnFire/OnSpike/Timer define damage sources.",
+      "nodeIds": [
+        "file:PlayerHP/PlayerHP.cs",
+        "file:PlayerInteractions/OnFire.cs",
+        "file:PlayerInteractions/OnSpike.cs"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Collectibles & UI",
+      "description": "CollectibleManager drives berry pickup and count UI.",
+      "nodeIds": [
+        "file:Prize/CollectibleManager.cs",
+        "file:Prize/Mossberry.cs",
+        "file:Scene/CollectCountUI.cs"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Element Traps",
+      "description": "Fire/Ice/Spikes and Reactions implement puzzle combos.",
+      "nodeIds": [
+        "file:Reactions/FireAndIce.cs",
+        "file:Fire/FireMove.cs",
+        "file:Ice/IceMove.cs",
+        "file:Spikes/SpikesMove.cs"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Scenes & Dialogue",
+      "description": "SceneControllerScript handles transitions; DialogueUIController shows story text.",
+      "nodeIds": [
+        "file:Scene/SceneControllerScript.cs",
+        "file:Text/DialogueUIController.cs"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Camera & Parallax",
+      "description": "FollowCamera tracks the player; Parallax adds 2D depth.",
+      "nodeIds": [
+        "file:Camera/FollowCamera.cs",
+        "file:Camera/Parallax.cs",
+        "file:Camera/ParallaxManager.cs"
+      ]
+    }
+  ]
+}

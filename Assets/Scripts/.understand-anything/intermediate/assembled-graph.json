@@ -1,0 +1,5840 @@
+{
+  "nodes": [
+    {
+      "id": "file:Audio/AudioManager.cs",
+      "type": "file",
+      "name": "AudioManager.cs",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "管理背景音乐播放，在 Start 中获取 AudioSource 并循环播放 clips。",
+      "tags": [
+        "音频",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Audio/AudioManager.cs:AudioManager",
+      "type": "class",
+      "name": "AudioManager",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "MonoBehaviour 音频管理器",
+      "tags": [
+        "音频",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Audio/AudioManager.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "AudioManager.Start 方法",
+      "tags": [
+        "音频",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Audio/AudioManager.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Audio/AudioManager.cs",
+      "summary": "AudioManager.Update 方法",
+      "tags": [
+        "音频",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Camera/FollowCamera.cs",
+      "type": "file",
+      "name": "FollowCamera.cs",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "2D 跟随相机，LateUpdate 中平滑跟随玩家 Transform。",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Camera/FollowCamera.cs:FollowCamera",
+      "type": "class",
+      "name": "FollowCamera",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "MonoBehaviour 相机跟随",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/FollowCamera.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "FollowCamera.Start 方法",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/FollowCamera.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Camera/FollowCamera.cs",
+      "summary": "FollowCamera.Update 方法",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Camera/Parallax.cs",
+      "type": "file",
+      "name": "Parallax.cs",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "视差滚动背景层，支持无限循环与多轴偏移。",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Camera/Parallax.cs:Parallax",
+      "type": "class",
+      "name": "Parallax",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "MonoBehaviour 视差层",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Camera/Parallax.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "Parallax.Start 方法",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/Parallax.cs:GetActualCameraPosition",
+      "type": "function",
+      "name": "GetActualCameraPosition",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "Parallax.GetActualCameraPosition 方法",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/Parallax.cs:LateUpdate",
+      "type": "function",
+      "name": "LateUpdate",
+      "filePath": "Camera/Parallax.cs",
+      "summary": "Parallax.LateUpdate 方法",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Camera/ParallaxManager.cs",
+      "type": "file",
+      "name": "ParallaxManager.cs",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "统一管理多个 Parallax 层，按相机位移驱动各层。",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "type": "class",
+      "name": "ParallaxManager",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "MonoBehaviour 视差管理器",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Camera/ParallaxManager.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "ParallaxManager.Start 方法",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Camera/ParallaxManager.cs:AddParallaxLayer",
+      "type": "function",
+      "name": "AddParallaxLayer",
+      "filePath": "Camera/ParallaxManager.cs",
+      "summary": "ParallaxManager.AddParallaxLayer 方法",
+      "tags": [
+        "相机",
+        "渲染",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Fire/FireMove.cs",
+      "type": "file",
+      "name": "FireMove.cs",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "火焰陷阱移动逻辑，碰撞后切换形态或触发反应。",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Fire/FireMove.cs:FireMove",
+      "type": "class",
+      "name": "FireMove",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "MonoBehaviour 火焰陷阱",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FireMove.Awake 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FireMove.Update 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:FixedUpdate",
+      "type": "function",
+      "name": "FixedUpdate",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FireMove.FixedUpdate 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:CalculateMoveDirection",
+      "type": "function",
+      "name": "CalculateMoveDirection",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FireMove.CalculateMoveDirection 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:StopMove",
+      "type": "function",
+      "name": "StopMove",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FireMove.StopMove 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FireMove.OnCollisionEnter2D 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FireMove.OnTriggerEnter2D 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Fire/FireMove.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Fire/FireMove.cs",
+      "summary": "FireMove.OnTriggerExit2D 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Ice/IceMove.cs",
+      "type": "file",
+      "name": "IceMove.cs",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "冰块陷阱移动，可被推动并在碰撞刺/火时改变状态。",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Ice/IceMove.cs:IceMove",
+      "type": "class",
+      "name": "IceMove",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "MonoBehaviour 冰块陷阱",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "IceMove.OnTriggerEnter2D 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "IceMove.OnTriggerExit2D 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "IceMove.Update 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "IceMove.StopMovement 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Ice/IceMove.cs:MoveAwayCoroutine",
+      "type": "function",
+      "name": "MoveAwayCoroutine",
+      "filePath": "Ice/IceMove.cs",
+      "summary": "IceMove.MoveAwayCoroutine 方法",
+      "tags": [
+        "陷阱",
+        "元素",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/JumpJumpHappy.cs",
+      "type": "file",
+      "name": "JumpJumpHappy.cs",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "弹跳平台，对玩家施加 burstForce 向上推力。",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "type": "class",
+      "name": "JumpJumpHappy",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "MonoBehaviour 弹跳平台",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/JumpJumpHappy.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "JumpJumpHappy.Start 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/JumpJumpHappy.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "JumpJumpHappy.Update 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/JumpJumpHappy.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "JumpJumpHappy.OnTriggerEnter2D 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/JumpJumpHappy.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Platform/JumpJumpHappy.cs",
+      "summary": "JumpJumpHappy.OnTriggerExit2D 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/MiniGameElevator.cs",
+      "type": "file",
+      "name": "MiniGameElevator.cs",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "小游戏升降台，上升/返回并配合淡出切换。",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "type": "class",
+      "name": "MiniGameElevator",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "MonoBehaviour 小游戏升降台",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Platform/MiniGameElevator.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "MiniGameElevator.Start 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MiniGameElevator.cs:OnTriggerStay2D",
+      "type": "function",
+      "name": "OnTriggerStay2D",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "MiniGameElevator.OnTriggerStay2D 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MiniGameElevator.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Platform/MiniGameElevator.cs",
+      "summary": "MiniGameElevator.OnTriggerExit2D 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/MovingPlatform.cs",
+      "type": "file",
+      "name": "MovingPlatform.cs",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "在 pointA 与 pointB 之间往返的移动平台。",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "type": "class",
+      "name": "MovingPlatform",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "MonoBehaviour 移动平台",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MovingPlatform.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "MovingPlatform.Start 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MovingPlatform.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "MovingPlatform.Update 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MovingPlatform.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "MovingPlatform.OnCollisionEnter2D 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/MovingPlatform.cs:OnCollisionExit2D",
+      "type": "function",
+      "name": "OnCollisionExit2D",
+      "filePath": "Platform/MovingPlatform.cs",
+      "summary": "MovingPlatform.OnCollisionExit2D 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/NewLevel.cs",
+      "type": "file",
+      "name": "NewLevel.cs",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "关卡过渡用移动物体，到达 stopPoint 后停止。",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/NewLevel.cs:NewLevel",
+      "type": "class",
+      "name": "NewLevel",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "MonoBehaviour 关卡过渡物体",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "NewLevel.Awake 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "NewLevel.Start 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:FixedUpdate",
+      "type": "function",
+      "name": "FixedUpdate",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "NewLevel.FixedUpdate 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "NewLevel.StopMovement 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NewLevel.cs:IsMoving",
+      "type": "function",
+      "name": "IsMoving",
+      "filePath": "Platform/NewLevel.cs",
+      "summary": "NewLevel.IsMoving 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Platform/NextLevelElevator.cs",
+      "type": "file",
+      "name": "NextLevelElevator.cs",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "通关升降台，上升后加载下一关场景。",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "type": "class",
+      "name": "NextLevelElevator",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "MonoBehaviour 通关升降台",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Platform/NextLevelElevator.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "NextLevelElevator.Start 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NextLevelElevator.cs:OnTriggerStay2D",
+      "type": "function",
+      "name": "OnTriggerStay2D",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "NextLevelElevator.OnTriggerStay2D 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Platform/NextLevelElevator.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Platform/NextLevelElevator.cs",
+      "summary": "NextLevelElevator.OnTriggerExit2D 方法",
+      "tags": [
+        "平台",
+        "关卡",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/DeathTimesCount.cs",
+      "type": "file",
+      "name": "DeathTimesCount.cs",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "单例统计玩家死亡次数。",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "type": "class",
+      "name": "DeathTimesCounter",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "单例 MonoBehaviour 死亡计数",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/DeathTimesCount.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "DeathTimesCounter.Awake 方法",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/DeathTimesCount.cs:AddDeath",
+      "type": "function",
+      "name": "AddDeath",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "DeathTimesCounter.AddDeath 方法",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/DeathTimesCount.cs:UpdateUI",
+      "type": "function",
+      "name": "UpdateUI",
+      "filePath": "PlayerHP/DeathTimesCount.cs",
+      "summary": "DeathTimesCounter.UpdateUI 方法",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/PersistUI.cs",
+      "type": "file",
+      "name": "PersistUI.cs",
+      "filePath": "PlayerHP/PersistUI.cs",
+      "summary": "跨场景持久化 UI（DontDestroyOnLoad）。",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerHP/PersistUI.cs:PersistUI",
+      "type": "class",
+      "name": "PersistUI",
+      "filePath": "PlayerHP/PersistUI.cs",
+      "summary": "MonoBehaviour 持久 UI",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PersistUI.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "PlayerHP/PersistUI.cs",
+      "summary": "PersistUI.Awake 方法",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerHP/PlayerHP.cs",
+      "type": "file",
+      "name": "PlayerHP.cs",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "玩家生命值，TakeDamage 处理受伤。",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "class",
+      "name": "PlayerHP",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "MonoBehaviour 玩家血量",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PlayerHP.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "PlayerHP.Start 方法",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PlayerHP.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "PlayerHP.Update 方法",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerHP/PlayerHP.cs:TakeDamage",
+      "type": "function",
+      "name": "TakeDamage",
+      "filePath": "PlayerHP/PlayerHP.cs",
+      "summary": "PlayerHP.TakeDamage 方法",
+      "tags": [
+        "玩家",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerInteractions/OnFire.cs",
+      "type": "file",
+      "name": "OnFire.cs",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "玩家接触火焰时持续扣血并闪烁提示。",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "type": "class",
+      "name": "OnFire",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "MonoBehaviour 火焰伤害",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnFire.Start 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnFire.Update 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:HandleFlashing",
+      "type": "function",
+      "name": "HandleFlashing",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnFire.HandleFlashing 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:StopFlashing",
+      "type": "function",
+      "name": "StopFlashing",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnFire.StopFlashing 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:OnTriggerStay2D",
+      "type": "function",
+      "name": "OnTriggerStay2D",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnFire.OnTriggerStay2D 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnFire.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "PlayerInteractions/OnFire.cs",
+      "summary": "OnFire.OnTriggerExit2D 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerInteractions/OnSpike.cs",
+      "type": "file",
+      "name": "OnSpike.cs",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "玩家接触尖刺时一次性扣血。",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "type": "class",
+      "name": "OnSpike",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "MonoBehaviour 尖刺伤害",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnSpike.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "OnSpike.Start 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnSpike.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "OnSpike.Update 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerInteractions/OnSpike.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "PlayerInteractions/OnSpike.cs",
+      "summary": "OnSpike.OnTriggerEnter2D 方法",
+      "tags": [
+        "玩家",
+        "伤害",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:PlayerMovement/PlayerMovementRe.cs",
+      "type": "file",
+      "name": "PlayerMovementRe.cs",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "核心 2D 平台跳跃控制器：移动、跳跃、攀墙、冰面滑行、Coyote Time。",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "type": "class",
+      "name": "PlayerMovementRe",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "MonoBehaviour 玩家移动核心",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.Awake 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.Update 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:FixedUpdate",
+      "type": "function",
+      "name": "FixedUpdate",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.FixedUpdate 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleJumpInput",
+      "type": "function",
+      "name": "HandleJumpInput",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.HandleJumpInput 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleWallClingInput",
+      "type": "function",
+      "name": "HandleWallClingInput",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.HandleWallClingInput 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:CheckWall",
+      "type": "function",
+      "name": "CheckWall",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.CheckWall 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleWallCling",
+      "type": "function",
+      "name": "HandleWallCling",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.HandleWallCling 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:IsAtWallEdge",
+      "type": "function",
+      "name": "IsAtWallEdge",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.IsAtWallEdge 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:WallJump",
+      "type": "function",
+      "name": "WallJump",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.WallJump 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:EndWallJump",
+      "type": "function",
+      "name": "EndWallJump",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.EndWallJump 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:EdgeDetach",
+      "type": "function",
+      "name": "EdgeDetach",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.EdgeDetach 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleIceMovement",
+      "type": "function",
+      "name": "HandleIceMovement",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.HandleIceMovement 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:OnTriggerStay2D",
+      "type": "function",
+      "name": "OnTriggerStay2D",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.OnTriggerStay2D 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.OnTriggerExit2D 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:HandleFlip",
+      "type": "function",
+      "name": "HandleFlip",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.HandleFlip 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:PlayerMovement/PlayerMovementRe.cs:UpdateAnimator",
+      "type": "function",
+      "name": "UpdateAnimator",
+      "filePath": "PlayerMovement/PlayerMovementRe.cs",
+      "summary": "PlayerMovementRe.UpdateAnimator 方法",
+      "tags": [
+        "玩家",
+        "核心",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Prize/CollectibleManager.cs",
+      "type": "file",
+      "name": "CollectibleManager.cs",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "收集品生成与计时，协调相机聚焦与 GameController。",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "class",
+      "name": "CollectibleManager",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "MonoBehaviour 收集品管理",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "CollectibleManager.Awake 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "CollectibleManager.Start 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "CollectibleManager.Update 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:OnCollectiblePicked",
+      "type": "function",
+      "name": "OnCollectiblePicked",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "CollectibleManager.OnCollectiblePicked 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:SpawnRandomCollectible",
+      "type": "function",
+      "name": "SpawnRandomCollectible",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "CollectibleManager.SpawnRandomCollectible 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:BeginSpawning",
+      "type": "function",
+      "name": "BeginSpawning",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "CollectibleManager.BeginSpawning 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/CollectibleManager.cs:FocusRoutine",
+      "type": "function",
+      "name": "FocusRoutine",
+      "filePath": "Prize/CollectibleManager.cs",
+      "summary": "CollectibleManager.FocusRoutine 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Prize/Mossberry.cs",
+      "type": "file",
+      "name": "Mossberry.cs",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "可收集浆果，触发 CollectibleManager 计数与音效。",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Prize/Mossberry.cs:Mossberry",
+      "type": "class",
+      "name": "Mossberry",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "MonoBehaviour 浆果收集物",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "Mossberry.Start 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "Mossberry.Update 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:PlayAndCollect",
+      "type": "function",
+      "name": "PlayAndCollect",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "Mossberry.PlayAndCollect 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "Mossberry.OnTriggerEnter2D 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Prize/Mossberry.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Prize/Mossberry.cs",
+      "summary": "Mossberry.OnTriggerExit2D 方法",
+      "tags": [
+        "收集",
+        "游戏逻辑",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/FireAndIce.cs",
+      "type": "file",
+      "name": "FireAndIce.cs",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "火与冰元素碰撞反应，切换物体形态。",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "type": "class",
+      "name": "FireAndIce",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "MonoBehaviour 火冰反应",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "FireAndIce.OnCollisionEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "FireAndIce.OnTriggerEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryReactFromChildTrigger",
+      "type": "function",
+      "name": "TryReactFromChildTrigger",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "FireAndIce.TryReactFromChildTrigger 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryReact",
+      "type": "function",
+      "name": "TryReact",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "FireAndIce.TryReact 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:IsOtherTagMatch",
+      "type": "function",
+      "name": "IsOtherTagMatch",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "FireAndIce.IsOtherTagMatch 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:ResolveTilemap",
+      "type": "function",
+      "name": "ResolveTilemap",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "FireAndIce.ResolveTilemap 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryFindReactCell",
+      "type": "function",
+      "name": "TryFindReactCell",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "FireAndIce.TryFindReactCell 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIce.cs:TryFindNeighborTile",
+      "type": "function",
+      "name": "TryFindNeighborTile",
+      "filePath": "Reactions/FireAndIce.cs",
+      "summary": "FireAndIce.TryFindNeighborTile 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/FireAndIceChildTriggerRelay.cs",
+      "type": "file",
+      "name": "FireAndIceChildTriggerRelay.cs",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "子碰撞体触发器，转发至 FireAndIce 父组件。",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "type": "class",
+      "name": "FireAndIceChildTriggerRelay",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "MonoBehaviour 触发转发",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIceChildTriggerRelay.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "FireAndIceChildTriggerRelay.Awake 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndIceChildTriggerRelay.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "summary": "FireAndIceChildTriggerRelay.OnTriggerEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/FireAndSpike.cs",
+      "type": "file",
+      "name": "FireAndSpike.cs",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "火与尖刺碰撞反应逻辑。",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "type": "class",
+      "name": "FireAndSpike",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "MonoBehaviour 火刺反应",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "FireAndSpike.Awake 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "FireAndSpike.OnCollisionEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "FireAndSpike.OnTriggerEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:CanReact",
+      "type": "function",
+      "name": "CanReact",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "FireAndSpike.CanReact 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/FireAndSpike.cs:RepelFromPoint",
+      "type": "function",
+      "name": "RepelFromPoint",
+      "filePath": "Reactions/FireAndSpike.cs",
+      "summary": "FireAndSpike.RepelFromPoint 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/IceAndSpike.cs",
+      "type": "file",
+      "name": "IceAndSpike.cs",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "冰与尖刺碰撞反应逻辑。",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "type": "class",
+      "name": "IceAndSpike",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "MonoBehaviour 冰刺反应",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Reactions/IceAndSpike.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "IceAndSpike.OnCollisionEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/IceAndSpike.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "IceAndSpike.OnTriggerEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/IceAndSpike.cs:TryReact",
+      "type": "function",
+      "name": "TryReact",
+      "filePath": "Reactions/IceAndSpike.cs",
+      "summary": "IceAndSpike.TryReact 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/MovableInteractions.cs",
+      "type": "file",
+      "name": "MovableInteractions.cs",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "可推动物体的通用移动与停止接口。",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "type": "class",
+      "name": "MovableInteractions",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "MonoBehaviour 可推动物体",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "MovableInteractions.OnTriggerEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "MovableInteractions.OnTriggerExit2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "MovableInteractions.Update 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "MovableInteractions.StopMovement 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/MovableInteractions.cs:MoveAwayCoroutine",
+      "type": "function",
+      "name": "MoveAwayCoroutine",
+      "filePath": "Reactions/MovableInteractions.cs",
+      "summary": "MovableInteractions.MoveAwayCoroutine 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "type": "file",
+      "name": "PushAwayOnPlayerTrigger2D.cs",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "玩家触发时将物体推离并锁定移动。",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "type": "class",
+      "name": "PushAwayOnPlayerTrigger2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "MonoBehaviour 推离触发器",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.Awake 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.Update 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:FixedUpdate",
+      "type": "function",
+      "name": "FixedUpdate",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.FixedUpdate 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.OnTriggerEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.OnCollisionEnter2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnCollisionStay2D",
+      "type": "function",
+      "name": "OnCollisionStay2D",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.OnCollisionStay2D 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StartMoveFromPlayer",
+      "type": "function",
+      "name": "StartMoveFromPlayer",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.StartMoveFromPlayer 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StopAndLock",
+      "type": "function",
+      "name": "StopAndLock",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.StopAndLock 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:IsStopTag",
+      "type": "function",
+      "name": "IsStopTag",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.IsStopTag 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:ShouldStopBy",
+      "type": "function",
+      "name": "ShouldStopBy",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.ShouldStopBy 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:CheckOverlapForStopTag",
+      "type": "function",
+      "name": "CheckOverlapForStopTag",
+      "filePath": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "summary": "PushAwayOnPlayerTrigger2D.CheckOverlapForStopTag 方法",
+      "tags": [
+        "反应",
+        "物理",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/BerryController.cs",
+      "type": "file",
+      "name": "BerryController.cs",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "场景中浆果对象的批量管理。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/BerryController.cs:BerryController",
+      "type": "class",
+      "name": "BerryController",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "MonoBehaviour 浆果控制器",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/BerryController.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "BerryController.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/BerryController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/BerryController.cs",
+      "summary": "BerryController.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/CollectCountUI.cs",
+      "type": "file",
+      "name": "CollectCountUI.cs",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "显示已收集数量的 UI 文本绑定。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "type": "class",
+      "name": "CollectCountUI",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "MonoBehaviour 收集计数 UI",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "CollectCountUI.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:UpdateCountUI",
+      "type": "function",
+      "name": "UpdateCountUI",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "CollectCountUI.UpdateCountUI 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/CollectCountUI.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Scene/CollectCountUI.cs",
+      "summary": "CollectCountUI.OnDestroy 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/DisplayCursor.cs",
+      "type": "file",
+      "name": "DisplayCursor.cs",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "控制鼠标光标显示/隐藏。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "type": "class",
+      "name": "DisplayCursor",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "MonoBehaviour 光标控制",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/DisplayCursor.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "DisplayCursor.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/DisplayCursor.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/DisplayCursor.cs",
+      "summary": "DisplayCursor.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/GameController.cs",
+      "type": "file",
+      "name": "GameController.cs",
+      "filePath": "Scene/GameController.cs",
+      "summary": "关卡测试开关，控制 gameObjects 激活与 CollectibleManager 生成。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/GameController.cs:GameController",
+      "type": "class",
+      "name": "GameController",
+      "filePath": "Scene/GameController.cs",
+      "summary": "MonoBehaviour 关卡控制器",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/GameController.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/GameController.cs",
+      "summary": "GameController.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/GameController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/GameController.cs",
+      "summary": "GameController.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/Menu.cs",
+      "type": "file",
+      "name": "Menu.cs",
+      "filePath": "Scene/Menu.cs",
+      "summary": "暂停菜单显示与 ESC 切换。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/Menu.cs:Menu",
+      "type": "class",
+      "name": "Menu",
+      "filePath": "Scene/Menu.cs",
+      "summary": "MonoBehaviour 暂停菜单",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Menu.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Menu.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Menu.cs:PauseGame",
+      "type": "function",
+      "name": "PauseGame",
+      "filePath": "Scene/Menu.cs",
+      "summary": "Menu.PauseGame 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/NormalSceneTransition.cs",
+      "type": "file",
+      "name": "NormalSceneTransition.cs",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "带淡入淡出的场景切换。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "class",
+      "name": "NormalSceneTransition",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "MonoBehaviour 场景过渡",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/NormalSceneTransition.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "NormalSceneTransition.OnTriggerEnter2D 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/NormalSceneTransition.cs:TriggerRoutine",
+      "type": "function",
+      "name": "TriggerRoutine",
+      "filePath": "Scene/NormalSceneTransition.cs",
+      "summary": "NormalSceneTransition.TriggerRoutine 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/PointerScript.cs",
+      "type": "file",
+      "name": "PointerScript.cs",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "UI 指针跟随带 targetTag 的目标物体。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/PointerScript.cs:PointerUI",
+      "type": "class",
+      "name": "PointerUI",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "MonoBehaviour UI 指针",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "PointerUI.Awake 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "PointerUI.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScript.cs:GetActiveBerry",
+      "type": "function",
+      "name": "GetActiveBerry",
+      "filePath": "Scene/PointerScript.cs",
+      "summary": "PointerUI.GetActiveBerry 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/PointerScriptArrow.cs",
+      "type": "file",
+      "name": "PointerScriptArrow.cs",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "箭头指针，带角度偏移指向目标。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "type": "class",
+      "name": "PointerScriptArrow",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "MonoBehaviour 箭头指针",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScriptArrow.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "PointerScriptArrow.Update 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/PointerScriptArrow.cs:GetActiveBerry",
+      "type": "function",
+      "name": "GetActiveBerry",
+      "filePath": "Scene/PointerScriptArrow.cs",
+      "summary": "PointerScriptArrow.GetActiveBerry 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/QuitGame.cs",
+      "type": "file",
+      "name": "QuitGame.cs",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "退出游戏 Application.Quit。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/QuitGame.cs:QuitGame",
+      "type": "class",
+      "name": "QuitGame",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "MonoBehaviour 退出游戏",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/QuitGame.cs:Quit",
+      "type": "function",
+      "name": "Quit",
+      "filePath": "Scene/QuitGame.cs",
+      "summary": "QuitGame.Quit 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/ResumeGame.cs",
+      "type": "file",
+      "name": "ResumeGame.cs",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "恢复游戏并关闭暂停菜单。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/ResumeGame.cs:ResumeGame",
+      "type": "class",
+      "name": "ResumeGame",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "MonoBehaviour 恢复游戏",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/ResumeGame.cs:Resume",
+      "type": "function",
+      "name": "Resume",
+      "filePath": "Scene/ResumeGame.cs",
+      "summary": "ResumeGame.Resume 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/SceneControllerScript.cs",
+      "type": "file",
+      "name": "SceneControllerScript.cs",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "场景过渡单例，BeginTransition 协程切换场景。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "type": "class",
+      "name": "SceneControllerScript",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "单例 MonoBehaviour 场景控制器",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "SceneControllerScript.Awake 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:BeginTransition",
+      "type": "function",
+      "name": "BeginTransition",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "SceneControllerScript.BeginTransition 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SceneControllerScript.cs:TransitionCoroutine",
+      "type": "function",
+      "name": "TransitionCoroutine",
+      "filePath": "Scene/SceneControllerScript.cs",
+      "summary": "SceneControllerScript.TransitionCoroutine 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/SettingSceneController.cs",
+      "type": "file",
+      "name": "SettingSceneController.cs",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "设置场景加载与重载。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "type": "class",
+      "name": "SettingSceneController",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "MonoBehaviour 设置场景",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SettingSceneController.cs:LoadScene",
+      "type": "function",
+      "name": "LoadScene",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "SettingSceneController.LoadScene 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/SettingSceneController.cs:ReloadScene",
+      "type": "function",
+      "name": "ReloadScene",
+      "filePath": "Scene/SettingSceneController.cs",
+      "summary": "SettingSceneController.ReloadScene 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Scene/Timer.cs",
+      "type": "file",
+      "name": "Timer.cs",
+      "filePath": "Scene/Timer.cs",
+      "summary": "倒计时逻辑，超时对玩家扣血。",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Scene/Timer.cs:Timer",
+      "type": "class",
+      "name": "Timer",
+      "filePath": "Scene/Timer.cs",
+      "summary": "MonoBehaviour 倒计时",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Scene/Timer.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "Scene/Timer.cs",
+      "summary": "Timer.Start 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Timer.cs:UpdateTimerUI",
+      "type": "function",
+      "name": "UpdateTimerUI",
+      "filePath": "Scene/Timer.cs",
+      "summary": "Timer.UpdateTimerUI 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Scene/Timer.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Scene/Timer.cs",
+      "summary": "Timer.OnDestroy 方法",
+      "tags": [
+        "场景",
+        "流程",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Spikes/SpikesMove.cs",
+      "type": "file",
+      "name": "SpikesMove.cs",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "尖刺陷阱移动，与火/冰碰撞时改变形态。",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "type": "class",
+      "name": "SpikesMove",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "MonoBehaviour 尖刺移动",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "SpikesMove.OnTriggerEnter2D 方法",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:OnTriggerExit2D",
+      "type": "function",
+      "name": "OnTriggerExit2D",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "SpikesMove.OnTriggerExit2D 方法",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "SpikesMove.Update 方法",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:StopMovement",
+      "type": "function",
+      "name": "StopMovement",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "SpikesMove.StopMovement 方法",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Spikes/SpikesMove.cs:MoveAwayCoroutine",
+      "type": "function",
+      "name": "MoveAwayCoroutine",
+      "filePath": "Spikes/SpikesMove.cs",
+      "summary": "SpikesMove.MoveAwayCoroutine 方法",
+      "tags": [
+        "陷阱",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/DialogueSystemDefaults.cs",
+      "type": "file",
+      "name": "DialogueSystemDefaults.cs",
+      "filePath": "Text/DialogueSystemDefaults.cs",
+      "summary": "对话系统全局默认参数（打字速度、边距等）。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Text/DialogueSystemDefaults.cs:DialogueSystemDefaults",
+      "type": "class",
+      "name": "DialogueSystemDefaults",
+      "filePath": "Text/DialogueSystemDefaults.cs",
+      "summary": "静态类 对话默认配置",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/DialogueUIController.cs",
+      "type": "file",
+      "name": "DialogueUIController.cs",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "对话 UI 单例，逐字显示与分段暂停。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "class",
+      "name": "DialogueUIController",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "单例 MonoBehaviour 对话 UI",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.Awake 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Reset",
+      "type": "function",
+      "name": "Reset",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.Reset 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:OnDestroy",
+      "type": "function",
+      "name": "OnDestroy",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.OnDestroy 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.Update 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:TryPlayDialogue",
+      "type": "function",
+      "name": "TryPlayDialogue",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.TryPlayDialogue 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:PlayDialogueSession",
+      "type": "function",
+      "name": "PlayDialogueSession",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.PlayDialogueSession 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:TypeSegment",
+      "type": "function",
+      "name": "TypeSegment",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.TypeSegment 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:WaitForCloseInput",
+      "type": "function",
+      "name": "WaitForCloseInput",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.WaitForCloseInput 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:PlayTypewriterSound",
+      "type": "function",
+      "name": "PlayTypewriterSound",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.PlayTypewriterSound 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:SetUIVisible",
+      "type": "function",
+      "name": "SetUIVisible",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.SetUIVisible 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:DetachOverlayCanvasFromWorldParent",
+      "type": "function",
+      "name": "DetachOverlayCanvasFromWorldParent",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.DetachOverlayCanvasFromWorldParent 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:EnsureCanvasVisible",
+      "type": "function",
+      "name": "EnsureCanvasVisible",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.EnsureCanvasVisible 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/DialogueUIController.cs:ConfigureTextFit",
+      "type": "function",
+      "name": "ConfigureTextFit",
+      "filePath": "Text/DialogueUIController.cs",
+      "summary": "DialogueUIController.ConfigureTextFit 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Text/OneTimeText.cs",
+      "type": "file",
+      "name": "OneTimeText.cs",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "一次性触发对话，与 DialogueUIController 联动。",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Text/OneTimeText.cs:OneTimeText",
+      "type": "class",
+      "name": "OneTimeText",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "MonoBehaviour 一次性对话触发",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:Awake",
+      "type": "function",
+      "name": "Awake",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.Awake 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnDisable",
+      "type": "function",
+      "name": "OnDisable",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.OnDisable 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.OnTriggerEnter2D 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:TriggerSequence",
+      "type": "function",
+      "name": "TriggerSequence",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.TriggerSequence 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:NotifyDialogueFinished",
+      "type": "function",
+      "name": "NotifyDialogueFinished",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.NotifyDialogueFinished 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:IsBlockedByPersistentSave",
+      "type": "function",
+      "name": "IsBlockedByPersistentSave",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.IsBlockedByPersistentSave 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:GetSavedValue",
+      "type": "function",
+      "name": "GetSavedValue",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.GetSavedValue 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:GetSaveKey",
+      "type": "function",
+      "name": "GetSaveKey",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.GetSaveKey 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:Reset",
+      "type": "function",
+      "name": "Reset",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.Reset 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Text/OneTimeText.cs:OnValidate",
+      "type": "function",
+      "name": "OnValidate",
+      "filePath": "Text/OneTimeText.cs",
+      "summary": "OneTimeText.OnValidate 方法",
+      "tags": [
+        "对话",
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Tilemap/TileReactionOnTouch2D.cs",
+      "type": "file",
+      "name": "TileReactionOnTouch2D.cs",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "Tilemap 碰撞触发的元素反应入口。",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "type": "class",
+      "name": "TileReactionOnTouch2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "MonoBehaviour Tilemap 反应",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:OnCollisionEnter2D",
+      "type": "function",
+      "name": "OnCollisionEnter2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "TileReactionOnTouch2D.OnCollisionEnter2D 方法",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:OnTriggerEnter2D",
+      "type": "function",
+      "name": "OnTriggerEnter2D",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "TileReactionOnTouch2D.OnTriggerEnter2D 方法",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Tilemap/TileReactionOnTouch2D.cs:TryReact",
+      "type": "function",
+      "name": "TryReact",
+      "filePath": "Tilemap/TileReactionOnTouch2D.cs",
+      "summary": "TileReactionOnTouch2D.TryReact 方法",
+      "tags": [
+        "Tilemap",
+        "反应",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:UI/ADDisplayUI.cs",
+      "type": "file",
+      "name": "ADDisplayUI.cs",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "广告/提示 UI 延迟显示。",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "class",
+      "name": "ADDisplayUI",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "MonoBehaviour 广告 UI",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/ADDisplayUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "ADDisplayUI.Start 方法",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/ADDisplayUI.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "UI/ADDisplayUI.cs",
+      "summary": "ADDisplayUI.Update 方法",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:UI/SpaceBarDisplayUI.cs",
+      "type": "file",
+      "name": "SpaceBarDisplayUI.cs",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "空格键提示 UI，与 ADDisplayUI 配合。",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "type": "class",
+      "name": "SpaceBarDisplayUI",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "MonoBehaviour 空格提示 UI",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "类"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/SpaceBarDisplayUI.cs:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "SpaceBarDisplayUI.Start 方法",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:UI/SpaceBarDisplayUI.cs:Update",
+      "type": "function",
+      "name": "Update",
+      "filePath": "UI/SpaceBarDisplayUI.cs",
+      "summary": "SpaceBarDisplayUI.Update 方法",
+      "tags": [
+        "UI",
+        "csharp",
+        "unity",
+        "方法"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Audio/AudioManager.cs",
+      "target": "class:Audio/AudioManager.cs:AudioManager",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Audio/AudioManager.cs:AudioManager",
+      "target": "function:Audio/AudioManager.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Audio/AudioManager.cs:AudioManager",
+      "target": "function:Audio/AudioManager.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Camera/FollowCamera.cs",
+      "target": "class:Camera/FollowCamera.cs:FollowCamera",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/FollowCamera.cs:FollowCamera",
+      "target": "function:Camera/FollowCamera.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/FollowCamera.cs:FollowCamera",
+      "target": "function:Camera/FollowCamera.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Camera/Parallax.cs",
+      "target": "class:Camera/Parallax.cs:Parallax",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/Parallax.cs:Parallax",
+      "target": "function:Camera/Parallax.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/Parallax.cs:Parallax",
+      "target": "function:Camera/Parallax.cs:GetActualCameraPosition",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/Parallax.cs:Parallax",
+      "target": "function:Camera/Parallax.cs:LateUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Camera/ParallaxManager.cs",
+      "target": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "target": "function:Camera/ParallaxManager.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "target": "function:Camera/ParallaxManager.cs:AddParallaxLayer",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Fire/FireMove.cs",
+      "target": "class:Fire/FireMove.cs:FireMove",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:FixedUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:CalculateMoveDirection",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:StopMove",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Fire/FireMove.cs:FireMove",
+      "target": "function:Fire/FireMove.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Ice/IceMove.cs",
+      "target": "class:Ice/IceMove.cs:IceMove",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:StopMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Ice/IceMove.cs:IceMove",
+      "target": "function:Ice/IceMove.cs:MoveAwayCoroutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/JumpJumpHappy.cs",
+      "target": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "target": "function:Platform/JumpJumpHappy.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "target": "function:Platform/JumpJumpHappy.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "target": "function:Platform/JumpJumpHappy.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/JumpJumpHappy.cs:JumpJumpHappy",
+      "target": "function:Platform/JumpJumpHappy.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/MiniGameElevator.cs",
+      "target": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "target": "function:Platform/MiniGameElevator.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "target": "function:Platform/MiniGameElevator.cs:OnTriggerStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MiniGameElevator.cs:MiniGameElevator",
+      "target": "function:Platform/MiniGameElevator.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/MovingPlatform.cs",
+      "target": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "target": "function:Platform/MovingPlatform.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "target": "function:Platform/MovingPlatform.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "target": "function:Platform/MovingPlatform.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/MovingPlatform.cs:MovingPlatform",
+      "target": "function:Platform/MovingPlatform.cs:OnCollisionExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/NewLevel.cs",
+      "target": "class:Platform/NewLevel.cs:NewLevel",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:FixedUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:StopMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NewLevel.cs:NewLevel",
+      "target": "function:Platform/NewLevel.cs:IsMoving",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Platform/NextLevelElevator.cs",
+      "target": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "target": "function:Platform/NextLevelElevator.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "target": "function:Platform/NextLevelElevator.cs:OnTriggerStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Platform/NextLevelElevator.cs:NextLevelElevator",
+      "target": "function:Platform/NextLevelElevator.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerHP/DeathTimesCount.cs",
+      "target": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "target": "function:PlayerHP/DeathTimesCount.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "target": "function:PlayerHP/DeathTimesCount.cs:AddDeath",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/DeathTimesCount.cs:DeathTimesCounter",
+      "target": "function:PlayerHP/DeathTimesCount.cs:UpdateUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerHP/PersistUI.cs",
+      "target": "class:PlayerHP/PersistUI.cs:PersistUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/PersistUI.cs:PersistUI",
+      "target": "function:PlayerHP/PersistUI.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerHP/PlayerHP.cs",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "target": "function:PlayerHP/PlayerHP.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "target": "function:PlayerHP/PlayerHP.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "target": "function:PlayerHP/PlayerHP.cs:TakeDamage",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerInteractions/OnFire.cs",
+      "target": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:HandleFlashing",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:StopFlashing",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:OnTriggerStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "function:PlayerInteractions/OnFire.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerInteractions/OnSpike.cs",
+      "target": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "target": "function:PlayerInteractions/OnSpike.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "target": "function:PlayerInteractions/OnSpike.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "target": "function:PlayerInteractions/OnSpike.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:PlayerMovement/PlayerMovementRe.cs",
+      "target": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:FixedUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleJumpInput",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleWallClingInput",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:CheckWall",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleWallCling",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:IsAtWallEdge",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:WallJump",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:EndWallJump",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:EdgeDetach",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleIceMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:OnTriggerStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:HandleFlip",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "function:PlayerMovement/PlayerMovementRe.cs:UpdateAnimator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Prize/CollectibleManager.cs",
+      "target": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:OnCollectiblePicked",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:SpawnRandomCollectible",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:BeginSpawning",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "target": "function:Prize/CollectibleManager.cs:FocusRoutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Prize/Mossberry.cs",
+      "target": "class:Prize/Mossberry.cs:Mossberry",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:PlayAndCollect",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "function:Prize/Mossberry.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/FireAndIce.cs",
+      "target": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:TryReactFromChildTrigger",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:TryReact",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:IsOtherTagMatch",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:ResolveTilemap",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:TryFindReactCell",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "target": "function:Reactions/FireAndIce.cs:TryFindNeighborTile",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/FireAndIceChildTriggerRelay.cs",
+      "target": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "target": "function:Reactions/FireAndIceChildTriggerRelay.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "target": "function:Reactions/FireAndIceChildTriggerRelay.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/FireAndSpike.cs",
+      "target": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:CanReact",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndSpike.cs:FireAndSpike",
+      "target": "function:Reactions/FireAndSpike.cs:RepelFromPoint",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/IceAndSpike.cs",
+      "target": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "target": "function:Reactions/IceAndSpike.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "target": "function:Reactions/IceAndSpike.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/IceAndSpike.cs:IceAndSpike",
+      "target": "function:Reactions/IceAndSpike.cs:TryReact",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/MovableInteractions.cs",
+      "target": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:StopMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/MovableInteractions.cs:MovableInteractions",
+      "target": "function:Reactions/MovableInteractions.cs:MoveAwayCoroutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "target": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:FixedUpdate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:OnCollisionStay2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StartMoveFromPlayer",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:StopAndLock",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:IsStopTag",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:ShouldStopBy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/PushAwayOnPlayerTrigger2D.cs:PushAwayOnPlayerTrigger2D",
+      "target": "function:Reactions/PushAwayOnPlayerTrigger2D.cs:CheckOverlapForStopTag",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Prize/Mossberry.cs:Mossberry",
+      "target": "class:Prize/CollectibleManager.cs:CollectibleManager",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnFire.cs:OnFire",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerInteractions/OnSpike.cs:OnSpike",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Reactions/FireAndIceChildTriggerRelay.cs:FireAndIceChildTriggerRelay",
+      "target": "class:Reactions/FireAndIce.cs:FireAndIce",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Camera/ParallaxManager.cs:ParallaxManager",
+      "target": "class:Camera/Parallax.cs:Parallax",
+      "type": "related",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:PlayerMovement/PlayerMovementRe.cs:PlayerMovementRe",
+      "target": "class:PlayerHP/PlayerHP.cs:PlayerHP",
+      "type": "related",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/BerryController.cs",
+      "target": "class:Scene/BerryController.cs:BerryController",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/BerryController.cs:BerryController",
+      "target": "function:Scene/BerryController.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/BerryController.cs:BerryController",
+      "target": "function:Scene/BerryController.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/CollectCountUI.cs",
+      "target": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:UpdateCountUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/CollectCountUI.cs:CollectCountUI",
+      "target": "function:Scene/CollectCountUI.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/DisplayCursor.cs",
+      "target": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "target": "function:Scene/DisplayCursor.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/DisplayCursor.cs:DisplayCursor",
+      "target": "function:Scene/DisplayCursor.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/GameController.cs",
+      "target": "class:Scene/GameController.cs:GameController",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/GameController.cs:GameController",
+      "target": "function:Scene/GameController.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/GameController.cs:GameController",
+      "target": "function:Scene/GameController.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/Menu.cs",
+      "target": "class:Scene/Menu.cs:Menu",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Menu.cs:Menu",
+      "target": "function:Scene/Menu.cs:PauseGame",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/NormalSceneTransition.cs",
+      "target": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "target": "function:Scene/NormalSceneTransition.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "target": "function:Scene/NormalSceneTransition.cs:TriggerRoutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/PointerScript.cs",
+      "target": "class:Scene/PointerScript.cs:PointerUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScript.cs:PointerUI",
+      "target": "function:Scene/PointerScript.cs:GetActiveBerry",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/PointerScriptArrow.cs",
+      "target": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "target": "function:Scene/PointerScriptArrow.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/PointerScriptArrow.cs:PointerScriptArrow",
+      "target": "function:Scene/PointerScriptArrow.cs:GetActiveBerry",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/QuitGame.cs",
+      "target": "class:Scene/QuitGame.cs:QuitGame",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/QuitGame.cs:QuitGame",
+      "target": "function:Scene/QuitGame.cs:Quit",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/ResumeGame.cs",
+      "target": "class:Scene/ResumeGame.cs:ResumeGame",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/ResumeGame.cs:ResumeGame",
+      "target": "function:Scene/ResumeGame.cs:Resume",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/SceneControllerScript.cs",
+      "target": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:BeginTransition",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "function:Scene/SceneControllerScript.cs:TransitionCoroutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/SettingSceneController.cs",
+      "target": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "target": "function:Scene/SettingSceneController.cs:LoadScene",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SettingSceneController.cs:SettingSceneController",
+      "target": "function:Scene/SettingSceneController.cs:ReloadScene",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Scene/Timer.cs",
+      "target": "class:Scene/Timer.cs:Timer",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:UpdateTimerUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/Timer.cs:Timer",
+      "target": "function:Scene/Timer.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Spikes/SpikesMove.cs",
+      "target": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:OnTriggerExit2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:StopMovement",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Spikes/SpikesMove.cs:SpikesMove",
+      "target": "function:Spikes/SpikesMove.cs:MoveAwayCoroutine",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Text/DialogueSystemDefaults.cs",
+      "target": "class:Text/DialogueSystemDefaults.cs:DialogueSystemDefaults",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Text/DialogueUIController.cs",
+      "target": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Reset",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:OnDestroy",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:TryPlayDialogue",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:PlayDialogueSession",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:TypeSegment",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:WaitForCloseInput",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:PlayTypewriterSound",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:SetUIVisible",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:DetachOverlayCanvasFromWorldParent",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:EnsureCanvasVisible",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "target": "function:Text/DialogueUIController.cs:ConfigureTextFit",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Text/OneTimeText.cs",
+      "target": "class:Text/OneTimeText.cs:OneTimeText",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:Awake",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnDisable",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:TriggerSequence",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:NotifyDialogueFinished",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:IsBlockedByPersistentSave",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:GetSavedValue",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:GetSaveKey",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:Reset",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "function:Text/OneTimeText.cs:OnValidate",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:Tilemap/TileReactionOnTouch2D.cs",
+      "target": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:OnCollisionEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:OnTriggerEnter2D",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Tilemap/TileReactionOnTouch2D.cs:TileReactionOnTouch2D",
+      "target": "function:Tilemap/TileReactionOnTouch2D.cs:TryReact",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:UI/ADDisplayUI.cs",
+      "target": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "target": "function:UI/ADDisplayUI.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "target": "function:UI/ADDisplayUI.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:UI/SpaceBarDisplayUI.cs",
+      "target": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "function:UI/SpaceBarDisplayUI.cs:Start",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "function:UI/SpaceBarDisplayUI.cs:Update",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Text/OneTimeText.cs:OneTimeText",
+      "target": "class:Text/DialogueUIController.cs:DialogueUIController",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:UI/SpaceBarDisplayUI.cs:SpaceBarDisplayUI",
+      "target": "class:UI/ADDisplayUI.cs:ADDisplayUI",
+      "type": "related",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "class:Scene/SceneControllerScript.cs:SceneControllerScript",
+      "target": "class:Scene/NormalSceneTransition.cs:NormalSceneTransition",
+      "type": "related",
+      "weight": 0.7,
+      "direction": "forward"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:player",
+      "name": "玩家系统",
+      "description": "玩家移动、生命值与受伤交互",
+      "nodeIds": [
+        "file:PlayerMovement/PlayerMovementRe.cs",
+        "file:PlayerHP/DeathTimesCount.cs",
+        "file:PlayerHP/PersistUI.cs",
+        "file:PlayerHP/PlayerHP.cs",
+        "file:PlayerInteractions/OnFire.cs",
+        "file:PlayerInteractions/OnSpike.cs"
+      ]
+    },
+    {
+      "id": "layer:gameplay",
+      "name": "游戏逻辑",
+      "description": "收集品、关卡控制与计时",
+      "nodeIds": [
+        "file:Prize/CollectibleManager.cs",
+        "file:Prize/Mossberry.cs",
+        "file:Scene/BerryController.cs",
+        "file:Scene/CollectCountUI.cs",
+        "file:Scene/DisplayCursor.cs",
+        "file:Scene/GameController.cs",
+        "file:Scene/Menu.cs",
+        "file:Scene/NormalSceneTransition.cs",
+        "file:Scene/PointerScript.cs",
+        "file:Scene/PointerScriptArrow.cs",
+        "file:Scene/QuitGame.cs",
+        "file:Scene/ResumeGame.cs",
+        "file:Scene/SceneControllerScript.cs",
+        "file:Scene/SettingSceneController.cs",
+        "file:Scene/Timer.cs",
+        "file:Platform/JumpJumpHappy.cs",
+        "file:Platform/MiniGameElevator.cs",
+        "file:Platform/MovingPlatform.cs",
+        "file:Platform/NewLevel.cs",
+        "file:Platform/NextLevelElevator.cs"
+      ]
+    },
+    {
+      "id": "layer:traps",
+      "name": "陷阱与反应",
+      "description": "火/冰/刺陷阱及元素碰撞反应",
+      "nodeIds": [
+        "file:Fire/FireMove.cs",
+        "file:Ice/IceMove.cs",
+        "file:Spikes/SpikesMove.cs",
+        "file:Reactions/FireAndIce.cs",
+        "file:Reactions/FireAndIceChildTriggerRelay.cs",
+        "file:Reactions/FireAndSpike.cs",
+        "file:Reactions/IceAndSpike.cs",
+        "file:Reactions/MovableInteractions.cs",
+        "file:Reactions/PushAwayOnPlayerTrigger2D.cs",
+        "file:Tilemap/TileReactionOnTouch2D.cs"
+      ]
+    },
+    {
+      "id": "layer:presentation",
+      "name": "表现层",
+      "description": "相机、UI、对话与音频",
+      "nodeIds": [
+        "file:Camera/FollowCamera.cs",
+        "file:Camera/Parallax.cs",
+        "file:Camera/ParallaxManager.cs",
+        "file:UI/ADDisplayUI.cs",
+        "file:UI/SpaceBarDisplayUI.cs",
+        "file:Text/DialogueSystemDefaults.cs",
+        "file:Text/DialogueUIController.cs",
+        "file:Text/OneTimeText.cs",
+        "file:Audio/AudioManager.cs"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "项目概览",
+      "description": "从 GameController 了解关卡如何启动收集品与测试流程。",
+      "nodeIds": [
+        "file:Scene/GameController.cs"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "玩家移动核心",
+      "description": "PlayerMovementRe 实现跳跃、攀墙、冰面滑行等核心平台机制。",
+      "nodeIds": [
+        "file:PlayerMovement/PlayerMovementRe.cs"
+      ],
+      "languageLesson": "Unity MonoBehaviour 生命周期：Awake/Update/FixedUpdate 分工处理输入与物理。"
+    },
+    {
+      "order": 3,
+      "title": "生命值与伤害",
+      "description": "PlayerHP 与 OnFire/OnSpike/Timer 构成伤害来源。",
+      "nodeIds": [
+        "file:PlayerHP/PlayerHP.cs",
+        "file:PlayerInteractions/OnFire.cs",
+        "file:PlayerInteractions/OnSpike.cs"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "收集与 UI",
+      "description": "CollectibleManager 驱动浆果收集与 UI 计数显示。",
+      "nodeIds": [
+        "file:Prize/CollectibleManager.cs",
+        "file:Prize/Mossberry.cs",
+        "file:Scene/CollectCountUI.cs"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "元素陷阱反应",
+      "description": "Fire/Ice/Spikes 与 Reactions 目录实现元素组合谜题。",
+      "nodeIds": [
+        "file:Reactions/FireAndIce.cs",
+        "file:Fire/FireMove.cs",
+        "file:Ice/IceMove.cs",
+        "file:Spikes/SpikesMove.cs"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "场景与对话",
+      "description": "SceneControllerScript 负责场景切换，DialogueUIController 处理剧情文本。",
+      "nodeIds": [
+        "file:Scene/SceneControllerScript.cs",
+        "file:Text/DialogueUIController.cs"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "相机与视差",
+      "description": "FollowCamera 跟随玩家，Parallax 系统营造 2D 景深。",
+      "nodeIds": [
+        "file:Camera/FollowCamera.cs",
+        "file:Camera/Parallax.cs",
+        "file:Camera/ParallaxManager.cs"
+      ]
+    }
+  ]
+}

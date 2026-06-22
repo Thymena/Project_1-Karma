@@ -1,0 +1,691 @@
+{
+  "scriptCompleted": true,
+  "files": [
+    {
+      "path": "Audio.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Audio/AudioManager.cs",
+      "language": "csharp",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Audio/AudioManager.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/FollowCamera.cs",
+      "language": "csharp",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/FollowCamera.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/Parallax.cs",
+      "language": "csharp",
+      "sizeLines": 241,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/Parallax.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/ParallaxManager.cs",
+      "language": "csharp",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/ParallaxManager.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Fire.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Fire/FireMove.cs",
+      "language": "csharp",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Fire/FireMove.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Ice.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Ice/IceMove.cs",
+      "language": "csharp",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Ice/IceMove.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Physics.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Physics/BouncyBall.physicsMaterial2D",
+      "language": "physicsmaterial2d",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Physics/BouncyBall.physicsMaterial2D.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Physics/IceMaterial.physicsMaterial2D",
+      "language": "physicsmaterial2d",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Physics/IceMaterial.physicsMaterial2D.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Physics/Slip.physicsMaterial2D",
+      "language": "physicsmaterial2d",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Physics/Slip.physicsMaterial2D.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/JumpJumpHappy.cs",
+      "language": "csharp",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/JumpJumpHappy.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/MiniGameElevator.cs",
+      "language": "csharp",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/MiniGameElevator.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/MovingPlatform.cs",
+      "language": "csharp",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/MovingPlatform.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/NewLevel.cs",
+      "language": "csharp",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/NewLevel.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/NextLevelElevator.cs",
+      "language": "csharp",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/NextLevelElevator.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/DeathTimesCount.cs",
+      "language": "csharp",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/DeathTimesCount.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/PersistUI.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/PersistUI.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/PlayerHP.cs",
+      "language": "csharp",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/PlayerHP.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerInteractions.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerInteractions/OnFire.cs",
+      "language": "csharp",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerInteractions/OnFire.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerInteractions/OnSpike.cs",
+      "language": "csharp",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerInteractions/OnSpike.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerMovement.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerMovement/PlayerMovementRe.cs",
+      "language": "csharp",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerMovement/PlayerMovementRe.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Prize.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Prize/CollectibleManager.cs",
+      "language": "csharp",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Prize/CollectibleManager.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Prize/Mossberry.cs",
+      "language": "csharp",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Prize/Mossberry.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndIce.cs",
+      "language": "csharp",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndIce.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "language": "csharp",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndIceChildTriggerRelay.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndSpike.cs",
+      "language": "csharp",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndSpike.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/IceAndSpike.cs",
+      "language": "csharp",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/IceAndSpike.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/MovableInteractions.cs",
+      "language": "csharp",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/MovableInteractions.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "language": "csharp",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/PushAwayOnPlayerTrigger2D.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/BerryController.cs",
+      "language": "csharp",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/BerryController.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/CollectCountUI.cs",
+      "language": "csharp",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/CollectCountUI.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/DisplayCursor.cs",
+      "language": "csharp",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/DisplayCursor.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/GameController.cs",
+      "language": "csharp",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/GameController.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/Menu.cs",
+      "language": "csharp",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/Menu.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/NormalSceneTransition.cs",
+      "language": "csharp",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/NormalSceneTransition.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/PointerScript.cs",
+      "language": "csharp",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/PointerScript.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/PointerScriptArrow.cs",
+      "language": "csharp",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/PointerScriptArrow.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/QuitGame.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/QuitGame.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/ResumeGame.cs",
+      "language": "csharp",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/ResumeGame.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/SceneControllerScript.cs",
+      "language": "csharp",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/SceneControllerScript.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/SettingSceneController.cs",
+      "language": "csharp",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/SettingSceneController.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/Timer.cs",
+      "language": "csharp",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/Timer.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Spikes.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Spikes/SpikesMove.cs",
+      "language": "csharp",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Spikes/SpikesMove.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/DialogueSystemDefaults.cs",
+      "language": "csharp",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/DialogueSystemDefaults.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/DialogueUIController.cs",
+      "language": "csharp",
+      "sizeLines": 286,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/DialogueUIController.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/OneTimeText.cs",
+      "language": "csharp",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/OneTimeText.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Tilemap.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Tilemap/TileReactionOnTouch2D.cs",
+      "language": "csharp",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Tilemap/TileReactionOnTouch2D.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "UI.meta",
+      "language": "meta",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "UI/ADDisplayUI.cs",
+      "language": "csharp",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "UI/ADDisplayUI.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "UI/SpaceBarDisplayUI.cs",
+      "language": "csharp",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "UI/SpaceBarDisplayUI.cs.meta",
+      "language": "meta",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 112,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "moderate",
+  "stats": {
+    "filesScanned": 112,
+    "byCategory": {
+      "code": 112
+    },
+    "byLanguage": {
+      "meta": 64,
+      "csharp": 45,
+      "physicsmaterial2d": 3
+    }
+  }
+}

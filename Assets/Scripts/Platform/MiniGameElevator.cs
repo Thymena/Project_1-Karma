@@ -46,7 +46,7 @@ public class MiniGameElevator : MonoBehaviour
         }
 
         // Elevator movement and scene transition
-        if (timerDelay > 0.5f && start.pastTest)
+        if (timerDelay > 1f && start.pastTest)
         {
             timer += Time.deltaTime;
 
@@ -57,7 +57,7 @@ public class MiniGameElevator : MonoBehaviour
             if (!fadeStarted && timer >= changeTime - fadeLeadTime)
             {
                 fadeStarted = true;
-                SceneControllerScript.instance.BeginTransition(fadeDuration: 1f, sceneLoadDelay: 0f);
+                SceneControllerScript.instance.BeginTransition(fadeDuration: 1f, sceneLoadDelay: 1f);
             }
 
             // Mark elevator as triggered when done

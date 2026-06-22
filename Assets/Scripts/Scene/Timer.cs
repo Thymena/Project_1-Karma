@@ -28,7 +28,8 @@ public class Timer : MonoBehaviour
             if (playerHP == null)
                 playerHP = player.GetComponent<PlayerHP>();
 
-            playerHP.health -= damage;
+            if (playerHP != null && !playerHP.IsDead)
+                playerHP.health -= damage;
         }
 
         // Display timer (MM:SS)

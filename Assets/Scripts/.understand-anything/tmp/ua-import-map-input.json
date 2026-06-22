@@ -1,0 +1,230 @@
+{
+  "projectRoot": "d:\\Unity\\Project_1\\Assets\\Scripts",
+  "files": [
+    {
+      "path": "Audio/AudioManager.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/FollowCamera.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/Parallax.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Camera/ParallaxManager.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Fire/FireMove.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Ice/IceMove.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/JumpJumpHappy.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/MiniGameElevator.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/MovingPlatform.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/NewLevel.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Platform/NextLevelElevator.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/DeathTimesCount.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/PersistUI.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerHP/PlayerHP.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerInteractions/OnFire.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerInteractions/OnSpike.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "PlayerMovement/PlayerMovementRe.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Prize/CollectibleManager.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Prize/Mossberry.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndIce.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndIceChildTriggerRelay.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/FireAndSpike.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/IceAndSpike.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/MovableInteractions.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Reactions/PushAwayOnPlayerTrigger2D.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/BerryController.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/CollectCountUI.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/DisplayCursor.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/GameController.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/Menu.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/NormalSceneTransition.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/PointerScript.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/PointerScriptArrow.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/QuitGame.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/ResumeGame.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/SceneControllerScript.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/SettingSceneController.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Scene/Timer.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Spikes/SpikesMove.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/DialogueSystemDefaults.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/DialogueUIController.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Text/OneTimeText.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "Tilemap/TileReactionOnTouch2D.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "UI/ADDisplayUI.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    },
+    {
+      "path": "UI/SpaceBarDisplayUI.cs",
+      "language": "csharp",
+      "fileCategory": "code"
+    }
+  ]
+}

@@ -53,6 +53,9 @@ TagManager:
   - name: Background
     uniqueID: 3644178751
     locked: 0
+  - name: Background2
+    uniqueID: 2253784609
+    locked: 0
   - name: Layer3
     uniqueID: 53180269
     locked: 0
@@ -68,6 +71,15 @@ TagManager:
   - name: Elevator
     uniqueID: 963087621
     locked: 0
+  - name: Foreground2
+    uniqueID: 2366209877
+    locked: 0
   - name: Foreground
     uniqueID: 1405651381
+    locked: 0
+  - name: AnimSpecial
+    uniqueID: 1822399093
+    locked: 0
+  - name: Pointer
+    uniqueID: 766264625
     locked: 0

@@ -23,6 +23,7 @@ public class OnSpike : MonoBehaviour
         if (other.CompareTag("Spikes"))
         {
             playerHP = GetComponent<PlayerHP>();
+            if (playerHP.IsDead) return;
             playerHP.health -= damage;
         }
         
